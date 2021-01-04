@@ -2,7 +2,7 @@
   <div>
     <Header />
     <Banner />
-    <General />
+    <General :data="hotData" />
   </div>
 </template>
 
@@ -10,10 +10,18 @@
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
 import General from "../../components/General";
+import formatArray from "../../utils/formatArray";
 export default {
   name: "Home",
-  mounted() {
-    this.$API.home.getHomeData();
+  data() {
+    return {
+      hotData: [],
+    };
+  },
+  async mounted() {
+    const result = await this.$API.home.getHotData();
+    this.hotData = formatArray(result.data.worksList, 5);
+    console.log(this.hotData);
   },
   components: {
     Header,

@@ -1,28 +1,26 @@
 <template>
   <div class="general">
-    <div></div>
-    <el-carousel indicator-position="none" height="294px">
-      <el-carousel-item class="el-carousel-item"> <Brief /> </el-carousel-item>
+    <div class="title">畅销作品</div>
+    <el-carousel indicator-position="none" height="340px">
+      <el-carousel-item
+        class="el-carousel-item"
+        v-for="(item, index) in data"
+        :key="index"
+      >
+        <div v-for="book in item" :key="book.id" class="brief">
+          <Brief :book="book" />
+        </div>
+      </el-carousel-item>
     </el-carousel>
   </div>
 </template>
 
 <script>
 import Brief from "../Brief";
-// import formatArray from "../../utils/formatArray";
+
 export default {
   name: "General",
-  data() {
-    return {
-      hotData: [],
-    };
-  },
-  async mounted() {
-    const result = await this.$API.home.getHotData();
-    this.hotData = result.data.worksList;
-    // this.hotData = formatArray(result.data.worksList, 5);
-    console.log(this.hotData);
-  },
+  props: ["data"],
   components: {
     Brief,
   },
@@ -32,11 +30,31 @@ export default {
 <style lang="less" scoped>
 .general {
   margin: 40px 0;
-  height: 294px;
+  height: 330px;
 }
 .el-carousel-item {
-  width: 1200px;
+  // width: 1143px;
+  // margin: 0 auto;
   box-sizing: border-box;
   padding: 0 60px;
+  display: flex;
 }
+.brief {
+  // width: 176px;
+  width: 20%;
+  padding: 40px 20px 0 20px;
+  box-sizing: border-box;
+  //   height: 100%;
+}
+.title {
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+  width: 1143px;
+  margin: 0 auto;
+}
+// .general-inner{
+//   width: 1200px;
+//   margin: 0 auto;
+// }
 </style>
