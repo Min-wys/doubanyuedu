@@ -18,6 +18,15 @@ router.get("/home", function(ctx, next) {
   };
 });
 
+// 返回chnnel完本推荐数据
+let channelData = require("./datas/channel.json");
+router.get("/channel", function(ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: channelData,
+  };
+});
+
 app.listen("3000", function(error) {
   if (error) {
     console.log("服务器运行失败!!!");

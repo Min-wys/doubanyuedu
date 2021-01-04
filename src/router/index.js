@@ -4,7 +4,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-const Home = () => import(/* webpackChunkName: "Home" */ "@views/Home");
+const Home = () => import(/* webpackChunkName: "Home" */ "../views/Home");
 
 // 改写push/replace方法
 const { push } = VueRouter.prototype;
