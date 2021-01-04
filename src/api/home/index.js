@@ -2,9 +2,10 @@
 import request from "../../utils/request";
 
 export default {
-  home() {
+  getHomeData() {
     return request({
-      url: "地址",
+      method: "GET",
+      url: "/home",
     });
   },
 };
