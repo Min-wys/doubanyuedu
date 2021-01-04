@@ -3,8 +3,11 @@
 */
 import Vue from "vue";
 import VueRouter from "vue-router";
+// import Home from '../views/Home'
+// import Rankings from '../views/Rankings'
 
-const Home = () => import(/* webpackChunkName: "Home" */ "@views/Home");
+const Home = () => import(/* webpackChunkName: "Home" */ "../views/Home");
+const Rankings = () => import(/* webpackChunkName: "Rankings" */ "../views/rankings" );
 
 // 改写push/replace方法
 const { push } = VueRouter.prototype;
@@ -31,6 +34,10 @@ const router = new VueRouter({
     {
       path: "/",
       component: Home,
+    },
+    {
+      path: "/rankings",
+      component: Rankings,
     },
   ],
 });
