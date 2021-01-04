@@ -1,5 +1,5 @@
 /* 
-自己的路由往里加
+  自己的路由往里加
 */
 import Vue from "vue";
 import VueRouter from "vue-router";
@@ -25,7 +25,7 @@ VueRouter.prototype.replace = function(location, onComplete, onAbort) {
 };
 Vue.use(VueRouter);
 
-// 添加
+// 自己添加路由
 const router = new VueRouter({
   routes: [
     {

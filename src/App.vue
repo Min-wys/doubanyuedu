@@ -1,5 +1,5 @@
 <template>
-  <div id="app">豆瓣阅读</div>
+  <div id="app">豆瓣阅读111</div>
 </template>
 
 <script>

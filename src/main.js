@@ -1,8 +1,16 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import App from "./App.vue";
+import store from "./store";
+import * as API from "./api";
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+Vue.prototype.$API = API;
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  beforeCreate() {
+    // 定义全局事假总线
+    Vue.prototype.$bus = this;
+  },
+  render: (h) => h(App),
+  store,
+}).$mount("#app");

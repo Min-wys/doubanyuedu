@@ -1,0 +1,264 @@
+{
+  "name": "连载榜",
+  "list": [
+    {
+      "readCount": 0,
+      "lastRank": 1,
+      "currentRank": 1,
+      "wordCount": 0,
+      "donationCount": 0,
+      "voteCount": 0,
+      "works": {
+        "id": "162794639",
+        "url": "/column/35560444/",
+        "title": "薄情人回收手册",
+        "isOrigin": true,
+        "isColumn": true,
+        "isEssay": false,
+        "isGallery": false,
+        "isBundle": false,
+        "author": [{ "url": "/author/63766196/", "name": "柳翠虎" }],
+        "origAuthor": null,
+        "cover": "https://img9.doubanio.com/view/ark_column_cover/retina/public/35560444.jpg?v=1605671917",
+        "coverLabel": "",
+        "kinds": [{ "shortName": "言情", "id": 501 }],
+        "highlightTags": [{ "name": "现代言情", "id": 33599 }]
+      }
+    },
+    {
+      "readCount": 0,
+      "lastRank": 2,
+      "currentRank": 2,
+      "wordCount": 0,
+      "donationCount": 0,
+      "voteCount": 0,
+      "works": {
+        "id": "166538175",
+        "url": "/column/35882238/",
+        "title": "我是这样地爱着你",
+        "isOrigin": true,
+        "isColumn": true,
+        "isEssay": false,
+        "isGallery": false,
+        "isBundle": false,
+        "author": [{ "url": "/author/63767531/", "name": "福宝" }],
+        "origAuthor": null,
+        "cover": "https://img1.doubanio.com/view/ark_column_cover/retina/public/35882238.jpg?v=1608520443",
+        "coverLabel": "",
+        "kinds": [{ "shortName": "言情", "id": 501 }],
+        "highlightTags": [{ "name": "现代言情", "id": 33599 }]
+      }
+    },
+    {
+      "readCount": 0,
+      "lastRank": 3,
+      "currentRank": 3,
+      "wordCount": 0,
+      "donationCount": 0,
+      "voteCount": 0,
+      "works": {
+        "id": "165006550",
+        "url": "/column/35764512/",
+        "title": "情人",
+        "isOrigin": true,
+        "isColumn": true,
+        "isEssay": false,
+        "isGallery": false,
+        "isBundle": false,
+        "author": [{ "url": "/author/63812836/", "name": "舍目斯" }],
+        "origAuthor": null,
+        "cover": "https://img2.doubanio.com/view/ark_column_cover/retina/public/35764512.jpg?v=1607511071",
+        "coverLabel": "",
+        "kinds": [{ "shortName": "女性", "id": 532 }],
+        "highlightTags": [{ "name": "家庭故事", "id": 38020 }]
+      }
+    },
+    {
+      "readCount": 0,
+      "lastRank": 4,
+      "currentRank": 4,
+      "wordCount": 0,
+      "donationCount": 0,
+      "voteCount": 0,
+      "works": {
+        "id": "159284229",
+        "url": "/column/35250519/",
+        "title": "可回收之家",
+        "isOrigin": true,
+        "isColumn": true,
+        "isEssay": false,
+        "isGallery": false,
+        "isBundle": false,
+        "author": [{ "url": "/author/63771081/", "name": "陆雾" }],
+        "origAuthor": null,
+        "cover": "https://img1.doubanio.com/view/ark_column_cover/retina/public/35250519.jpg?v=1606099762",
+        "coverLabel": "",
+        "kinds": [{ "shortName": "言情", "id": 501 }],
+        "highlightTags": [
+          { "name": "欢喜冤家", "id": 20359 },
+          { "name": "现代言情", "id": 33599 },
+          { "name": "职场爱情", "id": 40008 }
+        ]
+      }
+    },
+    {
+      "readCount": 0,
+      "lastRank": 5,
+      "currentRank": 5,
+      "wordCount": 0,
+      "donationCount": 0,
+      "voteCount": 0,
+      "works": {
+        "id": "159646330",
+        "url": "/column/35279210/",
+        "title": "轧戏",
+        "isOrigin": true,
+        "isColumn": true,
+        "isEssay": false,
+        "isGallery": false,
+        "isBundle": false,
+        "author": [{ "url": "/author/63733197/", "name": "祖乐" }],
+        "origAuthor": null,
+        "cover": "https://img3.doubanio.com/view/ark_column_cover/retina/public/35279210.jpg?v=1606470876",
+        "coverLabel": "",
+        "kinds": [{ "shortName": "言情", "id": 501 }],
+        "highlightTags": [
+          { "name": "现代言情", "id": 33599 },
+          { "name": "职场爱情", "id": 40008 }
+        ]
+      }
+    },
+    {
+      "readCount": 0,
+      "lastRank": 6,
+      "currentRank": 6,
+      "wordCount": 0,
+      "donationCount": 0,
+      "voteCount": 0,
+      "works": {
+        "id": "159420541",
+        "url": "/column/35261613/",
+        "title": "天下刀宗4：重刃",
+        "isOrigin": true,
+        "isColumn": true,
+        "isEssay": false,
+        "isGallery": false,
+        "isBundle": false,
+        "author": [{ "url": "/author/63702907/", "name": "雨楼清歌" }],
+        "origAuthor": null,
+        "cover": "https://img2.doubanio.com/view/ark_column_cover/retina/public/35261613.jpg?v=1600425459",
+        "coverLabel": "",
+        "kinds": [{ "shortName": "历史", "id": 510 }],
+        "highlightTags": [{ "name": "武侠世界", "id": 96838 }]
+      }
+    },
+    {
+      "readCount": 0,
+      "lastRank": 7,
+      "currentRank": 7,
+      "wordCount": 0,
+      "donationCount": 0,
+      "voteCount": 0,
+      "works": {
+        "id": "161379402",
+        "url": "/column/35415297/",
+        "title": "西风醉",
+        "isOrigin": true,
+        "isColumn": true,
+        "isEssay": false,
+        "isGallery": false,
+        "isBundle": false,
+        "author": [{ "url": "/author/63809004/", "name": "十三弦声" }],
+        "origAuthor": null,
+        "cover": "https://img1.doubanio.com/view/ark_column_cover/retina/public/35415297.jpg?v=1603678606",
+        "coverLabel": "",
+        "kinds": [{ "shortName": "言情", "id": 501 }],
+        "highlightTags": [{ "name": "古代言情", "id": 2267 }]
+      }
+    },
+    {
+      "readCount": 0,
+      "lastRank": 10,
+      "currentRank": 8,
+      "wordCount": 0,
+      "donationCount": 0,
+      "voteCount": 0,
+      "works": {
+        "id": "165193805",
+        "url": "/column/35778714/",
+        "title": "法外徒",
+        "isOrigin": true,
+        "isColumn": true,
+        "isEssay": false,
+        "isGallery": false,
+        "isBundle": false,
+        "author": [{ "url": "/author/63720083/", "name": "艾石" }],
+        "origAuthor": null,
+        "cover": "https://img9.doubanio.com/view/ark_column_cover/retina/public/35778714.jpg?v=1607927323",
+        "coverLabel": "",
+        "kinds": [{ "shortName": "悬疑", "id": 508 }],
+        "highlightTags": [{ "name": "罪案故事", "id": 119480 }]
+      }
+    },
+    {
+      "readCount": 0,
+      "lastRank": 12,
+      "currentRank": 9,
+      "wordCount": 0,
+      "donationCount": 0,
+      "voteCount": 0,
+      "works": {
+        "id": "159180145",
+        "url": "/column/35241644/",
+        "title": "乐于逢你",
+        "isOrigin": true,
+        "isColumn": true,
+        "isEssay": false,
+        "isGallery": false,
+        "isBundle": false,
+        "author": [{ "url": "/author/63803611/", "name": "包包鱼" }],
+        "origAuthor": null,
+        "cover": "https://img9.doubanio.com/view/ark_column_cover/retina/public/35241644.jpg?v=1605435817",
+        "coverLabel": "",
+        "kinds": [{ "shortName": "言情", "id": 501 }],
+        "highlightTags": [
+          { "name": "青梅竹马", "id": 9715 },
+          { "name": "欢喜冤家", "id": 20359 },
+          { "name": "现代言情", "id": 33599 }
+        ]
+      }
+    },
+    {
+      "readCount": 0,
+      "lastRank": 8,
+      "currentRank": 10,
+      "wordCount": 0,
+      "donationCount": 0,
+      "voteCount": 0,
+      "works": {
+        "id": "130752195",
+        "url": "/column/32907220/",
+        "title": "江南雪化",
+        "isOrigin": true,
+        "isColumn": true,
+        "isEssay": false,
+        "isGallery": false,
+        "isBundle": false,
+        "author": [{ "url": "/author/63774321/", "name": "李玉" }],
+        "origAuthor": null,
+        "cover": "https://img3.doubanio.com/view/ark_column_cover/retina/public/32907220.jpg?v=1582779910",
+        "coverLabel": "",
+        "kinds": [{ "shortName": "女性", "id": 532 }],
+        "highlightTags": [{ "name": "成长逆袭", "id": 119200 }]
+      }
+    }
+  ],
+  "period": null,
+  "background": {
+    "color": "",
+    "url": "https://img3.doubanio.com/f/ark/5536eda07cb581217266aaedab500fad32f81b02/pics/charts/bg-featured-unfinished_column.png"
+  },
+  "fullName": "作品三日内有更新，按周热度排行",
+  "type": "unfinished_column",
+  "channel": "featured"
+}

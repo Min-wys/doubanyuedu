@@ -4,7 +4,7 @@ import axios from "axios";
 //   process.env.NODE_ENV === "development" ? "/" : "http://read.douban.com";
 
 const instance = axios.create({
-  baseURL:  "http://read.douban.com/",
+  baseURL: "/api",
   headers: {},
 });
 
@@ -18,9 +18,9 @@ instance.interceptors.request.use((config) => {
 instance.interceptors.response.use(
   (response) => {
     NProgress.done();
-    // if (response.data.code === 200) {
-    return response.data;
-    // }
+    if (response.data.code === 200) {
+      return response.data;
+    }
     // const { message } = response.data;
     // Message.error(message);
     // return Promise.reject(message, "错误");
