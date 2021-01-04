@@ -1,13 +1,16 @@
 <template>
   <div class="reco">
     <div class="recoImg">
-      <img src="../../assets/Chnnel/9895.jpg" alt="" />
+      <img
+        :src="recommendItem.cover"
+        alt=""
+      />
     </div>
     <div class="info">
-      <h4 class="title">云养娃</h4>
-      <p>叶梅</p>
+      <h4 class="title">{{ recommendItem.title }}</h4>
+      <p>{{ recommendItem.author.name }}</p>
       <div class="abstract">
-        晒娃狂魔的幸福和甜蜜，那只是她想让你看到的一面。
+        {{ recommendItem.editorHighlight }}
       </div>
       <div class="rec-tags">家庭故事</div>
     </div>
@@ -17,9 +20,7 @@
 <script>
 export default {
   name: "RecommendItem",
-  props: {
-    recommendItem: Object, // 结构是对象的形式
-  },
+  props: ["recommendItem"],
 };
 </script>
 

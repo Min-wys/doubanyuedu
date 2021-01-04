@@ -46,9 +46,11 @@
             <div class="swiper-scrollbar"></div>
           </div>
         </div>
-        <!-- 推荐模块 -->
-        <Recommend />
       </div>
+    </div>
+    <div class="recommend">
+      <!-- 推荐模块 -->
+      <Recommend />
     </div>
   </div>
 </template>
@@ -91,15 +93,21 @@ export default {
 <style lang="less" scoped>
 .channelOuter {
   width: 100%;
+  .recommend {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 .container {
   width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 .swiper-container {
   width: 100%;
   height: 150px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   img {
     width: 100%;
     height: 100%;

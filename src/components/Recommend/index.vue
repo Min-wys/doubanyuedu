@@ -1,9 +1,13 @@
 <template>
   <div>
     <el-carousel :autoplay="false">
-      <el-carousel-item v-for="item in 4" :key="item">
-        <div class="tab">完本推荐</div>
-        <div class="recommendItem"><RecommendItem /><RecommendItem /></div>
+      <div class="tab">完本推荐</div>
+      <el-carousel-item v-for="(channel, index) in channelList" :key="index">
+        <div class="recommendItem">
+          <RecommendItem :recommendItem="channel[0]" /><RecommendItem
+            :recommendItem="channel[1]"
+          />
+        </div>
       </el-carousel-item>
     </el-carousel>
   </div>
@@ -11,11 +15,12 @@
 
 <script>
 import RecommendItem from "../RecommendItem";
+import formatArray from "../../utils/formatArray";
 export default {
   name: "Recommend",
   data() {
     return {
-      channelLst: {},
+      channelList: [],
     };
   },
   components: {
@@ -23,7 +28,9 @@ export default {
   },
   async mounted() {
     const result = await this.$API.chnnel.channel();
-    this.channelLst = result;
+    // 对请求回来的数据进行处理
+    let channelList = formatArray(result.data.worksList, 2);
+    this.channelList = channelList;
   },
 };
 </script>
