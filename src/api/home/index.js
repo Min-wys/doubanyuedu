@@ -2,10 +2,18 @@
 import request from "../../utils/request";
 
 export default {
+  /*  */
   getHomeData() {
     return request({
       method: "GET",
       url: "/home",
+    });
+  },
+  /*  */
+  getHotData() {
+    return request({
+      method: "GET",
+      url: "/hot",
     });
   },
 };

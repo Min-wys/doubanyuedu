@@ -18,7 +18,6 @@ instance.interceptors.request.use((config) => {
 instance.interceptors.response.use(
   (response) => {
     // NProgress.done();
-    console.log(response);
     if (response.data.code === 200) {
       return response.data.data;
     }
@@ -29,7 +28,6 @@ instance.interceptors.response.use(
   (error) => {
     // NProgress.done();
     // const message = error.message || "网络错误";
-
     return Promise.reject(error);
   }
 );
