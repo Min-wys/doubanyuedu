@@ -1,5 +1,8 @@
 <template>
-  <div id="app">豆瓣阅读111</div>
+  <div id="app">
+    豆瓣阅读111
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
