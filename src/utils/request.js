@@ -17,18 +17,18 @@ instance.interceptors.request.use((config) => {
 // 设置响应拦截器
 instance.interceptors.response.use(
   (response) => {
-    NProgress.done();
+    // NProgress.done();
     if (response.data.code === 200) {
-      return response.data;
+      return response.data.data;
     }
     // const { message } = response.data;
     // Message.error(message);
-    // return Promise.reject(message, "错误");
+    return Promise.reject(response, "错误");
   },
   (error) => {
     // NProgress.done();
-    const message = error.message || "网络错误";
-    return Promise.reject("失败");
+    // const message = error.message || "网络错误";
+    return Promise.reject(error);
   }
 );
 
