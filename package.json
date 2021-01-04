@@ -13,7 +13,10 @@
     "element-ui": "^2.4.5",
     "koa": "^2.13.0",
     "koa-router": "^10.0.0",
+    "less": "^4.0.0",
+    "less-loader": "^7.2.1",
     "mockjs": "^1.1.0",
+    "swiper": "^6.4.5",
     "vue": "^2.6.11",
     "vue-router": "^3.4.9",
     "vuex": "^3.6.0"

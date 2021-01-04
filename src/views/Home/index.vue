@@ -3,6 +3,7 @@
 </template>
 
 <script>
+// import Channel from
 export default {
   name: "Home",
 };
