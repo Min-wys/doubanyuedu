@@ -6,18 +6,24 @@
     <router-link>文艺频道</router-link>
     <router-link>历史频道</router-link>
     <Channel /> -->
+    <Home />
   </div>
 </template>
 
 <script>
-// import Channel from "./views/Channel/Channel";
+
+import Home from "./views/Home";
 export default {
-  name: "app",
-  // components: {
-  //   Channel,
-  // },
+  name: "App",
+  components: {
+    Home,
+  },
 };
 </script>
 
 <style>
+html,
+body {
+  width: 100%;
+}
 </style>
