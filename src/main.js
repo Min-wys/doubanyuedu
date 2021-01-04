@@ -2,7 +2,10 @@ import Vue from "vue";
 import App from "./App.vue";
 import store from "./store";
 import * as API from "./api";
-import './plugins/element.js'
+import "./plugins/element.js";
+import router from "./router";
+
+import "./styles/reset.css";
 
 Vue.config.productionTip = false;
 Vue.prototype.$API = API;
@@ -14,4 +17,5 @@ new Vue({
   },
   render: (h) => h(App),
   store,
+  router,
 }).$mount("#app");
