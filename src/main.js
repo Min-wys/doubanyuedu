@@ -2,6 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import store from "./store";
 import * as API from "./api";
+import './plugins/element.js'
 
 Vue.config.productionTip = false;
 Vue.prototype.$API = API;
