@@ -99,8 +99,9 @@ export default {
 
 <style lang="less" scoped>
 .section-outer {
-  width: 1300px;
-  min-width: 1300px;
+  // width: 1200px;
+  // min-width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .section-bottom {
