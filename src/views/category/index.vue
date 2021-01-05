@@ -391,6 +391,7 @@ export default {
     // 改变分类类型
     setCategory(kind, value) {
       this.options[kind] = value;
+      // this.getCategoryData()
     },
     // 增加标签
     addTag(e) {

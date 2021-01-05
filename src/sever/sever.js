@@ -60,6 +60,15 @@ router.get("/category", function (ctx, next) {
   };
 });
 
+// 返回category加入书架数数据
+let categoryLibData = require("./datas/category/lib.json");
+router.get("/categorylib", function (ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: categoryLibData,
+  };
+});
+
 // 返回finishBoom完本推荐的完本推荐数据
 let sixChannelList = require("./datas/sixChannelList.json");
 router.get("/sixchannellist", function (ctx, next) {
