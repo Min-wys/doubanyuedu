@@ -68,6 +68,17 @@ export default {
       channelList: [],
     };
   },
+  methods: {
+    toGeneral() {
+      this.$router.push({
+        name: "channel",
+        params: {
+          id: 2,
+        },
+      });
+      this.isShow = false;
+    },
+  },
   async mounted() {
     const result = await this.$API.home.getHotData();
     this.hotData = formatArray(result.data.worksList, 5);

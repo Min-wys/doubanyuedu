@@ -1,6 +1,6 @@
 <template>
   <div class="Brief">
-    <img src="https://wx4.sinaimg.cn/mw690/008eE3y7gy1gmcknt6d8kj304u079jt7.jpg" alt="" class="img" />
+    <img :src="book.cover" alt="" class="img" />
     <h4>{{ book.title }}</h4>
     <a :href="'https://read.douban.com' + book.author[0].url">{{
       book.author[0].name
@@ -23,7 +23,7 @@
       </span>
       <span class="separator"></span>
       <span :data-id="book.kinds[0].id">{{ book.kinds[0].shortName }}</span>
-          <span class="separator"></span>
+      <span class="separator"></span>
       <span>{{ book.highlightTags[0].name }}</span>
     </div>
   </div>
@@ -73,7 +73,7 @@ h4 {
   display: inline-block;
   margin: 0 10px;
   background: gray;
-  opacity: .5;
+  opacity: 0.5;
   vertical-align: -1px;
 }
 </style>
