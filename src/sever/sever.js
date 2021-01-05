@@ -52,7 +52,7 @@ router.get("/finishBoomData", function (ctx, next) {
 });
 
 // 返回category分类数据
-let categoryData = require("./datas/category.json");
+let categoryData = require("./datas/category/category.json");
 router.get("/category", function (ctx, next) {
   ctx.body = {
     code: 200,
