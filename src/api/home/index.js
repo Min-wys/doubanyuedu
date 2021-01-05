@@ -16,4 +16,18 @@ export default {
       url: "/hot",
     });
   },
+  /*  */
+  getHotRecommend() {
+    return request({
+      method: "GET",
+      url: "/homerecommend",
+    });
+  },
+  /*  */
+  getChannelList() {
+    return request({
+      method: "GET",
+      url: "/sixchannellist",
+    });
+  },
 };

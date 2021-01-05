@@ -1,14 +1,11 @@
 <template>
   <div class="reco">
     <div class="recoImg">
-      <img
-        :src="recommendItem.cover"
-        alt=""
-      />
+      <img :src="recommendItem.cover" alt="" />
     </div>
     <div class="info">
       <h4 class="title">{{ recommendItem.title }}</h4>
-      <p>{{ recommendItem.author.name }}</p>
+      <p>{{ recommendItem.author[0].name }}</p>
       <div class="abstract">
         {{ recommendItem.editorHighlight }}
       </div>

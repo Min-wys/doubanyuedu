@@ -4,7 +4,6 @@ const KoaRouter = require("koa-router");
 // 1.创建服务器应用实例app
 const app = new Koa();
 
-//
 const router = new KoaRouter();
 
 app.use(router.routes()).use(router.allowedMethods());
@@ -23,6 +22,14 @@ router.get("/hot", function (ctx, next) {
   ctx.body = {
     code: 200,
     data: hotData,
+  };
+});
+// 返回畅销作品数据
+let homeRecommend = require("./datas/homeRecommend.json");
+router.get("/homerecommend", function (ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: homeRecommend,
   };
 });
 
@@ -50,6 +57,23 @@ router.get("/category", function (ctx, next) {
   ctx.body = {
     code: 200,
     data: categoryData,
+  };
+});
+
+// 返回finishBoom完本推荐的完本推荐数据
+let sixChannelList = require("./datas/sixChannelList.json");
+router.get("/sixchannellist", function (ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: sixChannelList,
+  };
+});
+// 返回悬疑频道的重磅推荐数据
+let chnnelDangerData = require("./datas/chnnelDanger.json");
+router.get("/chnnelDanger", function (ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: chnnelDangerData,
   };
 });
 

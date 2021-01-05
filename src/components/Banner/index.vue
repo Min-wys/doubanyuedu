@@ -1,6 +1,6 @@
 <template>
   <div class="banner">
-    <el-carousel indicator-position="none" height="158px" arrow="never">
+    <el-carousel indicator-position="none" height="200px" arrow="never">
       <el-carousel-item>
         <img src="../../assets/image/10136.jpg" alt="" />
       </el-carousel-item>
@@ -28,10 +28,11 @@ export default {
   margin-top: 50px;
 }
 img {
-  width: 1263px;
+  width: 100%;
+  height: 100%;
 }
 .el-carousel__item {
-  height: 158px;
+  height: 100%;
 }
 
 .el-carousel__item:nth-child(2n) {
