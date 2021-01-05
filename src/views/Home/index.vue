@@ -24,27 +24,29 @@
         </div>
       </div>
     </div>
-    <div class="widget-channel-links">
-      <router-link
-        v-for="item in channelList"
-        :key="item.id"
-        :to="{
-          name: 'channel',
-          params: {
-            id: item.id,
-          },
-          query:{
-            title:item.title
-          }
-        }"
-        class="btn-link"
-        >{{ item.title }}</router-link
-      >
-      <!-- <router-link to="" class="btn-link">悬疑频道</router-link>
+    <div class="widget-channel-container">
+      <div class="widget-channel-links">
+        <router-link
+          v-for="item in channelList"
+          :key="item.id"
+          :to="{
+            name: 'channel',
+            params: {
+              id: item.id,
+            },
+            query: {
+              title: item.title,
+            },
+          }"
+          class="btn-link"
+          >{{ item.title }}</router-link
+        >
+        <!-- <router-link to="" class="btn-link">悬疑频道</router-link>
       <router-link to="" class="btn-link">女性频道</router-link>
       <router-link to="" class="btn-link">文艺频道</router-link>
       <router-link to="" class="btn-link">幻想频道</router-link>
       <router-link to="" class="btn-link">历史频道</router-link> -->
+      </div>
     </div>
     <HomeRecommend />
     <General :data="hotData" :title="'畅销作品'" />
@@ -178,5 +180,8 @@ export default {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   color: #333;
   padding: 0 20px;
+}
+.widget-channel-container{
+  background-color: #f8f9f9;
 }
 </style>
