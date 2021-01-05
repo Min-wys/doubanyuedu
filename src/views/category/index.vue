@@ -16,17 +16,72 @@
       <!-- 分类导航区 -->
       <div class="nav">
         <div class="nav_main">
-          <div class="nav_select">
-            <a class="select_control">分类<i class="el-icon-arrow-down"></i></a>
-            <a class="select_control">筛选<i class="el-icon-arrow-down"></i></a>
+          <div class="nav_toolbar">
+            <div class="nav_select">
+              <a class="select_control" @click="changeshow(1)" @focus="noShow"
+                >分类<i class="el-icon-arrow-down"></i
+              ></a>
+              <a class="select_control" @click="changeshow(2)"
+                >筛选<i class="el-icon-arrow-down"></i
+              ></a>
+            </div>
+            <div class="nav_tags"></div>
+            <div class="nav_sort">
+              <a class="sort_option selected">热度</a>
+              <a class="sort_option">加入书架数</a>
+              <a class="sort_option">更新时间</a>
+              <a class="sort_option">销量从高到低</a>
+              <a class="sort_option">评论从高到低</a>
+            </div>
           </div>
-          <div class="nav_tags"></div>
-          <div class="nav_sort">
-            <a class="sort_option selected">热度</a>
-            <a class="sort_option">加入书架数</a>
-            <a class="sort_option">更新时间</a>
-            <a class="sort_option">销量从高到低</a>
-            <a class="sort_option">评论从高到低</a>
+          <!-- 分类导航隐藏分类区 -->
+          <div class="selector_panel" v-show="isPanel1Show">
+            <div>
+              <div class="select_group">
+                <ul class="select_option_list">
+                  <li class="select-option selected">言情小说</li>
+                  <li class="select-option">女性小说</li>
+                  <li class="select-option">悬疑小说</li>
+                  <li class="select-option">科幻小说</li>
+                  <li class="select-option">幻想小说</li>
+                  <li class="select-option">文艺小说</li>
+                  <li class="select-option">历史小说</li>
+                  <li class="select-option">非小说</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="selector_panel" style="left: 80px" v-show="isPanel2Show">
+            <div>
+              <div class="select_group">
+                <span class="select_label">价格</span>
+                <ul class="select_option_list">
+                  <li class="select-option selected">全部</li>
+                  <li class="select-option">免费</li>
+                  <li class="select-option">付费</li>
+                  <li class="select-option">会员免费读</li>
+                </ul>
+              </div>
+              <div class="select_group">
+                <span class="select_label">字数</span>
+                <ul class="select_option_list">
+                  <li class="select-option selected">全部</li>
+                  <li class="select-option">50 万字以上</li>
+                  <li class="select-option">30 – 50 万字</li>
+                  <li class="select-option">15 – 30 万字</li>
+                  <li class="select-option">8 – 15 万字</li>
+                  <li class="select-option">8 万字以内</li>
+                </ul>
+              </div>
+              <div class="select_group">
+                <span class="select_label">进度</span>
+                <ul class="select_option_list">
+                  <li class="select-option selected">全部</li>
+                  <li class="select-option">连载中</li>
+                  <li class="select-option">已完成</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div class="classification">
@@ -95,7 +150,24 @@ export default {
       categoryList: [],
       total: 0,
       kind: "",
+      isPanel1Show: false,
+      isPanel2Show: false,
     };
+  },
+  methods: {
+    changeshow(i) {
+      if (i === 1) {
+        this.isPanel1Show = true;
+        this.isPanel2Show = false;
+      } else {
+        this.isPanel1Show = false;
+        this.isPanel2Show = true;
+      }
+    },
+    noShow() {
+      this.isPanel1Show = false;
+      this.isPanel2Show = false;
+    },
   },
   async mounted() {
     const result = await this.$API.category.getKindData();
@@ -131,6 +203,9 @@ export default {
   }
   // 分类导航区
   .nav_main {
+    position: relative;
+  }
+  .nav_toolbar {
     height: 40px;
     background-color: #ebf0f2;
     display: flex;
@@ -169,6 +244,43 @@ export default {
     .sort_option:hover {
       color: #fff;
       background-color: #389eac;
+    }
+  }
+  // 分类导航隐藏分类区
+  .selector_panel {
+    position: relative;
+    padding: 8px 30px 0;
+    background: #fff;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  .select_group {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  .select_label {
+    color: #a6a6a6;
+    margin-right: 14px;
+    height: 20px;
+    line-height: 20px;
+  }
+  .select_option_list {
+    display: flex;
+    .select-option {
+      padding: 0 14px;
+      height: 20px;
+      line-height: 20px;
+      cursor: pointer;
+      &:hover {
+        color: #fff;
+        background-color: #389eac;
+        border-radius: 20px;
+      }
+    }
+    .selected {
+      color: #fff;
+      background-color: #389eac;
+      border-radius: 20px;
     }
   }
   .classification {
