@@ -16,15 +16,14 @@
       </div>
       <h2>综合排行</h2>
     </div>
-
     <div class="lianzaibang">
        <h1>连载榜</h1>
        <h2>作品三日内有更新，按周热度排行</h2>
        <div class="killer">     
          <div class="ranking-number">1</div>   
-         <span>薄情人回收手册</span>          
-       </div>
-       <a href="https://read.douban.com/author/63766196/"   target="_blank" >
+         <span>薄情人回收手册</span>  
+           <a href="https://read.douban.com/author/63766196/"   target="_blank" > 
+        <br />
          <span>柳翠虎</span>
       </a>
     <div class="yanqing">
@@ -32,11 +31,14 @@
         <a href="https://read.douban.com/category?kind=501"   target="_blank">
           <span class="yanqing-on">言情</span>
         </a>
-        <span> | </span>
+        <span>|</span>
         <a href="https://read.douban.com/tag/%E7%8E%B0%E4%BB%A3%E8%A8%80%E6%83%85/"   target="_blank">
           <span> 现代言情</span>
         </a>
-    </div>
+      </div>       
+      <div class="ranking-number">2</div>   
+        <span>我是这样地爱你</span>  
+     </div>  
     </div>
   </div>
 </template>
@@ -114,6 +116,13 @@ export default {
 .killer span{
   font-size: 14px;
 }
+.killer img{
+  width: 80px;
+}
+.killer img:hover{
+  color: #333;
+  outline: none;
+}
 .lianzaibang a{
   font-size: 11px;
   color: #777;
@@ -128,6 +137,6 @@ export default {
    color: #777;
 }
 .yanqing a{
-  padding: 0 5px;
+  padding: 0 15px;
 } 
 </style>
