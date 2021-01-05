@@ -1,13 +1,14 @@
 <template>
   <div class="channelOuter">
+    <!-- <Header /> -->
     <!-- 头部外面页面 -->
     <div class="containerOuter">
       <div class="container">
         <!-- 头部页面 -->
         <div class="containerHeader">
           <div class="containerHeaderTitle">
-            <div class="containerHeaderText">完本频道</div>
-            <div class="containerHeaderRight">
+            <div class="containerHeaderText">{{ title }}</div>
+            <div class="containerHeaderRight" v-show="channelId === '1'">
               <div>
                 <img
                   src="https://img3.doubanio.com/f/ark/e4f7f31dde34f5e840379dffc053ebf5f43c2b6b/pics/index-original/icon-library.svg"
@@ -46,16 +47,37 @@
             <div class="swiper-scrollbar"></div>
           </div>
         </div>
+        <!-- 分块区域 -->
+        <ul class="category" v-show="channelId === '1'">
+          <li>生活悬疑</li>
+          <li>罪案故事</li>
+          <li>复仇计划</li>
+          <li>推理迷迭</li>
+        </ul>
       </div>
     </div>
+
     <div class="recommend">
       <!-- 推荐模块 -->
       <Recommend />
+    </div>
+
+    <!-- 走马灯区域 -->
+    <div class="general">
+      <General :data="generalData" />
+    </div>
+    <div class="general">
+      <General :data="generalData" />
     </div>
   </div>
 </template>
 
 <script>
+// 引入头部组件
+// import Header from "../../components/Header";
+// 引入公共的走马灯
+import General from "../../components/General";
+import formatArray from "../../utils/formatArray";
 // 引入swiper轮播图
 import "swiper/swiper-bundle.css";
 import Swiper, { Navigation, Pagination, Autoplay } from "swiper";
@@ -66,8 +88,17 @@ export default {
   name: "Channel",
   components: {
     Recommend,
+    General,
   },
-  mounted() {
+  data() {
+    return {
+      generalData: [],
+      channelId: "1",
+      title: "",
+    };
+  },
+  async mounted() {
+    // 轮播图区域
     this.Swiper = new Swiper(this.$refs.swiper, {
       loop: true,
       autoplay: {
@@ -86,6 +117,11 @@ export default {
         prevEl: ".swiper-button-prev",
       },
     });
+    this.channelId = this.$route.params.id;
+    this.title = this.$route.params.title;
+    const result = await this.$API.chnnel.finishBoomData();
+    this.generalData = formatArray(result.data.worksList, 5);
+    console.log("channelId", this.channelId, typeof this.channelId);
   },
 };
 </script>
@@ -93,9 +129,35 @@ export default {
 <style lang="less" scoped>
 .channelOuter {
   width: 100%;
-  .recommend {
+  margin-top: 35px;
+  .recommend,
+  .category {
     width: 1200px;
     margin: 0 auto;
+  }
+  .general {
+    width: 1320px;
+    margin: 0 auto 100px auto;
+  }
+  // 分块区域
+  .category {
+    display: flex;
+    margin-top: 30px;
+    li {
+      width: 25%;
+      height: 50px;
+      margin: 0 20px;
+      border-radius: 4px;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+      line-height: 50px;
+      font-size: 20px;
+      font-weight: bolder;
+      text-align: center;
+      &:hover {
+        background-color: #389eac;
+        color: white;
+      }
+    }
   }
 }
 .container {

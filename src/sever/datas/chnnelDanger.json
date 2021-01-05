@@ -1,0 +1,50 @@
+{
+  "data": {
+    "worksList": [
+      {
+        "id": "123104872",
+        "title": "算盘",
+        "cover": "https://wx2.sinaimg.cn/mw690/007uZ0mCgy1gmckuf1lywj304u079dga.jpg",
+        "url": "/column/32501832/",
+        "isBundle": false,
+        "coverLabel": "vip-can-read-label",
+        "author": [{ "name": "积海水", "url": "/author/63747158/" }],
+        "origAuthor": null,
+        "editorHighlight": "特工执行任务却反遭重击，谍海风云再起，他将如何突出重围？"
+      },
+      {
+        "id": "163819695",
+        "title": "赤子之心",
+        "cover": "https://wx1.sinaimg.cn/mw690/007uZ0mCgy1gmckufa7roj304u079myi.jpg",
+        "url": "/column/35650234/",
+        "isBundle": false,
+        "coverLabel": "",
+        "author": [{ "name": "章叶良", "url": "/author/63698989/" }],
+        "origAuthor": null,
+        "editorHighlight": "“半泽直树”式的热血故事，小人物也可撼动参天大树。"
+      },
+      {
+        "id": "166715847",
+        "title": "死亡回声",
+        "cover": "https://wx1.sinaimg.cn/mw690/007uZ0mCgy1gmckuf3vt7j304u079765.jpg",
+        "url": "/column/35894351/",
+        "isBundle": false,
+        "coverLabel": "",
+        "author": [{ "name": "风舞残云", "url": "/author/63774238/" }],
+        "origAuthor": null,
+        "editorHighlight": "《凶案密码》作者全新力作，一场模仿犯罪揭开跨越三十年的罪恶！"
+      },
+      {
+        "id": "165628741",
+        "title": "残破的巢穴",
+        "cover": "https://wx2.sinaimg.cn/mw690/007uZ0mCgy1gmckuf3lizj304u079gn5.jpg",
+        "url": "/column/35812614/",
+        "isBundle": false,
+        "coverLabel": "",
+        "author": [{ "name": "Will.C", "url": "/author/63700162/" }],
+        "origAuthor": null,
+        "editorHighlight": "小儿子突遭绑架，各怀心思的家人们，想救人？还是想杀人？"
+      }
+    ]
+  }
+}

@@ -2,12 +2,12 @@
   <div>
     <Header />
     <Banner />
+    <div @click="toGeneral">完结频道</div>
     <General :data="hotData" />
   </div>
 </template>
 
 <script>
-// import Channel from
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
 import General from "../../components/General";
@@ -18,6 +18,17 @@ export default {
     return {
       hotData: [],
     };
+  },
+  methods: {
+    toGeneral() {
+      this.$router.push({
+        name: "channel",
+        params: {
+          id: 2,
+        },
+      });
+      this.isShow = false;
+    },
   },
   async mounted() {
     const result = await this.$API.home.getHotData();

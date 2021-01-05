@@ -4,14 +4,13 @@ const KoaRouter = require("koa-router");
 // 1.创建服务器应用实例app
 const app = new Koa();
 
-//
 const router = new KoaRouter();
 
 app.use(router.routes()).use(router.allowedMethods());
 
 // 返回home数据
 let homeData = require("./datas/home.json");
-router.get("/home", function (ctx, next) {
+router.get("/home", function(ctx, next) {
   ctx.body = {
     code: 200,
     data: homeData,
@@ -19,7 +18,7 @@ router.get("/home", function (ctx, next) {
 });
 // 返回畅销作品数据
 let hotData = require("./datas/hot.json");
-router.get("/hot", function (ctx, next) {
+router.get("/hot", function(ctx, next) {
   ctx.body = {
     code: 200,
     data: hotData,
@@ -44,8 +43,16 @@ router.get("/finishBoomData", function(ctx, next) {
   };
 });
 
+// 返回悬疑频道的重磅推荐数据
+let chnnelDangerData = require("./datas/chnnelDanger.json");
+router.get("/chnnelDanger", function(ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: chnnelDangerData,
+  };
+});
 
-app.listen("3000", function (error) {
+app.listen("3000", function(error) {
   if (error) {
     console.log("服务器运行失败!!!");
   } else {

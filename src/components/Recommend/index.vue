@@ -43,7 +43,6 @@ export default {
 }
 /deep/ .el-carousel__container {
   height: 300px;
-  // background-color: red;
   position: relative;
 }
 .tab {

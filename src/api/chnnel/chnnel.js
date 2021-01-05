@@ -7,4 +7,14 @@ export default {
       url: "/channel",
     });
   },
+  finishBoomData() {
+    return request({
+      url: "/finishBoomData",
+    });
+  },
+  dangerData() {
+    return request({
+      url: "/finishBoomData",
+    });
+  },
 };
