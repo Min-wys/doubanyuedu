@@ -155,6 +155,106 @@
             <span class="examine">查看全部目录</span>
           </li>
         </ul>
+        <!-- 评论区域 -->
+        <div class="intro">
+          <span>评论 （41）</span>
+        </div>
+        <!-- 评论内容 -->
+        <ul class="remark">
+          <li>
+            <!-- 头像 -->
+            <div class="remarkHead">
+              <img src="../../assets/image/35411087.jpg" alt="" />
+            </div>
+            <div class="remarkDetail">
+              <p class="remarkName">凤凰池</p>
+              <span>01-03 发表书评</span>
+              <p class="remarkText">好看的，沈丁香和孙宥谦好可惜啊</p>
+              <div class="remarkBottom">
+                <div class="remarkBottomSection">
+                  <span>赞 0</span>
+                </div>
+                <div class="remarkBottomSection">
+                  <span>回复 0</span>
+                </div>
+                <div class="remarkBottomSection">
+                  <span>分享 ></span>
+                </div>
+              </div>
+              <div class="remarkBottomTwo">
+                <div class="remarkBottomTwLeft">
+                  <span>章节</span>
+                  <p>守护.水晶龙凤糕</p>
+                </div>
+                <div class="remarkBottomSection">
+                  <span>写回复</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <!-- 头像 -->
+            <div class="remarkHead">
+              <img src="../../assets/image/35411087.jpg" alt="" />
+            </div>
+            <div class="remarkDetail">
+              <p class="remarkName">凤凰池</p>
+              <span>01-03 发表书评</span>
+              <p class="remarkText">好看的，沈丁香和孙宥谦好可惜啊</p>
+              <div class="remarkBottom">
+                <div class="remarkBottomSection">
+                  <span>赞 0</span>
+                </div>
+                <div class="remarkBottomSection">
+                  <span>回复 0</span>
+                </div>
+                <div class="remarkBottomSection">
+                  <span>分享 ></span>
+                </div>
+              </div>
+              <div class="remarkBottomTwo">
+                <div class="remarkBottomTwLeft">
+                  <span>章节</span>
+                  <p>守护.水晶龙凤糕</p>
+                </div>
+                <div class="remarkBottomSection">
+                  <span>写回复</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <!-- 头像 -->
+            <div class="remarkHead">
+              <img src="../../assets/image/35411087.jpg" alt="" />
+            </div>
+            <div class="remarkDetail">
+              <p class="remarkName">凤凰池</p>
+              <span>01-03 发表书评</span>
+              <p class="remarkText">好看的，沈丁香和孙宥谦好可惜啊</p>
+              <div class="remarkBottom">
+                <div class="remarkBottomSection">
+                  <span>赞 0</span>
+                </div>
+                <div class="remarkBottomSection">
+                  <span>回复 0</span>
+                </div>
+                <div class="remarkBottomSection">
+                  <span>分享 ></span>
+                </div>
+              </div>
+              <div class="remarkBottomTwo">
+                <div class="remarkBottomTwLeft">
+                  <span>章节</span>
+                  <p>守护.水晶龙凤糕</p>
+                </div>
+                <div class="remarkBottomSection">
+                  <span>写回复</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -179,9 +279,10 @@ export default {
       rgba(255, 255, 255, 0) 100%
     ),
     url("../../assets/oneStoryBgcImg/25.jpg");
-  // height: 300px;
+  height: 300px;
   min-width: 1200px;
   background-size: cover;
+  background-position: center;
 }
 .module,
 .bottomOuter {
@@ -321,14 +422,13 @@ export default {
   margin: 0 auto;
 }
 .intro {
-  height: 32px;
+  height: 36px;
   background-color: #ebf0f2;
   font-size: 13px;
   font-weight: bold;
   line-height: 36px;
   box-sizing: border-box;
   padding-left: 10px;
-  line-height: 1.5;
 }
 .introContent {
   padding: 20px 13px 10px;
@@ -346,6 +446,9 @@ export default {
 .sectionContent {
   padding: 20px 13px 10px;
   border-bottom: 1px solid #ddd;
+  &:hover {
+    background-color: #ebf0f2;
+  }
   h3 {
     font-size: 16px;
   }
@@ -360,8 +463,9 @@ export default {
 }
 .sectionText {
   margin: 5px 0;
+  line-height: 1.5;
   // 多行文本溢出
-  height: 32px;
+  height: 40px;
   display: -webkit-box;
   /* 文本行排列方向 */
   -webkit-box-orient: vertical;
@@ -374,5 +478,72 @@ export default {
   display: flex;
   justify-content: space-between;
   color: #a6a6a6;
+}
+.remark {
+  padding: 20px 0 10px;
+  li {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0 10px 0;
+    .remarkHead {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 15px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .remarkDetail {
+      width: 725px;
+      .remarkName {
+        font-weight: bold;
+        font-size: 13px;
+      }
+      span {
+        color: #a6a6a6;
+      }
+    }
+    .remarkText {
+      padding: 15px 0px 10px 0px;
+      font-size: 13px;
+    }
+    .remarkBottom {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .remarkBottomSection {
+      width: 50px;
+      height: 30px;
+      background-color: #fff;
+      text-align: center;
+      line-height: 30px;
+      margin-left: 5px;
+      border-radius: 4px;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+      span {
+        color: #333;
+      }
+    }
+    .remarkBottomTwo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .remarkBottomTwLeft {
+        display: flex;
+        span {
+          margin-right: 10px;
+        }
+        p {
+          color: #389eac;
+          &:hover {
+            color: #108899;
+          }
+        }
+      }
+    }
+  }
 }
 </style>
