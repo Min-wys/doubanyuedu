@@ -24,32 +24,35 @@
         </div>
       </div>
     </div>
-    <div class="widget-channel-links">
-      <router-link
-        v-for="item in channelList"
-        :key="item.id"
-        :to="{
-          name: 'channel',
-          params: {
-            id: item.id,
-          },
-          query:{
-            title:item.title
-          }
-        }"
-        class="btn-link"
-        >{{ item.title }}</router-link
-      >
-      <!-- <router-link to="" class="btn-link">悬疑频道</router-link>
-      <router-link to="" class="btn-link">女性频道</router-link>
-      <router-link to="" class="btn-link">文艺频道</router-link>
-      <router-link to="" class="btn-link">幻想频道</router-link>
-      <router-link to="" class="btn-link">历史频道</router-link> -->
+    <div class="widget-channel-outer">
+      <div class="widget-channel-links">
+        <router-link
+          v-for="item in channelList"
+          :key="item.id"
+          :to="{
+            name: 'channel',
+            params: {
+              id: item.id,
+            },
+            query: {
+              title: item.title,
+            },
+          }"
+          class="btn-link"
+          >{{ item.title }}</router-link
+        >
+      </div>
     </div>
-    <HomeRecommend />
-    <General :data="hotData" :title="'畅销作品'" />
-    <General :data="hotData" :title="'每周精品'" />
-    <General :data="hotData" :title="'签约新作'" />
+    <div class="section-outer">
+      <HomeRecommend />
+    </div>
+    <div class="section-bottom">
+      <div class="section-bottom-bgc">
+        <General :data="hotData" :title="'畅销作品'" />
+        <General :data="hotData" :title="'每周精品'" />
+        <General :data="hotData" :title="'签约新作'" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -95,6 +98,19 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.section-outer {
+  width: 1300px;
+  min-width: 1300px;
+  margin: 0 auto;
+}
+.section-bottom {
+  background-color: #f8f9f9;
+}
+.section-bottom-bgc {
+  width: 1200px;
+  min-width: 1200px;
+  margin: 0 auto;
+}
 .general-widget {
   height: 30px;
   padding: 30px 0;
@@ -162,8 +178,10 @@ export default {
   line-height: 30px;
   margin-left: 8px;
 }
-.widget-channel-links {
+.widget-channel-outer {
   background-color: #f8f9f9;
+}
+.widget-channel-links {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;

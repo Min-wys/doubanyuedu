@@ -64,10 +64,14 @@
 
     <!-- 走马灯区域 -->
     <div class="general">
-      <General :data="generalData" />
+      <div class="generalInner">
+        <General :data="generalData" />
+      </div>
     </div>
     <div class="general">
-      <General :data="generalData" />
+      <div class="generalInner">
+        <General :data="generalData" />
+      </div>
     </div>
   </div>
 </template>
@@ -136,8 +140,12 @@ export default {
     margin: 0 auto;
   }
   .general {
+    background-color: #f8f9f9;
+  }
+  .generalInner {
     width: 1320px;
-    margin: 0 auto 100px auto;
+    min-width: 1320px;
+    margin: 0 auto;
   }
   // 分块区域
   .category {
