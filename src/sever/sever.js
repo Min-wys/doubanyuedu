@@ -4,7 +4,6 @@ const KoaRouter = require("koa-router");
 // 1.创建服务器应用实例app
 const app = new Koa();
 
-//
 const router = new KoaRouter();
 
 app.use(router.routes()).use(router.allowedMethods());
@@ -58,6 +57,14 @@ router.get("/sixchannellist", function(ctx, next) {
   ctx.body = {
     code: 200,
     data: sixChannelList,
+  };
+});
+// 返回悬疑频道的重磅推荐数据
+let chnnelDangerData = require("./datas/chnnelDanger.json");
+router.get("/chnnelDanger", function(ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: chnnelDangerData,
   };
 });
 
