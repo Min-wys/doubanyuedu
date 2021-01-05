@@ -7,6 +7,8 @@ import VueRouter from "vue-router";
 const Home = () => import(/* webpackChunkName: "Home" */ "../views/Home");
 const Channel = () =>
   import(/* webpackChunkName: "Home" */ "../views/Channel/Channel.vue");
+const OneStory = () =>
+  import(/* webpackChunkName: "Home" */ "../views/OneStory");
 
 // 改写push/replace方法
 const { push } = VueRouter.prototype;
@@ -38,6 +40,11 @@ const router = new VueRouter({
       path: "/channel/:id",
       component: Channel,
       name: "channel",
+    },
+    {
+      path: "/OneStory",
+      component: OneStory,
+      name: "OneStory",
     },
   ],
 });

@@ -31,14 +31,12 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="../../assets/Chnnel/10037.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="../../assets/Chnnel/9880.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="../../assets/Chnnel/9895.jpg" alt="" />
+              <div
+                class="swiper-slide"
+                v-for="channelUrl in channelUrlList"
+                :key="channelUrl.id"
+              >
+                <img :src="channelUrl.url" alt="" />
               </div>
             </div>
             <!-- If we need pagination -->
@@ -59,20 +57,20 @@
 
     <div class="recommend">
       <!-- 推荐模块 -->
-      <Recommend />
+      <Recommend :channelId="channelId" />
     </div>
 
     <!-- 走马灯区域 -->
     <div class="general">
+      <div class="generalInner" v-for="title in titleList" :key="title.id">
+        <General :data="generalData" :title="title.title"/>
+      </div>
+    </div>
+    <!-- <div class="general">
       <div class="generalInner">
         <General :data="generalData" />
       </div>
-    </div>
-    <div class="general">
-      <div class="generalInner">
-        <General :data="generalData" />
-      </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -99,7 +97,13 @@ export default {
       generalData: [],
       channelId: "1",
       title: "",
+      channelUrlList: [],
+      titleList:[]
     };
+  },
+  // 放在beforeCreate中，能够在Recommend组件创建前得到最新的id值，去发送请求
+  beforeMount() {
+    this.channelId = this.$route.params.id;
   },
   async mounted() {
     // 轮播图区域
@@ -121,11 +125,16 @@ export default {
         prevEl: ".swiper-button-prev",
       },
     });
-    this.channelId = this.$route.params.id;
-    this.title = this.$route.params.title;
-    const result = await this.$API.chnnel.finishBoomData();
+    // this.channelId = this.$route.params.id;
+    this.title = this.$route.query.title;
+    // 根据id的不同区获取不同的数据
+    const result = await this.$API.chnnel.finishBoomData(this.channelId);
     this.generalData = formatArray(result.data.worksList, 5);
-    console.log("channelId", this.channelId, typeof this.channelId);
+    // 获取图片数据
+    const urlResult = await this.$API.chnnel.channelUrlList(this.channelId);
+    this.channelUrlList = urlResult.data.worksList;
+    this.titleList = urlResult.data.titleList;
+    console.log("图片数据", this.titleList);
   },
 };
 </script>

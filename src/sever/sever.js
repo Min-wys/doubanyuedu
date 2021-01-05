@@ -35,23 +35,158 @@ router.get("/homerecommend", function(ctx, next) {
 
 // 返回chnnel完本推荐数据
 let channelData = require("./datas/channel.json");
+// 悬疑频道的推荐数据
+let channelDanger = require("./datas/channelDanger.json");
+// 女性频道的推荐数据
+let channelWoman = require("./datas/channelWoman.json");
+
 router.get("/channel", function(ctx, next) {
-  ctx.body = {
-    code: 200,
-    data: channelData,
-  };
+  const id = ctx.request.url.split("?")[1].split("=")[1];
+  console.log(id, typeof id);
+  // 进行判断返回的数据是什么
+  switch (id) {
+    case "1":
+      ctx.body = {
+        code: 200,
+        data: channelData,
+      };
+      break;
+    case "2":
+      ctx.body = {
+        code: 200,
+        data: channelDanger,
+      };
+      break;
+    case "3":
+      ctx.body = {
+        code: 200,
+        data: channelWoman,
+      };
+      break;
+    case "4":
+      ctx.body = {
+        code: 200,
+        data: channelData,
+      };
+      break;
+    case "5":
+      ctx.body = {
+        code: 200,
+        data: channelData,
+      };
+      break;
+    case "6":
+      ctx.body = {
+        code: 200,
+        data: channelData,
+      };
+      break;
+  }
 });
 
-// 返回finishBoom完本推荐的完本推荐数据
+// 返回finishBoom完本频道的完本推荐数据
 let finishBoomData = require("./datas/finishBoom.json");
+// 悬疑频道的新作数据
+let channelNewWork = require("./datas/channelNewWork.json");
+// 女性频道的新作数据
+let channelWomanNewwork = require("./datas/channelWomanNewwork.json");
+
 router.get("/finishBoomData", function(ctx, next) {
-  ctx.body = {
-    code: 200,
-    data: finishBoomData,
-  };
+  const id = ctx.request.url.split("?")[1].split("=")[1];
+  // console.log(id, typeof id);
+  // 进行判断返回的数据是什么
+  switch (id) {
+    case "1":
+      ctx.body = {
+        code: 200,
+        data: finishBoomData,
+      };
+      break;
+    case "2":
+      ctx.body = {
+        code: 200,
+        data: channelNewWork,
+      };
+      break;
+    case "3":
+      ctx.body = {
+        code: 200,
+        data: channelWomanNewwork,
+      };
+      break;
+    case "4":
+      ctx.body = {
+        code: 200,
+        data: finishBoomData,
+      };
+      break;
+    case "5":
+      ctx.body = {
+        code: 200,
+        data: finishBoomData,
+      };
+      break;
+    case "6":
+      ctx.body = {
+        code: 200,
+        data: finishBoomData,
+      };
+      break;
+  }
 });
 
-// 返回finishBoom完本推荐的完本推荐数据
+// 完本数据的图片数据
+let channelUrlList = require("./datas/channelUrlList.json");
+// 悬疑频道的图片数据
+let channelDangerUrlList = require("./datas/channelDangerUrlList.json");
+// 女性频道的图片数据
+let chanelWomanUrlList = require("./datas/chanelWomanUrlList.json");
+
+router.get("/channelUrlList", function(ctx, next) {
+  const id = ctx.request.url.split("?")[1].split("=")[1];
+  // console.log(id, typeof id);
+  // 进行判断返回的数据是什么
+  switch (id) {
+    case "1":
+      ctx.body = {
+        code: 200,
+        data: channelUrlList,
+      };
+      break;
+    case "2":
+      ctx.body = {
+        code: 200,
+        data: channelDangerUrlList,
+      };
+      break;
+    case "3":
+      ctx.body = {
+        code: 200,
+        data: chanelWomanUrlList,
+      };
+      break;
+    case "4":
+      ctx.body = {
+        code: 200,
+        data: channelUrlList,
+      };
+      break;
+    case "5":
+      ctx.body = {
+        code: 200,
+        data: channelDangerUrlList,
+      };
+      break;
+    case "6":
+      ctx.body = {
+        code: 200,
+        data: chanelWomanUrlList,
+      };
+      break;
+  }
+});
+
+// 返回六个频道数据
 let sixChannelList = require("./datas/sixChannelList.json");
 router.get("/sixchannellist", function(ctx, next) {
   ctx.body = {
@@ -60,13 +195,13 @@ router.get("/sixchannellist", function(ctx, next) {
   };
 });
 // 返回悬疑频道的重磅推荐数据
-let chnnelDangerData = require("./datas/chnnelDanger.json");
-router.get("/chnnelDanger", function(ctx, next) {
-  ctx.body = {
-    code: 200,
-    data: chnnelDangerData,
-  };
-});
+// let channelDangerData = require("./datas/channelDanger.json");
+// router.get("/chnnelDanger", function(ctx, next) {
+//   ctx.body = {
+//     code: 200,
+//     data: channelDangerData,
+//   };
+// });
 // 返回征稿数据
 let draft = require("./datas/draft.json");
 router.get("/draft", function(ctx, next) {
