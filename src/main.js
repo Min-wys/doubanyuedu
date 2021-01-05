@@ -2,10 +2,8 @@ import Vue from "vue";
 import App from "./App.vue";
 import store from "./store";
 import * as API from "./api";
-import "./plugins/element.js";
-import router from "./router";
-
-import "./styles/reset.css";
+import './plugins/element.js'
+import router from './router'
 
 Vue.config.productionTip = false;
 Vue.prototype.$API = API;
