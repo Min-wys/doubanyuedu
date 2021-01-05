@@ -37,6 +37,7 @@ const router = new VueRouter({
     {
       path: "/channel/:id",
       component: Channel,
+      name: "channel",
     },
   ],
 });

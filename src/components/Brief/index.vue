@@ -1,6 +1,6 @@
 <template>
   <div class="Brief">
-    <img src="" alt="" class="img" />
+    <img src="https://wx4.sinaimg.cn/mw690/008eE3y7gy1gmcknt6d8kj304u079jt7.jpg" alt="" class="img" />
     <h4>{{ book.title }}</h4>
     <a :href="'https://read.douban.com' + book.author[0].url">{{
       book.author[0].name

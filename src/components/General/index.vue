@@ -1,6 +1,6 @@
 <template>
   <div class="general">
-    <div class="title">畅销作品</div>
+    <div class="title">{{title}}</div>
     <el-carousel indicator-position="none" height="340px">
       <el-carousel-item
         class="el-carousel-item"
@@ -20,7 +20,7 @@ import Brief from "../Brief";
 
 export default {
   name: "General",
-  props: ["data"],
+  props: ["data","title"],
   components: {
     Brief,
   },
@@ -29,8 +29,10 @@ export default {
 
 <style lang="less" scoped>
 .general {
-  margin: 40px 0;
-  height: 330px;
+  background-color: #f8f9f9;
+  // margin: 40px 0;
+  // height: 330px;
+  padding: 20px 0;
 }
 .el-carousel-item {
   // width: 1143px;

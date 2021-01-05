@@ -1,6 +1,7 @@
 <template>
   <div>
-    <Header />
+    <!-- <Header />
+    <Banner /> -->
     <Banner />
     <div class="general-widget">
       <div class="section-container">
@@ -24,38 +25,60 @@
       </div>
     </div>
     <div class="widget-channel-links">
-      <router-link to="" class="btn-link">完本频道</router-link>
-      <router-link to="" class="btn-link">悬疑频道</router-link>
+      <router-link
+        v-for="item in channelList"
+        :key="item.id"
+        :to="{
+          name: 'channel',
+          params: {
+            id: item.id,
+          },
+          query:{
+            title:item.title
+          }
+        }"
+        class="btn-link"
+        >{{ item.title }}</router-link
+      >
+      <!-- <router-link to="" class="btn-link">悬疑频道</router-link>
       <router-link to="" class="btn-link">女性频道</router-link>
+      <router-link to="" class="btn-link">文艺频道</router-link>
       <router-link to="" class="btn-link">幻想频道</router-link>
-      <router-link to="" class="btn-link">历史频道</router-link>
+      <router-link to="" class="btn-link">历史频道</router-link> -->
     </div>
-    <General :data="hotData" />
+    <HomeRecommend />
+    <General :data="hotData" :title="'畅销作品'" />
+    <General :data="hotData" :title="'每周精品'" />
+    <General :data="hotData" :title="'签约新作'" />
   </div>
 </template>
 
 <script>
 // import Channel from
-import Header from "../../components/Header";
+// import Header from "../../components/Header";
 import Banner from "../../components/Banner";
 import General from "../../components/General";
+import HomeRecommend from "../../components/HomeRecommend";
 import formatArray from "../../utils/formatArray";
 export default {
   name: "Home",
   data() {
     return {
       hotData: [],
+      channelList: [],
     };
   },
   async mounted() {
     const result = await this.$API.home.getHotData();
     this.hotData = formatArray(result.data.worksList, 5);
-    console.log(this.hotData);
+    const list = await this.$API.home.getChannelList();
+    this.channelList = list.data.worksList;
   },
   components: {
-    Header,
+    // Header,
     Banner,
     General,
+    HomeRecommend,
   },
 };
 </script>
@@ -63,7 +86,8 @@ export default {
 <style lang="less" scoped>
 .general-widget {
   height: 30px;
-  margin: 30px 0;
+  padding: 30px 0;
+  background-color: #f8f9f9;
 }
 .section-container {
   padding: 0 60px;
@@ -128,7 +152,7 @@ export default {
   margin-left: 8px;
 }
 .widget-channel-links {
-  background-color: #F8F9F9;
+  background-color: #f8f9f9;
   display: flex;
   justify-content: center;
   padding-bottom: 30px;

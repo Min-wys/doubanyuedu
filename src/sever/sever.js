@@ -11,7 +11,7 @@ app.use(router.routes()).use(router.allowedMethods());
 
 // 返回home数据
 let homeData = require("./datas/home.json");
-router.get("/home", function (ctx, next) {
+router.get("/home", function(ctx, next) {
   ctx.body = {
     code: 200,
     data: homeData,
@@ -19,15 +19,15 @@ router.get("/home", function (ctx, next) {
 });
 // 返回畅销作品数据
 let hotData = require("./datas/hot.json");
-router.get("/hot", function (ctx, next) {
+router.get("/hot", function(ctx, next) {
   ctx.body = {
     code: 200,
     data: hotData,
   };
 });
 // 返回畅销作品数据
-let homeRecommend = require("./datas/hot.json");
-router.get("/homerecommend", function (ctx, next) {
+let homeRecommend = require("./datas/homeRecommend.json");
+router.get("/homerecommend", function(ctx, next) {
   ctx.body = {
     code: 200,
     data: homeRecommend,
@@ -52,8 +52,16 @@ router.get("/finishBoomData", function(ctx, next) {
   };
 });
 
+// 返回finishBoom完本推荐的完本推荐数据
+let sixChannelList = require("./datas/sixChannelList.json");
+router.get("/sixchannellist", function(ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: sixChannelList,
+  };
+});
 
-app.listen("3000", function (error) {
+app.listen("3000", function(error) {
   if (error) {
     console.log("服务器运行失败!!!");
   } else {

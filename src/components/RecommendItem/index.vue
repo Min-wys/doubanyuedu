@@ -8,7 +8,7 @@
     </div>
     <div class="info">
       <h4 class="title">{{ recommendItem.title }}</h4>
-      <p>{{ recommendItem.author.name }}</p>
+      <p>{{ recommendItem.author[0].name }}</p>
       <div class="abstract">
         {{ recommendItem.editorHighlight }}
       </div>
