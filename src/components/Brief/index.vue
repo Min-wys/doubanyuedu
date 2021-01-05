@@ -67,8 +67,6 @@ h4 {
   position: absolute;
   bottom: 0;
 }
-.extra-info > span {
-}
 .separator {
   width: 1px;
   height: 10px;

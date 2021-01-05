@@ -25,6 +25,14 @@ router.get("/hot", function (ctx, next) {
     data: hotData,
   };
 });
+// 返回畅销作品数据
+let homeRecommend = require("./datas/hot.json");
+router.get("/homerecommend", function (ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: homeRecommend,
+  };
+});
 
 app.listen("3000", function (error) {
   if (error) {
