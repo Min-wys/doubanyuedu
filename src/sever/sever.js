@@ -34,6 +34,25 @@ router.get("/homerecommend", function (ctx, next) {
   };
 });
 
+// 返回chnnel完本推荐数据
+let channelData = require("./datas/channel.json");
+router.get("/channel", function(ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: channelData,
+  };
+});
+
+// 返回finishBoom完本推荐的完本推荐数据
+let finishBoomData = require("./datas/finishBoom.json");
+router.get("/finishBoomData", function(ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: finishBoomData,
+  };
+});
+
+
 app.listen("3000", function (error) {
   if (error) {
     console.log("服务器运行失败!!!");

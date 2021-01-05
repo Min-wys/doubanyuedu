@@ -35,6 +35,7 @@
 </template>
 
 <script>
+// import Channel from
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
 import General from "../../components/General";
