@@ -431,7 +431,8 @@ export default {
   padding-left: 10px;
 }
 .introContent {
-  padding: 20px 13px 10px;
+  padding: 20px 13px 15px;
+  line-height: 2.5;
 }
 .eight .intro.catalog {
   display: flex;
@@ -523,6 +524,13 @@ export default {
       margin-left: 5px;
       border-radius: 4px;
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+      &:hover {
+        background: #389eac;
+        box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+        span {
+          color: white;
+        }
+      }
       span {
         color: #333;
       }
