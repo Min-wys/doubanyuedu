@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
- 
+
     <!-- <router-link >完本频道</router-link>
     <router-link>女性频道</router-link>
     <router-link>幻想频道</router-link>
@@ -30,5 +30,24 @@ export default {
 html,
 body {
   width: 100%;
+}
+a {
+  text-decoration: none !important;
+}
+.btn-link:hover {
+  background-color: #389eac !important;
+  color: #fff !important;
+}
+.btn-link {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  color: #333;
+  padding: 0 14px;
+  height: 30px;
+  font-size: 13px;
+  line-height: 30px;
 }
 </style>

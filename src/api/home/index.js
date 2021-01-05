@@ -30,4 +30,11 @@ export default {
       url: "/sixchannellist",
     });
   },
+  /*  */
+  getDraftList() {
+    return request({
+      method: "GET",
+      url: "/draft",
+    });
+  },
 };

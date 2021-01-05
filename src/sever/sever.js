@@ -67,6 +67,14 @@ router.get("/chnnelDanger", function(ctx, next) {
     data: chnnelDangerData,
   };
 });
+// 返回征稿数据
+let draft = require("./datas/draft.json");
+router.get("/draft", function(ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: draft,
+  };
+});
 
 app.listen("3000", function(error) {
   if (error) {
