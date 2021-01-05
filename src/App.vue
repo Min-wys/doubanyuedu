@@ -1,15 +1,30 @@
 <template>
   <div id="app">
-    豆瓣阅读111
     <router-view></router-view>
+    <!-- <router-link >完本频道</router-link>
+    <router-link>女性频道</router-link>
+    <router-link>幻想频道</router-link>
+    <router-link>文艺频道</router-link>
+    <router-link>历史频道</router-link>
+    <Channel /> -->
+    <Home />
   </div>
 </template>
 
 <script>
+
+import Home from "./views/Home";
 export default {
-  name: "app",
+  name: "App",
+  components: {
+    Home,
+  },
 };
 </script>
 
-<style scoped>
+<style>
+html,
+body {
+  width: 100%;
+}
 </style>

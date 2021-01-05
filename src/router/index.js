@@ -6,6 +6,8 @@ import VueRouter from "vue-router";
 
 const Home = () => import(/* webpackChunkName: "Home" */ "../views/Home");
 const Category = () => import(/* webpackChunkName: "Category"*/ "../views/category")
+const Channel = () =>
+  import(/* webpackChunkName: "Home" */ "../views/Channel/Channel.vue");
 
 // 改写push/replace方法
 const { push } = VueRouter.prototype;
@@ -36,7 +38,11 @@ const router = new VueRouter({
     {
       path: "/category",
       component: Category,
-    }
+    },
+    {
+      path: "/channel/:id",
+      component: Channel,
+    },
   ],
 });
 export default router;

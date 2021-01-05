@@ -7,7 +7,9 @@
           <el-breadcrumb-item :to="{ path: '/category' }"
             >原创写作</el-breadcrumb-item
           >
-          <el-breadcrumb-item>悬疑小说<span>(7029)</span></el-breadcrumb-item>
+          <el-breadcrumb-item
+            >{{ kind }}小说<span>({{ total }})</span></el-breadcrumb-item
+          >
         </el-breadcrumb>
       </div>
 
@@ -38,85 +40,38 @@
       <!-- 主要内容区 -->
       <div class="mainContent">
         <ul class="main_box">
-          <li class="mainItem">
+          <li class="mainItem" v-for="item in categoryList" :key="item.id">
             <div class="inner">
               <div class="cover">
-                <a href="javascript:;"><img src="./images/35577227.jpg" /></a>
+                <a href="javascript:;"><img src="./images/34659576.jpg" /></a>
               </div>
               <div class="info">
-                <a href="javascript:;"><h4>万人如海一身藏</h4></a>
-                <a href="javascript:;"><p class="author">独木舟</p></a>
+                <a href="javascript:;"
+                  ><h4>{{ item.title }}</h4></a
+                >
+                <a href="javascript:;"
+                  ><p class="author">{{ item.author[0].name }}</p></a
+                >
                 <a href="javascript:;"
                   ><p class="intro">
-                    取代一个男人最初的白月光胜算有多少？如果精神上无法侵入那肉体上的循序渐进是不是有机会找到破口？
-                    也不是和他很不熟，她认识他也有一、二年了。他是她的…她找不出适合的形容词。
-                    他贯穿她。 言情8.8 万字 连载中 职场爱情
+                    {{ item.authorHighlight || item.editorHighlight }}
                   </p></a
                 >
                 <div class="extra_info">
-                  <a href="javascript:;">都市</a>
+                  <a href="javascript:;">{{ item.kinds[0].shortName }}</a>
                   <span class="separator"></span>
-                  <span>14.7万</span>
+                  <span>{{ item.wordCount }}</span>
                   <span class="separator"></span>
-                  <a href="javascript:;">职场爱情</a>
-                  <span class="separator"></span>
-                  <span>连载中</span>
-                </div>
-                <button class="addBookshelf">加入书架</button>
-              </div>
-            </div>
-          </li>
-          <li class="mainItem">
-            <div class="inner">
-              <div class="cover">
-                <a href="javascript:;"><img src="./images/35577227.jpg" /></a>
-              </div>
-              <div class="info">
-                <a href="javascript:;"><h4>万人如海一身藏</h4></a>
-                <a href="javascript:;"><p class="author">独木舟</p></a>
-                <a href="javascript:;"
-                  ><p class="intro">
-                    取代一个男人最初的白月光胜算有多少？如果精神上无法侵入那肉体上的循序渐进是不是有机会找到破口？
-                    也不是和他很不熟，她认识他也有一、二年了。他是她的…她找不出适合的形容词。
-                    他贯穿她。 言情8.8 万字 连载中 职场爱情
-                  </p></a
-                >
-                <div class="extra_info">
-                  <a href="javascript:;">都市</a>
-                  <span class="separator"></span>
-                  <span>14.7万</span>
-                  <span class="separator"></span>
-                  <a href="javascript:;">职场爱情</a>
-                  <span class="separator"></span>
-                  <span>连载中</span>
-                </div>
-                <button class="addBookshelf">加入书架</button>
-              </div>
-            </div>
-          </li>
-          <li class="mainItem">
-            <div class="inner">
-              <div class="cover">
-                <a href="javascript:;"><img src="./images/35577227.jpg" /></a>
-              </div>
-              <div class="info">
-                <a href="javascript:;"><h4>万人如海一身藏</h4></a>
-                <a href="javascript:;"><p class="author">独木舟</p></a>
-                <a href="javascript:;"
-                  ><p class="intro">
-                    取代一个男人最初的白月光胜算有多少？如果精神上无法侵入那肉体上的循序渐进是不是有机会找到破口？
-                    也不是和他很不熟，她认识他也有一、二年了。他是她的…她找不出适合的形容词。
-                    他贯穿她。 言情8.8 万字 连载中 职场爱情
-                  </p></a
-                >
-                <div class="extra_info">
-                  <a href="javascript:;">都市</a>
-                  <span class="separator"></span>
-                  <span>14.7万</span>
-                  <span class="separator"></span>
-                  <a href="javascript:;">职场爱情</a>
-                  <span class="separator"></span>
-                  <span>连载中</span>
+                  <!-- <a href="javascript:;">{{ item.kinds[0].shortName }}</a> -->
+                  <a href="javascript:;">{{
+                    item.highlightTags[0] ? `${item.highlightTags[0].name}` : ""
+                  }}</a>
+                  <span
+                    :class="{
+                      separator: !item.isFinished,
+                    }"
+                  ></span>
+                  <span>{{ item.isFinished ? "" : "连载中" }}</span>
                 </div>
                 <button class="addBookshelf">加入书架</button>
               </div>
@@ -126,7 +81,7 @@
       </div>
 
       <!-- 分页器 -->
-      <el-pagination background layout="prev, pager, next" :total="1000">
+      <el-pagination background layout="prev, pager, next" :total="total">
       </el-pagination>
     </div>
   </div>
@@ -137,12 +92,16 @@ export default {
   name: "Category",
   data() {
     return {
-      isHover: true,
-      isSelected: true,
+      categoryList: [],
+      total: 0,
+      kind: "",
     };
   },
-  methods: {
-    addHover() {},
+  async mounted() {
+    const result = await this.$API.category.getKindData();
+    this.categoryList = result.data.list;
+    this.total = result.data.total;
+    this.kind = this.categoryList[0].kinds[0].shortName;
   },
 };
 </script>
@@ -258,6 +217,7 @@ export default {
       }
     }
     .info {
+      flex: 1;
       h4 {
         color: #333;
         font-size: 16px;
