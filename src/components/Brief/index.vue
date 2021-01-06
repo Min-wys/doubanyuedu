@@ -1,7 +1,7 @@
 <template>
   <div class="Brief">
-    <div @click="toOneStory">
-      <img :src="book.cover" alt="" class="img" />
+    <div>
+      <img v-lazy="book.cover" alt="" class="img" />
       <h4>{{ book.title }}</h4>
     </div>
     <a :href="'https://read.douban.com' + book.author[0].url">{{
@@ -9,7 +9,7 @@
     }}</a>
     <p class="abstract">{{ book.editorHighlight || book.abstract }}</p>
     <div class="extra-info">
-      <span>
+      <span v-if="book.averageRating">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="10"
@@ -21,12 +21,26 @@
             d="M6.688 3.125l3.37.694-2.345 2.619L8.14 10 5.03 8.475 1.923 10l.428-3.563L0 3.82l3.37-.694L5.028 0z"
           ></path>
         </svg>
-        <span>10.0</span>
+        <span>{{ book.averageRating * 2 }}</span>
+      </span>
+      <span v-else>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="10"
+          height="10"
+          class="rating-star"
+        >
+          <path
+            fill="#DDD"
+            d="M6.688 3.125l3.37.694-2.345 2.619L8.14 10 5.03 8.475 1.923 10l.428-3.563L0 3.82l3.37-.694L5.028 0z"
+          ></path>
+        </svg>
+        <span>暂无评分</span>
       </span>
       <span class="separator"></span>
       <span :data-id="book.kinds[0].id">{{ book.kinds[0].shortName }}</span>
       <span class="separator"></span>
-      <span>{{ book.highlightTags[0].name }}</span>
+      <span v-if="book.highlightTags[0]">{{ book.highlightTags[0].name }}</span>
     </div>
   </div>
 </template>

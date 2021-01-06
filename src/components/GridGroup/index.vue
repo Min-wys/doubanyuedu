@@ -12,7 +12,7 @@
               <a class="img-inner" href="">
                 <img
                   class="img"
-                  src="https://wx4.sinaimg.cn/mw690/008eE3y7gy1gmcknt6d8kj304u079jt7.jpg"
+                  :src="item.cover"
                   alt=""
                 />
               </a>

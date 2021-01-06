@@ -28,8 +28,22 @@ export default {
     };
   },
   async mounted() {
-    const result = await this.$API.home.getHotRecommend();
-    this.channelList = formatArray(result.data.worksList, 4);
+    const result = await this.$API.doubanhome.getHomeData(
+      [
+        "159646330",
+        "163020030",
+        "160040168",
+        "164573151",
+        "162142422",
+        "158000997",
+        "160100613",
+        "161315595",
+        "165872095",
+        "163272764",
+      ],
+      "\n          query getWorksList($worksIds: [ID!]) {\n            worksList(worksIds: $worksIds) {\n              \n            id\n            \n    \n    title\n    cover\n    url\n    isBundle\n    coverLabel\n  \n    \n    url\n    title\n  \n    \n    author {\n      name\n      url\n    }\n    origAuthor {\n      name\n      url\n    }\n  \n    ... on WorksBase {\n      editorHighlight\n    }\n  \n          \n            }\n          }\n        "
+    );
+    this.channelList = formatArray(result.data.data.worksList, 4);
   },
   components: {
     RecommendItem,

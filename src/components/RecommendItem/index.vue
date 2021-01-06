@@ -1,7 +1,7 @@
 <template>
   <div class="reco">
     <div class="recoImg" @click="toOneStory">
-      <img :src="recommendItem.cover" alt="" />
+      <img v-lazy="recommendItem.cover" alt="" />
     </div>
     <div class="info">
       <h4 class="title">{{ recommendItem.title }}</h4>

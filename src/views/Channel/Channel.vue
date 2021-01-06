@@ -36,7 +36,7 @@
                 v-for="channelUrl in channelUrlList"
                 :key="channelUrl.id"
               >
-                <img :src="channelUrl.url" alt="" />
+                <img v-lazy="channelUrl.url" alt="" />
               </div>
               <!-- <div
                 class="swiper-slide"
