@@ -89,7 +89,7 @@
                     v-for="item in classification"
                     :key="item.id"
                     :class="{ selected: options.kind === item.id }"
-                    @click="setCategory('kind', item.id)"
+                    @click="changeCategory(item.id, item.type)"
                   >
                     {{ item.type }}
                   </li>
@@ -239,8 +239,8 @@ export default {
       const result = await this.$API.category.getKindData(kindId);
       this.categoryList = result.data.list;
       this.total = result.data.total;
+      this.options.kind = kindId;
       this.tags = tags;
-      this.options.kind = +kindId;
       const list = this.categoryList
         .filter((item) => item.highlightTags[0])
         .map((item) => item.highlightTags[0].name);
@@ -285,10 +285,15 @@ export default {
     delTag(tag) {
       this.options[tag] = "";
     },
+    // 改变分类
+    changeCategory(kindId, tags) {
+      this.getCategoryKindData(kindId, tags);
+    },
   },
   mounted() {
-    const kindId = this.$route.params.id;
+    const kindId = this.$route.params.id.toString();
     const tags = this.$route.query.tags;
+
     this.getCategoryKindData(kindId, tags);
     this.getTypeData();
   },

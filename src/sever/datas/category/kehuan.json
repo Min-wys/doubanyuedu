@@ -1,161 +1,11 @@
 {
     "data": {
-        "total": 7042,
+        "total": 8069,
         "list": [
             {
-                "title": "凶案密码",
-                "cover": "https://img2.doubanio.com\/view\/ark_column_cover\/retina\/public\/32900783.jpg?v=1592278570",
-                "url": "\/column\/32900783\/",
-                "isBundle": false,
-                "coverLabel": "",
-                "author": [
-                    {
-                        "name": "风舞残云",
-                        "url": "\/author\/63774238\/"
-                    }
-                ],
-                "origAuthor": null,
-                "translator": null,
-                "abstract": "商业街碎尸惊现、豪车中女主持被一刀割喉、美丽山村地狱囚奴……退休前的老刑警临危受命，一桩桩离奇凶案真相大白之日，却是老刑警痛不欲生之时……\n一部节奏明快、情节跌宕起伏的刑侦技术流小说，欢迎您品读！！",
-                "authorHighlight": null,
-                "editorHighlight": "闹市碎尸、地窖囚犯、都市悬疑再起，老警察亲解凶案之谜。",
-                "isOrigin": true,
-                "kinds": [
-                    {
-                        "shortName": "悬疑",
-                        "id": 508
-                    }
-                ],
-                "wordCount": 1248649,
-                "wordCountUnit": "字",
-                "isColumn": true,
-                "isFinished": true,
-                "highlightTags": [
-                    {
-                        "name": "连环凶杀"
-                    },
-                    {
-                        "name": "生活悬疑"
-                    },
-                    {
-                        "name": "罪案故事"
-                    }
-                ],
-                "isInLibrary": false,
-                "id": "130665383"
-            },
-            {
-                "title": "法外徒",
-                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/35778714.jpg?v=1607927323",
-                "url": "\/column\/35778714\/",
-                "isBundle": false,
-                "coverLabel": "",
-                "author": [
-                    {
-                        "name": "艾石",
-                        "url": "\/author\/63720083\/"
-                    }
-                ],
-                "origAuthor": null,
-                "translator": null,
-                "abstract": "吴忌侦探事务所系列完结篇。前八部留下的未解之谜将汇集于这一部，悉数得解。\n吴忌的终极之战，最后的饕餮盛宴。\n一种新型毒品“贝多芬”悄然流行，缉毒刻不容缓，警方一次派出四名卧底打入贩毒集团内部，在净毒行动即将出现曙光之时，中间联络人突然失踪，行动被迫中止。为了查出联络人失踪事件背后的真相，为了缉毒行动能继续进行，警方高层找到吴忌，委托吴忌秘密展开调查……\n同一时间，一名母亲找上吴忌，委托他寻找失踪多日的女儿，吴忌将此委托交由安欣彤和方宸夏处理，两名女侦探首次联手出击，共同查案，而失踪案背后却暗藏杀机，危机四伏……\n这是一个关于忠诚与信念的故事。\n一周三更，一、三、五更。",
-                "authorHighlight": "四个卧底，谁是犹大？吴忌的终极之战，最后的饕餮盛宴。",
-                "editorHighlight": "“吴忌侦探系列”完结篇，吴忌联手警方展开秘密调查，终极之战即将开战！",
-                "isOrigin": true,
-                "kinds": [
-                    {
-                        "shortName": "悬疑",
-                        "id": 508
-                    }
-                ],
-                "wordCount": 53879,
-                "wordCountUnit": "字",
-                "isColumn": true,
-                "isFinished": false,
-                "highlightTags": [
-                    {
-                        "name": "罪案故事"
-                    }
-                ],
-                "isInLibrary": false,
-                "id": "165193805"
-            },
-            {
-                "title": "雪盲",
-                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/33987764.jpg?v=1588849087",
-                "url": "\/column\/33987764\/",
-                "isBundle": false,
-                "coverLabel": "",
-                "author": [
-                    {
-                        "name": "李大发",
-                        "url": "\/author\/63697571\/"
-                    }
-                ],
-                "origAuthor": null,
-                "translator": null,
-                "abstract": "刑警李正天追着他到了天台，亲眼看他跳下去，归于尘土。作为李正天侦办的第一起真正意义上的连环杀人案，这样的结果还算不错。\n\n半年之后，他复活了，继续制造死亡。\n\n起初李正天不敢相信，认为这是模仿犯罪。但是在那个月圆之夜，当他亲眼见到这个杀手死而复生……\n\n我们看到的犯罪只是冰山一角，可即便如此我们也得先把雪铲掉。如果还有什么比这更操蛋，那就是我们随时都可能变成雪盲。\n",
-                "authorHighlight": null,
-                "editorHighlight": "出于对女孩的怜悯，他杀死了那些母亲",
-                "isOrigin": true,
-                "kinds": [
-                    {
-                        "shortName": "悬疑",
-                        "id": 508
-                    }
-                ],
-                "wordCount": 274185,
-                "wordCountUnit": "字",
-                "isColumn": true,
-                "isFinished": true,
-                "highlightTags": [
-                    {
-                        "name": "罪案故事"
-                    }
-                ],
-                "isInLibrary": false,
-                "id": "139709757"
-            },
-            {
-                "title": "恶剪调查小组",
-                "cover": "https://img3.doubanio.com\/view\/ark_column_cover\/retina\/public\/35144490.jpg?v=1599445201",
-                "url": "\/column\/35144490\/",
-                "isBundle": false,
-                "coverLabel": "",
-                "author": [
-                    {
-                        "name": "不明眼",
-                        "url": "\/author\/63742159\/"
-                    }
-                ],
-                "origAuthor": null,
-                "translator": null,
-                "abstract": "为了还债，四年前就和发小顾铮老死不相往来的雷锐，不得已入驻了顾铮独自一人打理的恶剪调查工作室，由此两人开始一起接受委托，处理各类恶意拍摄和恶意剪辑造成的纠纷事件……\n自媒体时代，眼见是否为实，是声张正义还是被人当枪使，一切的真相，或许都藏在最不起眼的那一帧里。",
-                "authorHighlight": "自媒体时代，眼见是否为实，真相或许就藏在最不起眼的那一帧里。",
-                "editorHighlight": "自媒体时代，眼见是否为实，真相或许就藏在最不起眼的那一帧里。",
-                "isOrigin": true,
-                "kinds": [
-                    {
-                        "shortName": "悬疑",
-                        "id": 508
-                    }
-                ],
-                "wordCount": 357208,
-                "wordCountUnit": "字",
-                "isColumn": true,
-                "isFinished": false,
-                "highlightTags": [
-                    {
-                        "name": "生活悬疑"
-                    }
-                ],
-                "isInLibrary": false,
-                "id": "158000997"
-            },
-            {
-                "title": "血色逃逸线",
-                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/35606897.jpg?v=1605493133",
-                "url": "\/column\/35606897\/",
+                "title": "双宿时代：占据陌生肉体的我们",
+                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/34001578.jpg?v=1588837743",
+                "url": "\/column\/34001578\/",
                 "isBundle": false,
                 "coverLabel": "",
                 "author": [
@@ -166,614 +16,753 @@
                 ],
                 "origAuthor": null,
                 "translator": null,
-                "abstract": "二十六岁的成蔚，无法再忍受男友胡仕杰不正常的控制欲，驾车出逃。\n她不知道，胡仕杰与境内外毒枭有千丝万缕的联系；而她的出逃，竟阴差阳错地破坏了一次重大跨国毒品交易。\n她发誓离开了就不回头，殊不知毒枭、杀手已紧紧相随。\n与此同时，潜伏在暗处的缉毒先锋，已准备好了迎接又一次的出生入死。",
-                "authorHighlight": "她从窒息的恋情中逃离，却落入毒枭与警察的生死局",
-                "editorHighlight": "她才逃脱囚禁又遭遇莫名绑架，无辜者的求生之路危机四伏。",
+                "abstract": "简介：\n某日，毫无征兆的情况下，世界上陆续有6%的人捉对互换了意识，并且在互换后，同时拥有两具身体的全部记忆。\n他们被称为“双宿人”。\n这件事，以一种与大规模战争、天灾不同的方式，改变了世界面貌。\n\n29岁的华人韦一宸，居住在与中国接壤的某新兴移民城市，是一名刑侦警察。\n他因为行为不端，伤害证人，即将遭警局除名。\n但上级竟给他指派了新任务：保护一名能判断一个人是否“双宿”的 “鉴证师”……\n\n在他们的世界里，真情、信任和背叛的定义，都被迫改写。\n\n-----------------------------------------\n\n本文固定每日更新至结束。欢迎订阅投票 ：）",
+                "authorHighlight": null,
+                "editorHighlight": "6% 的人类已经互相交换意识，你是下一个，所以请牢记心中挚爱。",
                 "isOrigin": true,
                 "kinds": [
                     {
-                        "shortName": "悬疑",
-                        "id": 508
+                        "shortName": "幻想",
+                        "id": 506
                     }
                 ],
-                "wordCount": 133552,
+                "wordCount": 380304,
                 "wordCountUnit": "字",
                 "isColumn": true,
-                "isFinished": false,
+                "isFinished": true,
                 "highlightTags": [
                     {
-                        "name": "罪案故事"
+                        "name": "都市幻想"
                     }
                 ],
                 "isInLibrary": false,
-                "id": "163272764"
+                "id": "139769195"
             },
             {
-                "title": "红喜事",
-                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/35786734.jpg?v=1606800867",
-                "url": "\/column\/35786734\/",
+                "title": "天下刀宗",
+                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/32079294.jpg?v=1583911825",
+                "url": "\/column\/32079294\/",
                 "isBundle": false,
                 "coverLabel": "",
                 "author": [
                     {
-                        "name": "苏他",
-                        "url": "\/author\/63772594\/"
+                        "name": "雨楼清歌",
+                        "url": "\/author\/63702907\/"
                     }
                 ],
                 "origAuthor": null,
                 "translator": null,
-                "abstract": "旧年旧事，新年新提，老街上挂着的是红灯笼，红灯笼照着的是红喜事。\n我说我要嫁给我哥，他们说我恶心，其实恶心的是他们，他们还不自知。",
-                "authorHighlight": "江琸不是最后一个爱上自己哥哥的妹妹",
+                "abstract": "一丈嚣狂，三尺闲愁，都裁作天衣，可当风雨乎？\n",
+                "authorHighlight": null,
                 "editorHighlight": null,
                 "isOrigin": true,
                 "kinds": [
                     {
-                        "shortName": "悬疑",
-                        "id": 508
+                        "shortName": "幻想",
+                        "id": 506
                     }
                 ],
-                "wordCount": 100525,
+                "wordCount": 250664,
                 "wordCountUnit": "字",
                 "isColumn": true,
                 "isFinished": true,
                 "highlightTags": [
                     {
-                        "name": "罪案故事"
+                        "name": "架空世界"
                     }
                 ],
                 "isInLibrary": false,
-                "id": "165307298"
+                "id": "111807088"
             },
             {
-                "title": "死亡回声",
-                "cover": "https://img3.doubanio.com\/view\/ark_column_cover\/retina\/public\/35894351.jpg?v=1608802847",
-                "url": "\/column\/35894351\/",
+                "title": "天下没有四块五一本的无敌剑谱",
+                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/33262158.jpg?v=1588837934",
+                "url": "\/column\/33262158\/",
                 "isBundle": false,
                 "coverLabel": "",
                 "author": [
                     {
-                        "name": "风舞残云",
-                        "url": "\/author\/63774238\/"
+                        "name": "缝合医生",
+                        "url": "\/author\/63776538\/"
                     }
                 ],
                 "origAuthor": null,
                 "translator": null,
-                "abstract": "30年前，江滨医学院内，一名女大学生被奸杀，从此，几个男人彻底改变了人生的轨迹。\n30年后，一次手术意外，17岁的高职女孩命丧手术台，老板和医生为了逃避责任，竟模仿30年前的奸杀案，将女孩抛尸窨井，谁知，他们的麻烦也随之开始，一桩桩命案陆续发生……\n老刑警拨开重重谜雾，凶手陆续落网时，人们也终于看清，一副副优雅的皮囊下，是自私、偏执、懦弱和纠结无助的人性……",
-                "authorHighlight": "当30年前的奸杀谜案被揭开，展现在眼前的，是残破不堪的人性！",
-                "editorHighlight": "《凶案密码》作者全新力作，一场模仿犯罪揭开跨越三十年的罪恶！",
+                "abstract": "吕老三可是弹云山的三好学生，学会《天无剑谱》之后猛虎下山，拉起大旗准备闯出些名堂。刚一开局，捡到一个熊小五。吕老三眼毒，有识人之能，一拍大腿给熊小五送上了山，心想这厮必能光耀山门。不过，吕老三也有算错的时候——这熊小五实在太特么能吃了。",
+                "authorHighlight": null,
+                "editorHighlight": "超人气拉力赛幻想组佳作，修仙逆袭也可以走喜剧路线，满满的少年漫热血情怀。",
                 "isOrigin": true,
                 "kinds": [
                     {
-                        "shortName": "悬疑",
-                        "id": 508
+                        "shortName": "幻想",
+                        "id": 506
                     }
                 ],
-                "wordCount": 59335,
+                "wordCount": 398673,
                 "wordCountUnit": "字",
                 "isColumn": true,
-                "isFinished": false,
+                "isFinished": true,
                 "highlightTags": [
                     {
-                        "name": "生活悬疑"
+                        "name": "玄幻"
                     },
                     {
-                        "name": "罪案故事"
+                        "name": "架空世界"
                     }
                 ],
                 "isInLibrary": false,
-                "id": "166715847"
+                "id": "133532568"
             },
             {
-                "title": "鬼面",
-                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/35704065.jpg?v=1608518684",
-                "url": "\/column\/35704065\/",
+                "title": "藏剑者 · 终",
+                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/35948935.jpg?v=1608955975",
+                "url": "\/column\/35948935\/",
                 "isBundle": false,
                 "coverLabel": "",
                 "author": [
                     {
-                        "name": "徐暮明",
-                        "url": "\/author\/63812322\/"
+                        "name": "易别景",
+                        "url": "\/author\/63690203\/"
                     }
                 ],
                 "origAuthor": null,
                 "translator": null,
-                "abstract": "京都八月，晨起寺庙里清扫庭院的小和尚，在正殿里发现了一具以跪伏姿态，捆绑在明王神像前的华人男性尸体。\n警方未在现场提取到任何可以指明凶手的物证，唯一可能的目击证人也于案发当晚陷入了昏迷。就在负责侦办此案的警官一筹莫展的时候，凶手却意外地自首了。\n凶案背后到底有何隐情？为什么主动投案的凶手要对杀人动机守口如瓶？\n华侨商报女记者谢恩泽赴日与同事张洋一起报道此案，却意外被凶手选中，获得了独家采访的机会。随着采访和调查的深入，案件所表现出的与事实相矛盾的真相被一点点揭开。\n自毁式的牺牲，能否拯救坠入深渊的灵魂？\n\n匪夷所思的七道问题，隐藏真相的七首歌词。\n骇人听闻的幼年旧事，生死相依的动人深情。",
-                "authorHighlight": "悬案背后生死相依的深情。我愿为你杀人！",
+                "abstract": "大漠孤烟，红土喋血。天上峰会，雪顶决战。\n在命运旅程的终点，等待他的将是什么？\n藏剑者故事的最终篇章 螭玉会雪篇。",
+                "authorHighlight": null,
                 "editorHighlight": null,
                 "isOrigin": true,
                 "kinds": [
                     {
-                        "shortName": "悬疑",
-                        "id": 508
+                        "shortName": "幻想",
+                        "id": 506
                     }
                 ],
-                "wordCount": 136479,
+                "wordCount": 187410,
                 "wordCountUnit": "字",
                 "isColumn": true,
                 "isFinished": false,
                 "highlightTags": [
                     {
-                        "name": "罪案故事"
+                        "name": "架空世界"
                     }
                 ],
                 "isInLibrary": false,
-                "id": "164338147"
+                "id": "167545297"
             },
             {
-                "title": "失踪的流量女孩",
-                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/35582036.jpg?v=1605855542",
-                "url": "\/column\/35582036\/",
+                "title": "港都异变1988",
+                "cover": "https://img3.doubanio.com\/view\/ark_column_cover\/retina\/public\/35844580.jpg?v=1608202603",
+                "url": "\/column\/35844580\/",
                 "isBundle": false,
                 "coverLabel": "",
                 "author": [
                     {
-                        "name": "吉良",
-                        "url": "\/author\/63780611\/"
+                        "name": "闻希声",
+                        "url": "\/author\/63813690\/"
                     }
                 ],
                 "origAuthor": null,
                 "translator": null,
-                "abstract": "直播间意外发现一具埋在墙内的女尸，经鉴定为失踪的人气网红艾陌；\n犀利女警白晓火速调查发现，艾陌与所属的MCN经纪公司之间似乎有着难以言说的秘密......\n整容、流量、数据，光鲜的过往、骇人的传言，她身上被贴满了标签；\n屏幕背后，她究竟度过了怎样的一生才会迎来这样的结局？\n她是谁的影子？又遮住了谁的光？",
-                "authorHighlight": "直播惊现网红尸体，流量女孩的隐秘人生随之曝光。",
-                "editorHighlight": "直播惊现网红尸体，流量女孩的隐秘人生随之曝光。",
+                "abstract": "1988.9.17 香岛隔绝事件拉开帷幕，东区遭袭，九龙瘫痪，新界裂变！不透光的都市牢笼内，名为「易术」的诡道播种在“幸运儿”们的身上。\n\n用游戏来夺命的未成年杀手组织柳花堂，拥有压倒性力量的兽化部队碧血盟，暗藏玄机的文化企业瀑谷，前香岛黑派组织青年国术社……能力者们穷其所能探索着隔绝事件的真相，而至深的罪恶，却已被埋藏在悚人的世界里侧…\n\n末世的残响，在这片土地上黯然奏鸣。",
+                "authorHighlight": "港都隔绝，全岛瘫痪，易术能力者们在极夜中探寻着世界的真相。",
+                "editorHighlight": "长夜封锁的杀戮都市，普通上班族觉醒异能，上演绝地求生！",
                 "isOrigin": true,
                 "kinds": [
                     {
-                        "shortName": "悬疑",
-                        "id": 508
+                        "shortName": "幻想",
+                        "id": 506
                     }
                 ],
-                "wordCount": 122670,
+                "wordCount": 74648,
                 "wordCountUnit": "字",
                 "isColumn": true,
                 "isFinished": false,
                 "highlightTags": [
                     {
-                        "name": "推理解谜"
-                    },
-                    {
-                        "name": "罪案故事"
+                        "name": "架空世界"
                     }
                 ],
                 "isInLibrary": false,
-                "id": "163020030"
+                "id": "165998213"
             },
             {
-                "title": "白鸟坠入密林",
-                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/35835004.jpg?v=1609123250",
-                "url": "\/column\/35835004\/",
+                "title": "天下无仙",
+                "cover": "https://img2.doubanio.com\/view\/ark_column_cover\/retina\/public\/35919533.jpg?v=1608806061",
+                "url": "\/column\/35919533\/",
                 "isBundle": false,
                 "coverLabel": "",
                 "author": [
                     {
-                        "name": "贝客邦",
-                        "url": "\/author\/63734856\/"
+                        "name": "木石君",
+                        "url": "\/author\/63766247\/"
                     }
                 ],
                 "origAuthor": null,
                 "translator": null,
-                "abstract": "2008年南方雪灾初降，革马村的十岁女孩金莹在归家途中失踪。她留下的唯一痕迹是指向一户民宅的雪地脚印，但警方却未在民宅内找到金莹。户主梁皓成为了无法定罪的嫌疑人。\n九年后，某摄制团队来到革马村拍摄案件纪录片，请求村民接受采访，提供线索，试图重新唤起人们对失踪女孩的关注。\n录制中途，一起拾荒者杀人案再次惊扰了平静的村庄。摄制组敏锐地捕捉到了两起案件之间的关联。真相已随时间之河远去。",
-                "authorHighlight": "如果您有关于此案的任何线索，请在评论区留言。",
-                "editorHighlight": "寻找雪地失踪女孩，纪录片剧组镜头下的蛛丝马迹。",
+                "abstract": "修仙者修炼所需的灵物，无一不是凡人劳动所得。\n修仙者获得的每一分灵力，都浸透着凡人的血汗。\n凡人阿池设计结识仙人戚无明，一路除魔修斩妖物，终于获得了进入戚家门墙的资格。\n在仙盟，她见到了更大的不平等。为了改变仙凡贵贱，她选择不顾一切地往高位上爬。\n戚无明在阿池身上看见了自己的影子，因为这相似之处，他欣赏她却更厌恶她。\n他们的关系愈演愈烈，终成相爱相杀之局。",
+                "authorHighlight": "她是一介凡人，却一路逆袭成仙，誓要改变仙贵凡贱的世界。",
+                "editorHighlight": "她是一介凡人，却一路逆袭成仙，誓要改变仙贵凡贱的世界。",
                 "isOrigin": true,
                 "kinds": [
                     {
-                        "shortName": "悬疑",
-                        "id": 508
+                        "shortName": "幻想",
+                        "id": 506
                     }
                 ],
-                "wordCount": 28793,
+                "wordCount": 70753,
                 "wordCountUnit": "字",
                 "isColumn": true,
                 "isFinished": false,
                 "highlightTags": [
                     {
-                        "name": "生活悬疑"
+                        "name": "奇幻"
                     },
                     {
-                        "name": "推理解谜"
+                        "name": "玄幻"
+                    },
+                    {
+                        "name": "架空世界"
                     }
                 ],
                 "isInLibrary": false,
-                "id": "165872095"
+                "id": "167091804"
             },
             {
-                "title": "世界尽头和冷酷富婆",
-                "cover": "https://img2.doubanio.com\/view\/ark_column_cover\/retina\/public\/35512173.jpg?v=1608116196",
-                "url": "\/column\/35512173\/",
+                "title": "梦幻由心莲",
+                "cover": "https://img1.doubanio.com\/view\/ark_column_banner_cover\/retina\/public\/885059cdb4dd4fbba73e7c63e9502bb7.jpg",
+                "url": "\/column\/32852310\/",
                 "isBundle": false,
                 "coverLabel": "",
                 "author": [
                     {
-                        "name": "安之龙",
-                        "url": "\/author\/63695260\/"
+                        "name": "爱的水瓶",
+                        "url": "\/author\/63773430\/"
                     }
                 ],
                 "origAuthor": null,
                 "translator": null,
-                "abstract": "世界尽头的新西兰，那是地球上最后一块净土，真正的诗和远方。林清凡海外游学多年，最后在新西兰流连忘返。\n因家庭原因，林清凡从新西兰回到东北家乡小城，发现家庭发生极大变故，他穷困潦倒陷入了困境。此时小城一位神秘的富婆找到了他，如果林清凡答应和富婆结婚去新西兰生活一年，将会得到一笔巨款，但富婆附加了十分苛刻冷酷的条件。\n林清凡会答应这位冷酷富婆吗？在世界尽头的新西兰又会有怎样的惊险故事？\n",
-                "authorHighlight": "诗和远方还是眼前的苟且？和富婆去世界尽头结婚是怎样的体验？",
-                "editorHighlight": "一面定终身共赴新西兰，他想自杀她要绿卡。天上掉富婆？这事没那么简单。",
-                "isOrigin": true,
-                "kinds": [
-                    {
-                        "shortName": "悬疑",
-                        "id": 508
-                    }
-                ],
-                "wordCount": 50545,
-                "wordCountUnit": "字",
-                "isColumn": true,
-                "isFinished": false,
-                "highlightTags": [
-                    {
-                        "name": "生活悬疑"
-                    }
-                ],
-                "isInLibrary": false,
-                "id": "162361800"
-            },
-            {
-                "title": "赤子之心",
-                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/35650234.jpg?v=1607918676",
-                "url": "\/column\/35650234\/",
-                "isBundle": false,
-                "coverLabel": "",
-                "author": [
-                    {
-                        "name": "章叶良",
-                        "url": "\/author\/63698989\/"
-                    }
-                ],
-                "origAuthor": null,
-                "translator": null,
-                "abstract": "一枚小小的电子章，引发了一场蝴蝶效应。正义执行干警和神秘银行柜员，联手调查腐败、对抗黑恶势力，并引发了官场、商场的大地震，牵出了腐败背后更大的阴谋。\n\n",
-                "authorHighlight": "“半泽直树”式的热血故事，小人物也可撼动参天大树。",
-                "editorHighlight": "“半泽直树”式的热血故事，小人物也可撼动参天大树。",
-                "isOrigin": true,
-                "kinds": [
-                    {
-                        "shortName": "悬疑",
-                        "id": 508
-                    }
-                ],
-                "wordCount": 201820,
-                "wordCountUnit": "字",
-                "isColumn": true,
-                "isFinished": true,
-                "highlightTags": [
-                    {
-                        "name": "生活悬疑"
-                    },
-                    {
-                        "name": "复仇计划"
-                    },
-                    {
-                        "name": "罪案故事"
-                    }
-                ],
-                "isInLibrary": false,
-                "id": "163819695"
-            },
-            {
-                "title": "迷墙",
-                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/35765447.jpg?v=1607660083",
-                "url": "\/column\/35765447\/",
-                "isBundle": false,
-                "coverLabel": "",
-                "author": [
-                    {
-                        "name": "言定瑀",
-                        "url": "\/author\/63774449\/"
-                    }
-                ],
-                "origAuthor": null,
-                "translator": null,
-                "abstract": "林玫冉：九十年代摇滚乐队的女主唱。美丽的乌月潭畔，她被人杀死在湖边。\n\n谢岩飞：摇滚乐队吉他手，也是林玫冉的前男友。\n\n林阿难：林玫冉的侄女。童年时，被父母忽视厌弃，小姑和谢岩飞是她生活里的光。作为小姑案重要的目击证人，她没对警察说出谢岩飞的名字。昆德拉说，生命总是一张草图。背叛与愧疚就是她这张草图的底色。\n\n十三年后，旧案重启，随着谜底的逐步深入揭开，亲情、友情与爱情都在小姑之死中扮演了什么角色？而她又该如何选择？",
-                "authorHighlight": "爱情真的能大得过良知？摇滚老炮儿和小护士秀给你看。",
-                "editorHighlight": "一桩逝去亲人的旧案，让恋上摇滚老炮儿的小护士陷入情与理的心理死局。",
-                "isOrigin": true,
-                "kinds": [
-                    {
-                        "shortName": "悬疑",
-                        "id": 508
-                    }
-                ],
-                "wordCount": 136394,
-                "wordCountUnit": "字",
-                "isColumn": true,
-                "isFinished": false,
-                "highlightTags": [
-                    {
-                        "name": "连环凶杀"
-                    },
-                    {
-                        "name": "生活悬疑"
-                    },
-                    {
-                        "name": "复仇计划"
-                    },
-                    {
-                        "name": "罪案故事"
-                    }
-                ],
-                "isInLibrary": false,
-                "id": "165014385"
-            },
-            {
-                "title": "重生援助小组",
-                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/35778434.jpg?v=1608085318",
-                "url": "\/column\/35778434\/",
-                "isBundle": false,
-                "coverLabel": "",
-                "author": [
-                    {
-                        "name": "小哈",
-                        "url": "\/author\/63703847\/"
-                    }
-                ],
-                "origAuthor": null,
-                "translator": null,
-                "abstract": "怎样确保租住的胶囊旅馆不是隐藏在市区的停尸间？\n火灾现场的消防水带，为何会喷射出尸骨和人肉糜？\n一个人从顶楼跳下之后，竟然皮肤完好、骨脏尽碎？\n不同地点的三个死者，能否被同一个人同时间杀掉？\n重型卡车轮子内胎里卷着尸体，可以正常行驶多久？\n将死之人藏进枯树，来年枝繁叶茂，算谁的生命力？\n强奸犯、杀人犯、人贩子…当他们刑满释放后再次与命案牵扯，选择会有何不同？还是在成为犯罪前科者的那一刻起，已经没有了选择？\n缺德颓废的辍学青年+热血天真的中年辅警,在援助刑释人员重返社会的过程中，屡屡卷入前所未有的死亡现场。\n那里有赎罪，有麻木和逃避，有报应不爽，\n和永不原谅。\n\n",
-                "authorHighlight": "离奇新案与刑释旧犯的玩命对撞，死罪不可免，活罪也别想逃。",
-                "editorHighlight": "离奇新案与刑释旧犯的玩命对撞，死罪不可免，活罪也别想逃。",
-                "isOrigin": true,
-                "kinds": [
-                    {
-                        "shortName": "悬疑",
-                        "id": 508
-                    }
-                ],
-                "wordCount": 81003,
-                "wordCountUnit": "字",
-                "isColumn": true,
-                "isFinished": false,
-                "highlightTags": [
-                    {
-                        "name": "推理解谜"
-                    },
-                    {
-                        "name": "罪案故事"
-                    }
-                ],
-                "isInLibrary": false,
-                "id": "165190995"
-            },
-            {
-                "title": "轮回前的告别",
-                "cover": "https://img2.doubanio.com\/view\/ark_column_cover\/retina\/public\/33857302.jpg?v=1588839242",
-                "url": "\/column\/33857302\/",
-                "isBundle": false,
-                "coverLabel": "",
-                "author": [
-                    {
-                        "name": "贝客邦",
-                        "url": "\/author\/63734856\/"
-                    }
-                ],
-                "origAuthor": null,
-                "translator": null,
-                "abstract": "相恋一年，女友慧文遭入室者袭击而成为植物人，宗彦陷入了绵长的痛苦之中。\n两年后，慧文终因肺部感染去世。临终前的最后一晚，宗彦送走护工，与女友在单人病房内独处。朦胧之际，宗彦依稀感受到慧文在他掌心写下仅有三个字的遗言。\n不久，宗彦无意间参加了慧文家人组织的\"叫魂\"仪式。附体的神婆拉过宗彦的手，在他掌心写下同样的三个字。\n从未说出口的事，如何被他人洞悉？\n与此同时，慧文的书信正从世界的另一边寄送而来。\n轮回前的告别，能否解脱背负思念的余生？\n",
+                "abstract": "冰冷裹挟着红花，欲望啃啮着心伤。\n爱是温柔的手，还是捆绑的绳。\n",
                 "authorHighlight": null,
-                "editorHighlight": "灵媒降魂，写下逝者轮回前的告别，但真相远在轮回的秘密之外。",
+                "editorHighlight": null,
                 "isOrigin": true,
                 "kinds": [
                     {
-                        "shortName": "悬疑",
-                        "id": 508
+                        "shortName": "幻想",
+                        "id": 506
                     }
                 ],
-                "wordCount": 148439,
+                "wordCount": 175472,
                 "wordCountUnit": "字",
                 "isColumn": true,
-                "isFinished": true,
-                "highlightTags": [],
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "奇幻"
+                    },
+                    {
+                        "name": "架空世界"
+                    },
+                    {
+                        "name": "脑洞故事"
+                    }
+                ],
                 "isInLibrary": false,
-                "id": "138741283"
+                "id": "129753939"
             },
             {
-                "title": "读心调酒师",
-                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/34965216.jpg?v=1598604793",
-                "url": "\/column\/34965216\/",
+                "title": "六藏图",
+                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/32981249.jpg?v=1588837713",
+                "url": "\/column\/32981249\/",
                 "isBundle": false,
                 "coverLabel": "",
                 "author": [
                     {
-                        "name": "钡喜橘",
-                        "url": "\/author\/63773563\/"
+                        "name": "天下第一郭",
+                        "url": "\/author\/27520808\/"
                     }
                 ],
                 "origAuthor": null,
                 "translator": null,
-                "abstract": "由主线大案串联的4个单元案，剧情跌宕起伏。从始至末说来话，不过是情而已。\n\n白卉，全职精神科女医生，兼职调酒师。洒脱不羁爱自由的白卉，对外冷内热的刑警遇杉一见钟情。两人携手破案，成为默契搭档。\n\n随着终极谜底浮出水面，悲痛欲绝的白卉性情骤变，一腔孤勇策划铲除最后的恶魔......\n\n\n",
+                "abstract": "贞观八年上元节，扬州郊外的龙华寺发生命案，寺内僧众无一生还。\n\n与此同时，伴随着佛教三阶宗在大唐的兴盛，关于三阶宗圣物“六藏图”失窃的传言，甚嚣尘上。\n\n同年，东海商人张九微、康国使臣康君邺、吐谷浑死士慕容婕分别前往大唐。三个异乡人和他们背后的势力在盛世中搅动风云，却不曾想到，一股追寻六藏图的暗流，正将所有人卷入一场足以改写大唐国运的惊天阴谋。\n\nPOV（视点人物）写作手法，每个章节从不同的人物视角出发。",
                 "authorHighlight": null,
-                "editorHighlight": "女医生倒追帅刑警，欢喜冤家成王牌搭档！",
+                "editorHighlight": "由佛珠引发的连环杀人，将三个异乡客卷入改写大唐国运的惊天阴谋",
                 "isOrigin": true,
                 "kinds": [
                     {
-                        "shortName": "悬疑",
-                        "id": 508
+                        "shortName": "幻想",
+                        "id": 506
                     }
                 ],
-                "wordCount": 246004,
+                "wordCount": 337427,
                 "wordCountUnit": "字",
                 "isColumn": true,
                 "isFinished": true,
                 "highlightTags": [
                     {
-                        "name": "生活悬疑"
-                    },
-                    {
-                        "name": "复仇计划"
+                        "name": "架空世界"
                     }
                 ],
                 "isInLibrary": false,
-                "id": "156265454"
+                "id": "131974625"
             },
             {
-                "title": "没有死者的谋杀",
-                "cover": "https://img2.doubanio.com\/view\/ark_column_cover\/retina\/public\/34778722.jpg?v=1598263500",
-                "url": "\/column\/34778722\/",
+                "title": "古怪谈",
+                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/32787634.jpg?v=1579231968",
+                "url": "\/column\/32787634\/",
                 "isBundle": false,
                 "coverLabel": "",
                 "author": [
                     {
-                        "name": "陆雾",
-                        "url": "\/author\/63771081\/"
+                        "name": "袋鼠花",
+                        "url": "\/author\/2938440\/"
                     }
                 ],
                 "origAuthor": null,
                 "translator": null,
-                "abstract": "同桌吃饭的网友，突然人间蒸发，目击者都称并无此人存在；\n七旬老汉为爱私奔，为何会牵扯出连环命案；\n案发现场被破坏的少女失踪案，尘封十年后牵扯出三条命案；\n神秘失踪的未婚夫，竟然同时还有五个女友\n只有你一人能看到的幽灵邮件，是幻觉还是阴谋？\n不被重视的失踪案背后，总是精心计划的谋杀。如何在没有尸体的情况下推理？如何在死者不明的情况下找出凶手？\n五起单元案，一个反转。爱与谋杀，同样危险。",
+                "abstract": "中国古代悬疑怪谈，变幻莫测，匪夷所思，令人悚然而又神往。在老庄的绮丽梦乡中，自地理志的四海八荒地，由笔记小说的幽情谬思里，从乡野异闻的奇谈怪论间，走出这一个个美丽的怨灵、可爱的妖精、恐怖的鬼怪、恍惚的男女。",
                 "authorHighlight": null,
-                "editorHighlight": "网友奔现却人间蒸发，非典型谋杀案正式上线。",
+                "editorHighlight": "乡野异闻奇谈，这里有一个个美丽的怨灵、可爱的妖精、恐怖的鬼怪，一段段诡异神秘的传奇故事。",
                 "isOrigin": true,
                 "kinds": [
                     {
-                        "shortName": "悬疑",
-                        "id": 508
+                        "shortName": "幻想",
+                        "id": 506
                     }
                 ],
-                "wordCount": 239437,
+                "wordCount": 144293,
                 "wordCountUnit": "字",
                 "isColumn": true,
                 "isFinished": true,
                 "highlightTags": [
                     {
-                        "name": "连环凶杀"
+                        "name": "奇幻"
                     },
                     {
-                        "name": "生活悬疑"
+                        "name": "架空世界"
                     },
                     {
-                        "name": "素人侦探"
+                        "name": "都市幻想"
                     },
                     {
-                        "name": "罪案故事"
+                        "name": "脑洞故事"
                     }
                 ],
                 "isInLibrary": false,
-                "id": "154770493"
+                "id": "128533702"
             },
             {
-                "title": "魈画",
-                "cover": "https://img2.doubanio.com\/view\/ark_column_cover\/retina\/public\/32795442.jpg?v=1578630009",
-                "url": "\/column\/32795442\/",
+                "title": "古怪谈 2",
+                "cover": "https://img2.doubanio.com\/view\/ark_column_cover\/retina\/public\/35987052.jpg?v=1609432348",
+                "url": "\/column\/35987052\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "袋鼠花",
+                        "url": "\/author\/2938440\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "怪谈故事，变幻莫测，匪夷所思，令人悚然而又神往。在神话传说的绮丽梦乡中，自地理志异的四海八荒地，由乡野异闻的奇谈怪论间，从心灵深处的幽情谬思里，走出这一个个美丽的怨灵、可爱的妖精、恐怖的鬼怪、恍惚的男女。",
+                "authorHighlight": null,
+                "editorHighlight": null,
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 18160,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "奇幻"
+                    },
+                    {
+                        "name": "都市幻想"
+                    },
+                    {
+                        "name": "脑洞故事"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "168095199"
+            },
+            {
+                "title": "大唐良谋",
+                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/33879818.jpg?v=1592468422",
+                "url": "\/column\/33879818\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "婠叔僮",
+                        "url": "\/author\/63786999\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "煌煌大唐，有良相，立于书牍，有良将，藏于市井。并刀如水，吴盐胜雪，风起云涌，两京动荡，天子九逃，陆九郎力挽狂澜，将这颓唐不堪的乱世又延续了百年。福兮祸兮......",
+                "authorHighlight": null,
+                "editorHighlight": "丰神俊朗大理寺卿VS江湖女仵作，联手侦破大唐悬案！",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 110996,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "138947206"
+            },
+            {
+                "title": "半龙隐",
+                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/33041954.jpg?v=1592467527",
+                "url": "\/column\/33041954\/",
                 "isBundle": false,
                 "coverLabel": "vip-can-read-label",
                 "author": [
                     {
-                        "name": "乌鸦哥哥",
-                        "url": "\/author\/63772309\/"
+                        "name": "红酥手贱",
+                        "url": "\/author\/63730476\/"
                     }
                 ],
                 "origAuthor": null,
                 "translator": null,
-                "abstract": " 一幅画功精湛的国画到底暗藏了什么秘密，让拥有它的人都死于凶险意外？\n\n一老一小两名警察循线追查，发现该画不仅引发了多起意外死亡，还牵扯到一桩人口失踪疑案。\n\n失踪女子生死未卜,意外死亡仍在发生，调查超乎所有人的想象——从繁华省城到遥远边城，再到与世隔绝的深山村寨……主人公历经艰险，发现这一切的背后不仅隐藏着一桩陈年往事，还与深山土著流传已久的“驱魈”传说有关。\n\n当真相揭晓，所有人都以为终局来临，却没想到真正的骇异在悄然接近。\n\n本作中的每一起案（事）件都是真实的，乌鸦哥哥只是把它们串在了一起，并作了适度的改编和渲染，并对事发地点及原型人物进行了隐换。",
+                "abstract": "不曾被窥探过的龙的世界，祖孙三代的命运交响曲。",
                 "authorHighlight": null,
-                "editorHighlight": null,
+                "editorHighlight": "永生者知道，他的下一个躯壳已在蠢蠢欲动。",
                 "isOrigin": true,
                 "kinds": [
                     {
-                        "shortName": "悬疑",
-                        "id": 508
+                        "shortName": "幻想",
+                        "id": 506
                     }
                 ],
-                "wordCount": 314222,
+                "wordCount": 450013,
                 "wordCountUnit": "字",
                 "isColumn": true,
                 "isFinished": true,
                 "highlightTags": [
                     {
-                        "name": "警察故事"
-                    },
-                    {
-                        "name": "奇遇怪谈"
-                    },
-                    {
-                        "name": "罪案故事"
+                        "name": "架空世界"
                     }
                 ],
                 "isInLibrary": false,
-                "id": "128680160"
+                "id": "132217230"
             },
             {
-                "title": "明末诡谲录",
-                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/34292299.jpg?v=1596509068",
-                "url": "\/column\/34292299\/",
+                "title": "玄鸟录",
+                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/31396146.jpg?v=1550818468",
+                "url": "\/column\/31396146\/",
                 "isBundle": false,
                 "coverLabel": "",
                 "author": [
                     {
-                        "name": "幸之",
-                        "url": "\/author\/63781594\/"
+                        "name": "倪刃",
+                        "url": "\/author\/63692811\/"
                     }
                 ],
                 "origAuthor": null,
                 "translator": null,
-                "abstract": "崇祯年，本是一场世故的返乡之旅，却不经意展开了场末日绘卷。如命运指引一般游走天下，偶然发现尘世之外，另一个玄之又玄的隐秘世界。\n\n不断穿梭于凡尘与世外。诡异的信仰、扭曲的传说，便是大明摇曳的国运，竟也被古老的癫狂所牵扯。\n\n诡异、秘术、妄想与辩证、工艺、事实。远古流传至今的隐秘，目睹越多，疯狂越甚。\n\n世外，从来都不只有桃源，更多的，是诡谲......",
-                "authorHighlight": "于末世人间，展开一场辩证与扭曲交织的冒险，草绳灰线皆是宿命。",
-                "editorHighlight": "一场辩证与扭曲交织的冒险，草绳灰线皆是宿命。",
+                "abstract": "这是一部以中国青铜时代城邦文明为背景的冒险权谋爱情奇幻史诗。\n大禹之后，天下分崩。代表帝权的九鼎之一被人所偷。\n娇宠任性的公子白浚，能否在现实捶打之下走向成熟？\n芒作为奴隶，忍受着命运的痛苦压抑，他是否有机会在乱世获得重生？\n来自青衣城的少女墨绫，在后宫为母亲和自己的存活而战，她的命运将会怎样改变？\n东夷殷族，新的“诗人君王”将如何带领东夷参与九州的纵横捭阖？\n谁能寻获苍龙圣鼎，召唤出西域苍龙，在天下诸侯的纷争中取得先机？\n谁又能令玄鸟从东海而出，掀起一场残酷与光明共舞的风暴？",
+                "authorHighlight": "中国青铜时代冒险权谋爱情奇幻史诗",
+                "editorHighlight": "传说寻获苍龙圣鼎就能取得天下，无论王族还是奴隶，都想借乱世改变命运。",
                 "isOrigin": true,
                 "kinds": [
                     {
-                        "shortName": "悬疑",
-                        "id": 508
+                        "shortName": "幻想",
+                        "id": 506
                     }
                 ],
-                "wordCount": 319403,
-                "wordCountUnit": "字",
-                "isColumn": true,
-                "isFinished": true,
-                "highlightTags": [
-                    {
-                        "name": "奇遇怪谈"
-                    },
-                    {
-                        "name": "推理解谜"
-                    }
-                ],
-                "isInLibrary": false,
-                "id": "145382553"
-            },
-            {
-                "title": "恶女会计事件簿",
-                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/35268858.jpg?v=1605083694",
-                "url": "\/column\/35268858\/",
-                "isBundle": false,
-                "coverLabel": "",
-                "author": [
-                    {
-                        "name": "苍绫",
-                        "url": "\/author\/63807049\/"
-                    }
-                ],
-                "origAuthor": null,
-                "translator": null,
-                "abstract": "梦想成为顶尖会计的顾筱筱，被梦寐以求的会计师事务所录取。\n遭遇了美貌但毒舌的女上司，不穿prada但也是女魔头的——苏昳。\n两人联手解决各种公司危机，却也不断陷入惊险的悬疑事件。\n随着了解的加深，筱筱渐渐发现，苏昳竟也隐藏着巨大的秘密……",
-                "authorHighlight": "职场小白搭档毒舌美女上司，理清财务谜团，破解悬念疑案。",
-                "editorHighlight": "职场小白搭档毒舌美女上司，理清金融谜团，揭开重重黑幕。",
-                "isOrigin": true,
-                "kinds": [
-                    {
-                        "shortName": "悬疑",
-                        "id": 508
-                    }
-                ],
-                "wordCount": 252158,
+                "wordCount": 273825,
                 "wordCountUnit": "字",
                 "isColumn": true,
                 "isFinished": false,
                 "highlightTags": [
                     {
-                        "name": "生活悬疑"
+                        "name": "奇幻"
                     },
                     {
-                        "name": "复仇计划"
+                        "name": "架空世界"
                     }
                 ],
                 "isInLibrary": false,
-                "id": "159517198"
+                "id": "107506859"
+            },
+            {
+                "title": "刀走妖心",
+                "cover": "https://img2.doubanio.com\/view\/ark_column_cover\/retina\/public\/35472803.jpg?v=1604888575",
+                "url": "\/column\/35472803\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "利利是是",
+                        "url": "\/author\/63810022\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "斩妖的要诀，是穿过骨与肉的层层防护，剥出那颗妖类特有的心。在这个妖祸四起的江湖上，凭着名为【诸恶莫作】的钢刀和娴熟的掏心技巧，猎妖人陈甲闯出了一片天。然而，斩破了无数颗妖心，他这颗人心却愈加彷徨……\n\n《刀走妖心 errant swordsman》的第一个大篇章《飞沙妖窟》",
+                "authorHighlight": "披着武侠外皮的灾难|悬疑|权谋|冒险故事",
+                "editorHighlight": "妖祸四起的江湖，猎妖人斩破了无数颗妖心，自己的心却愈加彷徨。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 94103,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "玄幻"
+                    },
+                    {
+                        "name": "架空世界"
+                    },
+                    {
+                        "name": "脑洞故事"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "162110509"
+            },
+            {
+                "title": "夜闯布达拉宫",
+                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/31559827.jpg?v=1557821530",
+                "url": "\/column\/31559827\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "雲隱",
+                        "url": "\/author\/63741730\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "凉州古寺之中，晋代灵均台下，水系与布达拉宫相连。\n我与张潮误入灵均台下暗河，竟一直走到了布达拉宫。那迷宫般的城堡内，过去的事情宛若记忆般轮番上演。我们遇到了被毒杀的九世达赖，渐渐分裂的三头金身，唱着情歌的仓央嘉措，松赞干布的秘密遗训……\n整座拉萨宛若时间之轮，在迷雾之中缓缓转动。而一切秘密的中心，就在大昭寺的觉康殿内。\n要想逃出时间的迷宫，必须解开这时轮坛城的奥秘。",
+                "authorHighlight": null,
+                "editorHighlight": null,
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 232693,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": true,
+                "highlightTags": [
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "109401693"
+            },
+            {
+                "title": "食肆故事",
+                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/31493438.jpg?v=1589165087",
+                "url": "\/column\/31493438\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "大头宝宝君",
+                        "url": "\/author\/63758074\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "在一家看似不起眼的小食店里，有位美艳的老板娘和年轻小伙计荠儿。表面上，他们掌握着令人着迷的美食密码。可你永远不知道，走进这家小食店的人背后有多少不为人知的神秘故事。而他们，就是串联起着一系列离奇故事的关键人物。",
+                "authorHighlight": "食肆，真的只是吃饭的地方吗？",
+                "editorHighlight": null,
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 375058,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": true,
+                "highlightTags": [
+                    {
+                        "name": "玄幻"
+                    },
+                    {
+                        "name": "脑洞故事"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "109143159"
+            },
+            {
+                "title": "穿越到了名不见经传的三流小说里",
+                "cover": "https://img3.doubanio.com\/view\/ark_column_cover\/retina\/public\/35229801.jpg?v=1601783175",
+                "url": "\/column\/35229801\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "沈藤萝",
+                        "url": "\/author\/63774064\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "少年和少女穿越到了一个疑似是小说世界的地方，为了回到原来的世界，决定并肩作战，完成剧情。但是原来以为只是蹩脚的名不见经传的悬疑小说，找到凶手就可以通关，两个人却在同行的过程中，对这小说的本质产生了怀疑。\n\n",
+                "authorHighlight": "以为是个穿越，却是个悬疑，以为是个悬疑，实际是个武侠……",
+                "editorHighlight": "少年和少女穿越到一部没有名气的武侠小说里，不断探索故事各种可能的模式。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 366085,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "159007637"
+            },
+            {
+                "title": "公元：时间牧人",
+                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/33508654.jpg?v=1599719318",
+                "url": "\/column\/33508654\/",
+                "isBundle": false,
+                "coverLabel": "vip-can-read-label",
+                "author": [
+                    {
+                        "name": "石径斜",
+                        "url": "\/author\/63776609\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "一次试验，一场迷雾，将两座相隔千年的城市重叠到同一时空。当古代与现代交融，过去和未来纠缠，相差两千年的人们，会如何应对彼此？时间，究竟是文明的福音，还是人类的囚牢？静水流深的历史长河，又隐藏着怎样的欲望和秘密、私心和伟大？",
+                "authorHighlight": null,
+                "editorHighlight": "一次试验，一场迷雾，将两座相隔千年的城市重叠到同一时空。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 213000,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": true,
+                "highlightTags": [
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "135713050"
+            },
+            {
+                "title": "鸮群：赛博时代的猎人们",
+                "cover": "https://img3.doubanio.com\/view\/ark_column_cover\/retina\/public\/35308591.jpg?v=1603079311",
+                "url": "\/column\/35308591\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "铸沙人",
+                        "url": "\/author\/63807504\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "二一零零年，东部第一枢纽都市，零上三十七度。在这座热岛的无人街道上疾驰着的他们，目标是阳光下狩猎者们不便触及的阴影中所暗藏的一切。寻求着心胜于物之道的异能人，在夹缝中生存的暴力团首领或是唯利是图的走私者。他们或许都是猎物，又或许都是同伴。这是猎人与猎物之间的故事，是鸮群与鼠群之间的故事。",
+                "authorHighlight": "赛博时代的都市传说，猎魔人和异能者的死斗！",
+                "editorHighlight": "赏金猎人 VS 异能少女，联手调查拯救赛博都市。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 207274,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "都市幻想"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "160040168"
+            },
+            {
+                "title": "大唐名人穿越实录",
+                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/32980045.jpg?v=1588838477",
+                "url": "\/column\/32980045\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "青溪客",
+                        "url": "\/author\/63713338\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "在8世纪和王维相见，又在21世纪和王维重逢，郁妍很激动。但当李白崔颢颜真卿杜牧鱼玄机温庭筠……都被传送到她家之后，她每天都担心自己会出现在社会新闻里：“幽州警方捣毁某小区一传销窝点，当场缴获赃款现金三十一元八角。该团伙发展下线的套路非常特别，所有成员均被洗脑，坚信自己从唐朝穿越而来。”\n她开始勤勤恳恳地帮（诱）助（骗）大家融入现代社会，直到——李白成了品酒微博大V，鱼玄机考中了公务员，崔颢做上了黄鹤楼的导游……\n她终于放心了。",
+                "authorHighlight": null,
+                "editorHighlight": "李白鱼玄机颜真卿反穿现代找工作，史上最不实用的21世纪就业指南。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 256691,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": true,
+                "highlightTags": [
+                    {
+                        "name": "都市幻想"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "131972119"
             }
         ]
     }

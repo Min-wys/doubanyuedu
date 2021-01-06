@@ -42,7 +42,6 @@ let channelWoman = require("./datas/channelWoman.json");
 
 router.get("/channel", function (ctx, next) {
   const id = ctx.request.url.split("?")[1].split("=")[1];
-  console.log(id, typeof id);
   // 进行判断返回的数据是什么
   switch (id) {
     case "1":
@@ -88,16 +87,38 @@ router.get("/channel", function (ctx, next) {
 
 // 返回category分类数据
 let categoryYanqingData = require("./datas/category/yanqing.json");
-// let categoryNvxingData = require("./datas/category/nvxing.json");
-// let categoryXuanyiData = require("./datas/category/xuanyi.json");
-// let categoryKehuanData = require("./datas/category/kehuan.json");
+let categoryNvxingData = require("./datas/category/nvxing.json");
+let categoryXuanyiData = require("./datas/category/xuanyi.json");
+let categoryKehuanData = require("./datas/category/kehuan.json");
 
 router.get("/category", function (ctx, next) {
-  console.log(ctx);
-  ctx.body = {
-    code: 200,
-    data: categoryYanqingData,
-  };
+  const kindId = ctx.request.url.split("?")[1].split("=")[1]
+  switch (kindId) {
+    case "1":
+      ctx.body = {
+        code: 200,
+        data: categoryYanqingData,
+      };
+      break;
+    case "2":
+      ctx.body = {
+        code: 200,
+        data: categoryNvxingData,
+      };
+      break;
+    case "3":
+      ctx.body = {
+        code: 200,
+        data: categoryXuanyiData,
+      };
+      break;
+    case "4":
+      ctx.body = {
+        code: 200,
+        data: categoryKehuanData,
+      };
+      break;
+  }
 });
 
 // 返回category分类类型筛选数据
