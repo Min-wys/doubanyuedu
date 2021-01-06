@@ -16,7 +16,9 @@
       </div>
       <h2>综合排行</h2>
     </div>
-     <div class="paihang"> <Zujian /> <Zujian />  <Zujian /> <Zujian /> <Zujian /> <Zujian /> </div>
+    <div class="paihang">
+      <Zujian /> <Zujian /> <Zujian /> <Zujian /> <Zujian /><Zujian />
+    </div>
   </div>
 </template>
 <script>
@@ -43,13 +45,15 @@ body {
 }
 /* h1标签 */
 .rank-container h1 {
-  margin: 30px 0;
+  margin: 40px 0;
   font-size: 30px;
-  padding: 0 25px;
+  padding: 0 50px;
+  color: #333;
 }
 .rank-container h2 {
-  padding: 0 25px;
+  padding: 0 50px;
   font-size: 24px;
+  margin: 40px 0;
 }
 .rank-search {
   display: flex;
@@ -68,14 +72,14 @@ body {
 }
 
 .rank-search span .rank-search-all {
-  font-size: 24px;
+  font-size: 20px;
   color: #333;
+  font-weight: bold;
 }
 .paihang {
   width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  
 }
 </style>
