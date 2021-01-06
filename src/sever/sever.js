@@ -40,7 +40,7 @@ let channelDanger = require("./datas/channelDanger.json");
 // 女性频道的推荐数据
 let channelWoman = require("./datas/channelWoman.json");
 
-router.get("/channel", function(ctx, next) {
+router.get("/channel", function (ctx, next) {
   const id = ctx.request.url.split("?")[1].split("=")[1];
   console.log(id, typeof id);
   // 进行判断返回的数据是什么
@@ -85,38 +85,38 @@ router.get("/channel", function(ctx, next) {
 });
 
 // 返回finishBoom完本频道的完本推荐数据
-let finishBoomData = require("./datas/finishBoom.json");
-router.get("/finishBoomData", function (ctx, next) {
-  ctx.body = {
-    code: 200,
-    data: finishBoomData,
-  };
-});
 
 // 返回category分类数据
-let categoryData = require("./datas/category/category.json");
+let categoryYanqingData = require("./datas/category/yanqing.json");
+// let categoryNvxingData = require("./datas/category/nvxing.json");
+// let categoryXuanyiData = require("./datas/category/xuanyi.json");
+// let categoryKehuanData = require("./datas/category/kehuan.json");
+
 router.get("/category", function (ctx, next) {
+  console.log(ctx);
   ctx.body = {
     code: 200,
-    data: categoryData,
+    data: categoryYanqingData,
   };
 });
 
-// 返回category加入书架数数据
-let categoryLibData = require("./datas/category/lib.json");
-router.get("/categorylib", function (ctx, next) {
+// 返回category分类类型筛选数据
+let categoryTypeData = require("./datas/category/classification.json");
+router.get("/categoryType", function (ctx, next) {
   ctx.body = {
     code: 200,
-    data: categoryLibData,
+    data: categoryTypeData,
   };
 });
+
 
 // 悬疑频道的新作数据
 let channelNewWork = require("./datas/channelNewWork.json");
 // 女性频道的新作数据
+let finishBoomData = require("./datas/finishBoom.json");
 let channelWomanNewwork = require("./datas/channelWomanNewwork.json");
 
-router.get("/finishBoomData", function(ctx, next) {
+router.get("/finishBoomData", function (ctx, next) {
   const id = ctx.request.url.split("?")[1].split("=")[1];
   // console.log(id, typeof id);
   // 进行判断返回的数据是什么
@@ -167,7 +167,7 @@ let channelDangerUrlList = require("./datas/channelDangerUrlList.json");
 // 女性频道的图片数据
 let chanelWomanUrlList = require("./datas/chanelWomanUrlList.json");
 
-router.get("/channelUrlList", function(ctx, next) {
+router.get("/channelUrlList", function (ctx, next) {
   const id = ctx.request.url.split("?")[1].split("=")[1];
   // console.log(id, typeof id);
   // 进行判断返回的数据是什么
@@ -211,7 +211,7 @@ router.get("/channelUrlList", function(ctx, next) {
   }
 });
 
-// 返回六个频道数据
+// 返回finishBoom完本推荐的完本推荐数据
 let sixChannelList = require("./datas/sixChannelList.json");
 router.get("/sixchannellist", function (ctx, next) {
   ctx.body = {
@@ -219,17 +219,9 @@ router.get("/sixchannellist", function (ctx, next) {
     data: sixChannelList,
   };
 });
-// 返回悬疑频道的重磅推荐数据
-// let channelDangerData = require("./datas/channelDanger.json");
-// router.get("/chnnelDanger", function(ctx, next) {
-//   ctx.body = {
-//     code: 200,
-//     data: channelDangerData,
-//   };
-// });
 // 返回征稿数据
 let draft = require("./datas/draft.json");
-router.get("/draft", function(ctx, next) {
+router.get("/draft", function (ctx, next) {
   ctx.body = {
     code: 200,
     data: draft,

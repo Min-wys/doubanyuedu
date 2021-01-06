@@ -47,10 +47,50 @@
         </div>
         <!-- 分块区域 -->
         <ul class="category" v-show="channelId === '1'">
-          <li>生活悬疑</li>
-          <li>罪案故事</li>
-          <li>复仇计划</li>
-          <li>推理迷迭</li>
+          <li
+            @click="
+              $router.replace({
+                name: 'Category',
+                query: { tags: '言情小说' },
+                params: { id: 1 },
+              })
+            "
+          >
+            言情小说
+          </li>
+          <li
+            @click="
+              $router.replace({
+                name: 'Category',
+                query: { tags: '女性小说' },
+                params: { id: 2 },
+              })
+            "
+          >
+            女性小说
+          </li>
+          <li
+            @click="
+              $router.replace({
+                name: 'Category',
+                query: { tags: '悬疑小说' },
+                params: { id: 3 },
+              })
+            "
+          >
+            悬疑小说
+          </li>
+          <li
+            @click="
+              $router.replace({
+                name: 'Category',
+                query: { tags: '科幻小说' },
+                params: { id: 4 },
+              })
+            "
+          >
+            科幻小说
+          </li>
         </ul>
       </div>
     </div>
@@ -63,20 +103,13 @@
     <!-- 走马灯区域 -->
     <div class="general">
       <div class="generalInner" v-for="title in titleList" :key="title.id">
-        <General :data="generalData" :title="title.title"/>
+        <General :data="generalData" :title="title.title" />
       </div>
     </div>
-    <!-- <div class="general">
-      <div class="generalInner">
-        <General :data="generalData" />
-      </div>
-    </div> -->
   </div>
 </template>
 
 <script>
-// 引入头部组件
-// import Header from "../../components/Header";
 // 引入公共的走马灯
 import General from "../../components/General";
 import formatArray from "../../utils/formatArray";
@@ -98,7 +131,7 @@ export default {
       channelId: "1",
       title: "",
       channelUrlList: [],
-      titleList:[]
+      titleList: [],
     };
   },
   // 放在beforeCreate中，能够在Recommend组件创建前得到最新的id值，去发送请求
