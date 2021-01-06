@@ -170,7 +170,12 @@
                 <div class="extra_info">
                   <a href="javascript:;">{{ item.kinds[0].shortName }}</a>
                   <span class="separator"></span>
-                  <span>{{ item.wordCount }}</span>
+                  <span
+                    >{{
+                      Math.floor((+item.wordCount / 10000) * 10) / 10
+                    }}
+                    万字</span
+                  >
                   <span
                     :class="{
                       separator: item.highlightTags[0] ? true : false,
@@ -221,11 +226,6 @@ export default {
       classification: [],
       screenList: [],
     };
-  },
-  computed: {
-    wordCount(count) {
-      return Math.floor((count / 10000) * 10) / 10;
-    },
   },
   methods: {
     // 请求分类数据
