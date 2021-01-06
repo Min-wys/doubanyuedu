@@ -5,6 +5,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 
 const Home = () => import(/* webpackChunkName: "Home" */ "../views/Home");
+const Category = () =>
+  import(/* webpackChunkName: "Category"*/ "../views/category");
 const Channel = () =>
   import(/* webpackChunkName: "Home" */ "../views/Channel/Channel.vue");
 const OneStory = () =>
@@ -35,6 +37,11 @@ const router = new VueRouter({
     {
       path: "/",
       component: Home,
+    },
+    {
+      path: "/category",
+      component: Category,
+      name: "Category",
     },
     {
       path: "/channel/:id",

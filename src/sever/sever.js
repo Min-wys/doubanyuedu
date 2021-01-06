@@ -187,6 +187,32 @@ router.get("/channelUrlList", function(ctx, next) {
 });
 
 // 返回六个频道数据
+router.get("/finishBoomData", function(ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: finishBoomData,
+  };
+});
+
+// 返回category分类数据
+let categoryData = require("./datas/category/category.json");
+router.get("/category", function(ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: categoryData,
+  };
+});
+
+// 返回category加入书架数数据
+let categoryLibData = require("./datas/category/lib.json");
+router.get("/categorylib", function(ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: categoryLibData,
+  };
+});
+
+// 返回finishBoom完本推荐的完本推荐数据
 let sixChannelList = require("./datas/sixChannelList.json");
 router.get("/sixchannellist", function(ctx, next) {
   ctx.body = {
@@ -194,14 +220,6 @@ router.get("/sixchannellist", function(ctx, next) {
     data: sixChannelList,
   };
 });
-// 返回悬疑频道的重磅推荐数据
-// let channelDangerData = require("./datas/channelDanger.json");
-// router.get("/chnnelDanger", function(ctx, next) {
-//   ctx.body = {
-//     code: 200,
-//     data: channelDangerData,
-//   };
-// });
 // 返回征稿数据
 let draft = require("./datas/draft.json");
 router.get("/draft", function(ctx, next) {
