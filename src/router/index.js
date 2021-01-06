@@ -39,7 +39,7 @@ const router = new VueRouter({
       component: Home,
     },
     {
-      path: "/category",
+      path: "/category/:id",
       component: Category,
       name: "Category",
     },
@@ -54,5 +54,9 @@ const router = new VueRouter({
       name: "OneStory",
     },
   ],
+  // 每次切换路由页面滚动条位置
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
 });
 export default router;

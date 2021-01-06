@@ -1,6 +1,6 @@
 <template>
   <div class="reco">
-    <div class="recoImg">
+    <div class="recoImg" @click="toOneStory">
       <img :src="recommendItem.cover" alt="" />
     </div>
     <div class="info">
@@ -18,6 +18,12 @@
 export default {
   name: "RecommendItem",
   props: ["recommendItem"],
+  methods: {
+    toOneStory() {
+      this.$store.commit("REPLACE_BOOK", this.recommendItem);
+      this.$router.push("/OneStory");
+    },
+  },
 };
 </script>
 

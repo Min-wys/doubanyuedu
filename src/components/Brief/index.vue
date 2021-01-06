@@ -1,7 +1,9 @@
 <template>
   <div class="Brief">
-    <img :src="book.cover" alt="" class="img" />
-    <h4>{{ book.title }}</h4>
+    <div @click="toOneStory">
+      <img :src="book.cover" alt="" class="img" />
+      <h4>{{ book.title }}</h4>
+    </div>
     <a :href="'https://read.douban.com' + book.author[0].url">{{
       book.author[0].name
     }}</a>
@@ -33,6 +35,12 @@
 export default {
   name: "Brief",
   props: ["book"],
+  methods: {
+    toOneStory() {
+      this.$store.commit("REPLACE_BOOK", this.book);
+      this.$router.push("/OneStory");
+    },
+  },
 };
 </script>
 

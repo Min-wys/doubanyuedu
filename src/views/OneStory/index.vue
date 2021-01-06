@@ -10,25 +10,27 @@
           </div>
           <p class="arrows">></p>
           <div>
-            <span>原创作品</span>
+            <span>优质作品</span>
           </div>
           <p class="arrows">></p>
           <div>
-            <span>当后妈这件小事</span>
+            <span>{{ book.title }}</span>
           </div>
         </div>
         <!-- 小说的题目 -->
-        <h1 class="sroryTitle"><span>当后妈这件小事</span></h1>
+        <h1 class="sroryTitle">
+          <span>{{ book.title }}</span>
+        </h1>
         <!-- 作者头像加名字 -->
         <div class="authorMessage">
           <div class="headPortrait">
-            <img src="../../assets/image/10136.jpg" alt="" />
+            <img :src="book.cover" alt="" />
           </div>
-          <span>鹿哈哈</span>
+          <span>{{ book.author[0].name }}</span>
         </div>
         <!-- 个性签名 -->
         <div class="signature">
-          <span>陈多多原本只想好好谈个恋爱，却谈成了后妈界的质优临时工。</span>
+          <span>{{ book.editorHighlight }}</span>
         </div>
       </div>
     </div>
@@ -48,23 +50,26 @@
       <!-- 蓝色标签区域 -->
       <div class="blueTag">
         <p>></p>
-        <span>女性小说</span>
+        <span>{{ book.kinds ? book.kinds[0].shortName : "连载" }}小说</span>
         <p>></p>
-        <span>治愈</span>
-        <span>治愈</span>
-        <span>治愈喜剧</span>
-        <span>职业女性</span>
-        <span>家庭故事</span>
+        <div v-if="book.highlightTags">
+          <span v-for="(tag, index) in book.highlightTags" :key="index">{{
+            tag.name
+          }}</span>
+        </div>
+        <span>治愈无聊</span>
+        <span>倾心制作</span>
+        <span>努力</span>
       </div>
       <!-- 四个白色块块 -->
       <ul class="whileBlock">
         <li>
           <span>字数</span>
-          <strong>33,504</strong>
+          <strong>{{ book.id }}</strong>
         </li>
         <li>
           <span>阅读</span>
-          <strong>231</strong>
+          <strong>{{ book.ratingCount || "0" }}</strong>
         </li>
         <li>
           <span>加入书架</span>
@@ -72,7 +77,7 @@
         </li>
         <li>
           <span>推荐票</span>
-          <strong>0</strong>
+          <strong>{{ book.averageRating || "0" }}</strong>
         </li>
       </ul>
       <!-- 810px -->
@@ -83,170 +88,96 @@
         </div>
         <!--  简介内容-->
         <div class="introContent">
-          多亏了疫情，陈多多才知道男友竟然有一个私生子“小秋”。彼时，男友被困国外，而孩子的亲妈被送进了手术室。陈多多临危受命，不得不从医院带着小秋回家，硬起头皮当起了临时“后妈”。面对爸妈和七大姑、八大姨的质问，面对疫情导致的一系列突发情况，面对小秋被长期校园霸凌而导致的奇怪性格，陈多多仿佛一夜成长……
+          {{ book.abstract || book.editorHighlight }}
         </div>
         <!-- 目录 -->
         <div class="intro catalog">
-          <span>目录 (35)</span>
+          <span>目录 ({{ sectionList.total }})</span>
           <div class="label">
             <label>
-              <input type="checkbox" />
+              <input type="checkbox" @click="newBeforeClick" />
               新发表在前
             </label>
             <label>
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                @click="showSectionText = !showSectionText"
+              />
               显示简介
             </label>
           </div>
         </div>
         <!-- 章节 -->
         <ul class="section">
-          <li class="sectionContent">
-            <h3>1 相亲</h3>
-            <div class="sectionText">
-              筱柒立在浮生食肆门前，呆望了许久。面前这座食肆看着并无特别之处。门面装潢古朴，几丈见方的厅堂摆着六台食案，一个雕花的沉香木大柜台。柜台后面是纱制卷帘遮掩的厨房，隐约可见一架摆满各种精致厨具的碗柜。放眼望去，肆里陈设及布局都一览无余他还要筱柒立在浮生食肆门前，呆望了许久。面前这座食肆看着并无特别之处。门面装潢古朴，几丈见方的厅堂摆着六台食案，一个雕花的沉香木大柜台。柜台后面是纱制卷帘遮掩的厨房，隐约可见一架摆满各种精致厨具的碗柜。放眼望去，肆里陈设及布局都一览无余他还要
-            </div>
-            <div class="sectionTime">
-              <span>2020-12-02</span>
-              <span>阅读 1,493 讨论 0</span>
-            </div>
-          </li>
-          <li class="sectionContent">
-            <h3>1 相亲</h3>
-            <div class="sectionText">
-              筱柒立在浮生食肆门前，呆望了许久。面前这座食肆看着并无特别之处。门面装潢古朴，几丈见方的厅堂摆着六台食案，一个雕花的沉香木大柜台。柜台后面是纱制卷帘遮掩的厨房，隐约可见一架摆满各种精致厨具的碗柜。放眼望去，肆里陈设及布局都一览无余他还要筱柒立在浮生食肆门前，呆望了许久。面前这座食肆看着并无特别之处。门面装潢古朴，几丈见方的厅堂摆着六台食案，一个雕花的沉香木大柜台。柜台后面是纱制卷帘遮掩的厨房，隐约可见一架摆满各种精致厨具的碗柜。放眼望去，肆里陈设及布局都一览无余他还要
-            </div>
-            <div class="sectionTime">
-              <span>2020-12-02</span>
-              <span>阅读 1,493 讨论 0</span>
-            </div>
-          </li>
-          <li class="sectionContent">
-            <h3>1 相亲</h3>
-            <div class="sectionText">
-              筱柒立在浮生食肆门前，呆望了许久。面前这座食肆看着并无特别之处。门面装潢古朴，几丈见方的厅堂摆着六台食案，一个雕花的沉香木大柜台。柜台后面是纱制卷帘遮掩的厨房，隐约可见一架摆满各种精致厨具的碗柜。放眼望去，肆里陈设及布局都一览无余他还要筱柒立在浮生食肆门前，呆望了许久。面前这座食肆看着并无特别之处。门面装潢古朴，几丈见方的厅堂摆着六台食案，一个雕花的沉香木大柜台。柜台后面是纱制卷帘遮掩的厨房，隐约可见一架摆满各种精致厨具的碗柜。放眼望去，肆里陈设及布局都一览无余他还要
-            </div>
-            <div class="sectionTime">
-              <span>2020-12-02</span>
-              <span>阅读 1,493 讨论 0</span>
+          <li
+            class="sectionContent"
+            v-for="section in sectionList.list"
+            :key="section.id"
+          >
+            <h3>{{ section.title }}</h3>
+            <div v-show="showSectionText">
+              <div class="sectionText">
+                {{ section.abstract }}
+              </div>
+              <div class="sectionTime">
+                <span>{{ section.onSaleTime }}</span>
+                <span
+                  >阅读 {{ section.readCount }} 讨论
+                  {{ section.commentCount }}</span
+                >
+              </div>
             </div>
           </li>
           <li class="sectionContent">
-            <h3>1 相亲</h3>
-            <div class="sectionText">
-              筱柒立在浮生食肆门前，呆望了许久。面前这座食肆看着并无特别之处。门面装潢古朴，几丈见方的厅堂摆着六台食案，一个雕花的沉香木大柜台。柜台后面是纱制卷帘遮掩的厨房，隐约可见一架摆满各种精致厨具的碗柜。放眼望去，肆里陈设及布局都一览无余他还要筱柒立在浮生食肆门前，呆望了许久。面前这座食肆看着并无特别之处。门面装潢古朴，几丈见方的厅堂摆着六台食案，一个雕花的沉香木大柜台。柜台后面是纱制卷帘遮掩的厨房，隐约可见一架摆满各种精致厨具的碗柜。放眼望去，肆里陈设及布局都一览无余他还要
-            </div>
-            <div class="sectionTime">
-              <span>2020-12-02</span>
-              <span>阅读 1,493 讨论 0</span>
-            </div>
-          </li>
-          <li class="sectionContent">
-            <h3>1 相亲</h3>
-            <div class="sectionText">
-              筱柒立在浮生食肆门前，呆望了许久。面前这座食肆看着并无特别之处。门面装潢古朴，几丈见方的厅堂摆着六台食案，一个雕花的沉香木大柜台。柜台后面是纱制卷帘遮掩的厨房，隐约可见一架摆满各种精致厨具的碗柜。放眼望去，肆里陈设及布局都一览无余他还要筱柒立在浮生食肆门前，呆望了许久。面前这座食肆看着并无特别之处。门面装潢古朴，几丈见方的厅堂摆着六台食案，一个雕花的沉香木大柜台。柜台后面是纱制卷帘遮掩的厨房，隐约可见一架摆满各种精致厨具的碗柜。放眼望去，肆里陈设及布局都一览无余他还要
-            </div>
-            <div class="sectionTime">
-              <span>2020-12-02</span>
-              <span>阅读 1,493 讨论 0</span>
-            </div>
-          </li>
-          <li class="sectionContent">
-            <span class="examine">查看全部目录</span>
+            <span class="examine" @click="manyToClose">{{
+              manySection ? "点击查看更多" : "收起"
+            }}</span>
           </li>
         </ul>
         <!-- 评论区域 -->
         <div class="intro">
-          <span>评论 （41）</span>
+          <span>评论 {{ introList.commentTotal }}</span>
         </div>
         <!-- 评论内容 -->
         <ul class="remark">
-          <li>
+          <li v-for="item in introList.comments" :key="item.id">
             <!-- 头像 -->
             <div class="remarkHead">
-              <img src="../../assets/image/35411087.jpg" alt="" />
+              <img :src="item.user.avatar" alt="" />
             </div>
             <div class="remarkDetail">
-              <p class="remarkName">凤凰池</p>
-              <span>01-03 发表书评</span>
-              <p class="remarkText">好看的，沈丁香和孙宥谦好可惜啊</p>
-              <div class="remarkBottom">
+              <p class="remarkName">{{ item.user.name }}</p>
+              <span>{{ item.createTime }} </span>
+              <span
+                >发表{{ item.commentType === "Review" ? "书评" : "讨论" }}</span
+              >
+              <!-- 白色块 -->
+              <div class="remarkDetailWhite" v-if="item.refDiscussion">
+                <div>
+                  <span>{{ item.refDiscussion.user.name }}</span>
+                  <span>{{ item.refDiscussion.createTime }}</span>
+                </div>
+                <span>{{ item.refDiscussion.content }}</span>
+              </div>
+              <p class="remarkText">{{ item.content }}</p>
+              <div class="remarkBottom" v-show="item.commentType === 'Review'">
                 <div class="remarkBottomSection">
-                  <span>赞 0</span>
+                  <span>赞 {{ item.upvoteCount }}</span>
                 </div>
                 <div class="remarkBottomSection">
-                  <span>回复 0</span>
+                  <span>回复 {{ item.commentCount }}</span>
                 </div>
                 <div class="remarkBottomSection">
                   <span>分享 ></span>
                 </div>
               </div>
-              <div class="remarkBottomTwo">
+              <div
+                class="remarkBottomTwo"
+                v-show="item.commentType === 'Discussion'"
+              >
                 <div class="remarkBottomTwLeft">
                   <span>章节</span>
-                  <p>守护.水晶龙凤糕</p>
-                </div>
-                <div class="remarkBottomSection">
-                  <span>写回复</span>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <!-- 头像 -->
-            <div class="remarkHead">
-              <img src="../../assets/image/35411087.jpg" alt="" />
-            </div>
-            <div class="remarkDetail">
-              <p class="remarkName">凤凰池</p>
-              <span>01-03 发表书评</span>
-              <p class="remarkText">好看的，沈丁香和孙宥谦好可惜啊</p>
-              <div class="remarkBottom">
-                <div class="remarkBottomSection">
-                  <span>赞 0</span>
-                </div>
-                <div class="remarkBottomSection">
-                  <span>回复 0</span>
-                </div>
-                <div class="remarkBottomSection">
-                  <span>分享 ></span>
-                </div>
-              </div>
-              <div class="remarkBottomTwo">
-                <div class="remarkBottomTwLeft">
-                  <span>章节</span>
-                  <p>守护.水晶龙凤糕</p>
-                </div>
-                <div class="remarkBottomSection">
-                  <span>写回复</span>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <!-- 头像 -->
-            <div class="remarkHead">
-              <img src="../../assets/image/35411087.jpg" alt="" />
-            </div>
-            <div class="remarkDetail">
-              <p class="remarkName">凤凰池</p>
-              <span>01-03 发表书评</span>
-              <p class="remarkText">好看的，沈丁香和孙宥谦好可惜啊</p>
-              <div class="remarkBottom">
-                <div class="remarkBottomSection">
-                  <span>赞 0</span>
-                </div>
-                <div class="remarkBottomSection">
-                  <span>回复 0</span>
-                </div>
-                <div class="remarkBottomSection">
-                  <span>分享 ></span>
-                </div>
-              </div>
-              <div class="remarkBottomTwo">
-                <div class="remarkBottomTwLeft">
-                  <span>章节</span>
-                  <p>守护.水晶龙凤糕</p>
+                  <p>{{ item.works.title }}</p>
                 </div>
                 <div class="remarkBottomSection">
                   <span>写回复</span>
@@ -261,8 +192,48 @@
 </template>
 
 <script>
+import { mapState, mapActions, mapMutations } from "vuex";
 export default {
   name: "OneStory",
+  data() {
+    return {
+      showSectionText: true, // 章节显示
+      newBefore: true, // 最新在前
+      manySection: true, // 收起和加载更多的开关
+    };
+  },
+  computed: {
+    ...mapState({
+      book: (state) => state.onestory.book,
+      sectionList: (state) => state.onestory.sectionList,
+      introList: (state) => state.onestory.introList,
+    }),
+  },
+  methods: {
+    ...mapActions(["getSectionList", "getIntroList"]),
+    ...mapMutations([
+      "SORT_SECTION_LIST",
+      "CONCAT_SECTION_LIST",
+      "CLOSE_SECTION_LIST",
+    ]),
+    // 点击让最新章节在前
+    newBeforeClick() {
+      this.SORT_SECTION_LIST(this.newBefore);
+      // 来回切换显示
+      this.newBefore = !this.newBefore;
+    },
+    // 收起和加载更多的开关
+    manyToClose() {
+      // true 是 加载更多 发送加载更多的数据
+      this.manySection ? this.CONCAT_SECTION_LIST() : this.CLOSE_SECTION_LIST();
+      // 取反
+      this.manySection = !this.manySection;
+    },
+  },
+  async mounted() {
+    await this.getSectionList();
+    await this.getIntroList();
+  },
 };
 </script>
 
@@ -505,6 +476,18 @@ export default {
       }
       span {
         color: #a6a6a6;
+      }
+      .remarkDetailWhite {
+        margin: 20px 20px 0px 12px;
+        padding: 10px 12px;
+        border-left: 1px solid #ddd;
+        background: #fff;
+        font-size: 12px;
+        span {
+          color: #777;
+          margin-right: 5px;
+          line-height: 1.5;
+        }
       }
     }
     .remarkText {

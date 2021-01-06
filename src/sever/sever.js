@@ -42,7 +42,6 @@ let channelWoman = require("./datas/channelWoman.json");
 
 router.get("/channel", function(ctx, next) {
   const id = ctx.request.url.split("?")[1].split("=")[1];
-  console.log(id, typeof id);
   // 进行判断返回的数据是什么
   switch (id) {
     case "1":
@@ -226,6 +225,24 @@ router.get("/draft", function(ctx, next) {
   ctx.body = {
     code: 200,
     data: draft,
+  };
+});
+
+// 返回OneStory的章节数据
+let oneStorySectionData = require("./datas/oneStory/section.json");
+router.get("/oneStorySectionData", function(ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: oneStorySectionData,
+  };
+});
+
+// 返回OneStory的评论数据
+let oneStoryIntroData = require("./datas/oneStory/intro.json");
+router.get("/oneStoryIntroData", function(ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: oneStoryIntroData,
   };
 });
 
