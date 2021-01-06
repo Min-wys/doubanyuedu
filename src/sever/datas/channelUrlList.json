@@ -1,0 +1,22 @@
+{
+  "data": {
+    "worksList": [
+      {
+        "id": "1",
+        "url": "https://wx1.sinaimg.cn/mw690/007uZ0mCgy1gmcv6r7pyrj32800ci432.jpg"
+      },
+      {
+        "id": "2",
+        "url": "https://wx1.sinaimg.cn/mw690/007uZ0mCgy1gmcv6rqhorj32800ci4dd.jpg"
+      },
+      {
+        "id": "3",
+        "url": "https://wx2.sinaimg.cn/mw690/007uZ0mCgy1gmcv6rhjhkj32800cigqd.jpg"
+      }
+    ],
+    "titleList": [
+      { "id": "1", "title": "完本畅销" },
+      { "id": "2", "title": "新近完结" }
+    ]
+  }
+}

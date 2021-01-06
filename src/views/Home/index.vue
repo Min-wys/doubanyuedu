@@ -1,7 +1,5 @@
 <template>
   <div>
-    <!-- <Header />
-    <Banner /> -->
     <Banner />
     <div class="general-widget">
       <div class="section-container">
@@ -53,15 +51,17 @@
         <General :data="hotData" :title="'签约新作'" />
       </div>
     </div>
+    <GridGroup :data="draftList" :title="'「新家庭故事」主题征稿'" />
+    <GridGroup :data="draftList" :title="'最近更新'" />
   </div>
 </template>
 
 <script>
-// import Channel from
 // import Header from "../../components/Header";
 import Banner from "../../components/Banner";
 import General from "../../components/General";
 import HomeRecommend from "../../components/HomeRecommend";
+import GridGroup from "../../components/GridGroup";
 import formatArray from "../../utils/formatArray";
 export default {
   name: "Home",
@@ -69,6 +69,7 @@ export default {
     return {
       hotData: [],
       channelList: [],
+      draftList: [],
     };
   },
   methods: {
@@ -81,26 +82,42 @@ export default {
       });
       this.isShow = false;
     },
+    /* 获取热门数据 */
+    async getHotData() {
+      const result = await this.$API.home.getHotData();
+      this.hotData = formatArray(result.data.worksList, 5);
+    },
+    /* 获取推荐数据 */
+    async getChannelList() {
+      const channelList = await this.$API.home.getChannelList();
+      this.channelList = channelList.data.worksList;
+    },
+    /* 获取数据 */
+    async getDraftList() {
+      const draftList = await this.$API.home.getDraftList();
+      this.draftList = draftList.data.worksList;
+    },
   },
-  async mounted() {
-    const result = await this.$API.home.getHotData();
-    this.hotData = formatArray(result.data.worksList, 5);
-    const list = await this.$API.home.getChannelList();
-    this.channelList = list.data.worksList;
+  mounted() {
+    this.getHotData();
+    this.getChannelList();
+    this.getDraftList();
   },
   components: {
     // Header,
     Banner,
     General,
     HomeRecommend,
+    GridGroup,
   },
 };
 </script>
 
 <style lang="less" scoped>
 .section-outer {
-  width: 1300px;
-  min-width: 1300px;
+  // width: 1200px;
+  // min-width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .section-bottom {
@@ -207,5 +224,8 @@ export default {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   color: #333;
   padding: 0 20px;
+}
+.widget-channel-container {
+  background-color: #f8f9f9;
 }
 </style>

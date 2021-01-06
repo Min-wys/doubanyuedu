@@ -26,8 +26,9 @@ export default {
   components: {
     RecommendItem,
   },
+  props: ["channelId"],
   async mounted() {
-    const result = await this.$API.chnnel.channel();
+    const result = await this.$API.chnnel.channel(this.channelId);
     // 对请求回来的数据进行处理
     let channelList = formatArray(result.data.worksList, 2);
     this.channelList = channelList;

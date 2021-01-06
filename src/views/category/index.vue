@@ -93,50 +93,50 @@
                   </li>
                   <li
                     class="select-option"
-                    :class="{ selected: options.kind === 502 }"
-                    @click="setCategory('kind', 502)"
+                    :class="{ selected: options.kind === 532 }"
+                    @click="setCategory('kind', 532)"
                   >
                     女性小说
                   </li>
                   <li
                     class="select-option"
-                    :class="{ selected: options.kind === 503 }"
-                    @click="setCategory('kind', 503)"
+                    :class="{ selected: options.kind === 508 }"
+                    @click="setCategory('kind', 508)"
                   >
                     悬疑小说
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.kind === 504 }"
-                    @click="setCategory('kind', 504)"
-                  >
-                    科幻小说
                   </li>
                   <li
                     class="select-option"
                     :class="{ selected: options.kind === 505 }"
                     @click="setCategory('kind', 505)"
                   >
-                    幻想小说
+                    科幻小说
                   </li>
                   <li
                     class="select-option"
                     :class="{ selected: options.kind === 506 }"
                     @click="setCategory('kind', 506)"
                   >
+                    幻想小说
+                  </li>
+                  <li
+                    class="select-option"
+                    :class="{ selected: options.kind === 503 }"
+                    @click="setCategory('kind', 503)"
+                  >
                     文艺小说
                   </li>
                   <li
                     class="select-option"
-                    :class="{ selected: options.kind === 507 }"
-                    @click="setCategory('kind', 507)"
+                    :class="{ selected: options.kind === 510 }"
+                    @click="setCategory('kind', 510)"
                   >
                     历史小说
                   </li>
                   <li
                     class="select-option"
-                    :class="{ selected: options.kind === 508 }"
-                    @click="setCategory('kind', 508)"
+                    :class="{ selected: options.kind === 516 }"
+                    @click="setCategory('kind', 516)"
                   >
                     非小说
                   </li>

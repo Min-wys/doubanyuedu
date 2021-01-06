@@ -2,19 +2,19 @@
 import request from "../../utils/request";
 
 export default {
-  channel() {
+  channel(id) {
     return request({
-      url: "/channel",
+      url: `/channel?id=${id}`,
     });
   },
-  finishBoomData() {
+  finishBoomData(id) {
     return request({
-      url: "/finishBoomData",
+      url: `/finishBoomData?id=${id}`,
     });
   },
-  dangerData() {
+  channelUrlList(id) {
     return request({
-      url: "/finishBoomData",
+      url: `/channelUrlList?id=${id}`,
     });
   },
 };
