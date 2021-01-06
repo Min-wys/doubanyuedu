@@ -4,7 +4,7 @@
       <router-link to="/" class="site-logo"></router-link>
       <nav class="func-nav">
         <ul>
-          <li>分类</li>
+          <li class="nav-category" @click="isCategory = !isCategory">分类</li>
           <li>搜索</li>
         </ul>
       </nav>
@@ -32,12 +32,34 @@
         <router-link to="">注册</router-link>
       </div>
     </div>
+    <div class="category" v-if="isCategory">
+      <div class="category-con">
+        <h2 class="category-title">
+          <a href="" style="color: #333">原创作品</a>
+        </h2>
+        <div>
+          <a href="" class="btn-link">言情小说</a>
+          <a href="" class="btn-link">女性小说</a>
+          <a href="" class="btn-link">悬疑小说</a>
+          <a href="" class="btn-link">科幻小说</a>
+          <a href="" class="btn-link">幻想小说</a>
+          <a href="" class="btn-link">文艺小说</a>
+          <a href="" class="btn-link">历史小说</a>
+          <a href="" class="btn-link">非小说</a>
+        </div>
+      </div>
+    </div>
   </header>
 </template>
 
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      isCategory: false,
+    };
+  },
 };
 </script>
 
@@ -48,7 +70,7 @@ export default {
   top: 0;
   width: 100%;
   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background-color: #FFF;
+  background-color: #fff;
 }
 .header-inner {
   display: flex;
@@ -125,5 +147,22 @@ export default {
   padding: 0 17px;
   font-size: 14px;
   color: #000;
+}
+.category {
+  margin-top: 30px;
+  overflow: hidden;
+}
+.category-con {
+  width: 1136px;
+  margin: 0 auto 30px;
+}
+.category-title {
+  margin-bottom: 20px;
+}
+.btn-link {
+  margin-right: 5px;
+}
+.nav-category{
+  cursor: pointer;
 }
 </style>

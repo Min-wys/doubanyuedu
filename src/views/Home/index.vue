@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="startList[0]">
     <Banner />
     <div class="general-widget">
       <div class="section-container">
@@ -44,32 +44,40 @@
     <div class="section-outer">
       <HomeRecommend />
     </div>
-    <div class="section-bottom">
-      <div class="section-bottom-bgc">
-        <General :data="hotData" :title="'畅销作品'" />
-        <General :data="hotData" :title="'每周精品'" />
-        <General :data="hotData" :title="'签约新作'" />
-      </div>
-    </div>
-    <GridGroup :data="draftList" :title="'「新家庭故事」主题征稿'" />
-    <GridGroup :data="draftList" :title="'最近更新'" />
+    <!-- <div class="section-bottom">
+      <div class="section-bottom-bgc"> -->
+    <General :data="hotData" :title="'畅销作品'" />
+    <General :data="weeklyList" :title="startList[0].data.title" />
+    <General :data="recNewList" :title="startList[1].data.title" />
+    <!-- </div>
+    </div> -->
+    <GridGroup :data="recentlyList_1" :title="startList[3].data.title" />
+    <GridGroup :data="recentlyList_2" :title="startList[4].data.title" />
+    <Like :data="likeList" @click="refreshLikeList" />
   </div>
 </template>
 
 <script>
-// import Header from "../../components/Header";
 import Banner from "../../components/Banner";
 import General from "../../components/General";
 import HomeRecommend from "../../components/HomeRecommend";
 import GridGroup from "../../components/GridGroup";
+import Like from "../../components/Like";
 import formatArray from "../../utils/formatArray";
 export default {
   name: "Home",
   data() {
     return {
-      hotData: [],
+      startList: [] /* 首页起始数据 */,
+      weeklyList: [] /* 每周精品数据 */,
+      recNewList: [] /* 签约新作数据 */,
+      recentlyList_1: [] /* 最近更新数据1 */,
+      recentlyList_2: [] /* 最近更新数据2 */,
+      likeList: [] /* 猜你喜欢数据 */,
+      index: 0 /* 用于刷新猜你喜欢数据 */,
+
+      hotData: [] /* 畅销作品数据 */,
       channelList: [],
-      draftList: [],
     };
   },
   methods: {
@@ -87,21 +95,72 @@ export default {
       const result = await this.$API.home.getHotData();
       this.hotData = formatArray(result.data.worksList, 5);
     },
-    /* 获取推荐数据 */
+    /* 获取导航数据 */
     async getChannelList() {
       const channelList = await this.$API.home.getChannelList();
       this.channelList = channelList.data.worksList;
     },
-    /* 获取数据 */
-    async getDraftList() {
-      const draftList = await this.$API.home.getDraftList();
-      this.draftList = draftList.data.worksList;
+    /* 封装获取数据函数 */
+    async getHomeData(worksIds, query) {
+      const result = await this.$API.doubanhome.getHomeData(worksIds, query);
+      return result.data.data.worksList;
+    },
+    /* 请求猜你喜欢的数据 */
+    getLikeData() {
+      this.getHomeData(
+        this.likeIds[this.index],
+        "\n          query getWorksList($worksIds: [ID!]) {\n            worksList(worksIds: $worksIds) {\n              \n      id\n      \n    \n    title\n    cover\n    url\n    isBundle\n    coverLabel\n  \n    \n    url\n    title\n  \n    \n    author {\n      name\n      url\n    }\n    origAuthor {\n      name\n      url\n    }\n  \n    \n  abstract\n  authorHighlight\n  editorHighlight\n\n    \n    isEssay\n    \n    ... on EssayWorks {\n      favorCount\n    }\n  \n    \n    \n    averageRating\n    ratingCount\n    url\n  \n  \n  \n    kinds { \n    name @skip(if: true)\n    shortName @include(if: true)\n    id\n   }\n    highlightTags { name }\n    \n  \n    \n            }\n          }\n        "
+      ).then((res) => {
+        this.likeList = res;
+      });
+    },
+    /* 刷新猜你喜欢的数据 */
+    refreshLikeList() {
+      this.index++;
+      if (this.index > 99) {
+        this.index = 0;
+      }
+      this.getLikeData();
     },
   },
-  mounted() {
+  async mounted() {
     this.getHotData();
     this.getChannelList();
-    this.getDraftList();
+    /* 获取首页起始数据 */
+    const re = await this.$API.doubanhome.getStart();
+    this.startList = re.data.list;
+    /* 处理猜你喜欢的数据，每次只请求5条数据 */
+    /* 将数据保存在this上 */
+    this.likeIds = formatArray(this.startList[5].data.worksIds, 5);
+    this.getLikeData();
+    /* 获取每周精品数据 */
+    this.getHomeData(
+      this.startList[0].data.worksIds,
+      "\n          query getWorksList($worksIds: [ID!]) {\n            worksList(worksIds: $worksIds) {\n              \n      id\n      \n    \n    title\n    cover\n    url\n    isBundle\n    coverLabel\n  \n    \n    url\n    title\n  \n    \n    author {\n      name\n      url\n    }\n    origAuthor {\n      name\n      url\n    }\n  \n    \n  abstract\n  authorHighlight\n  editorHighlight\n\n    \n    isEssay\n    \n    ... on EssayWorks {\n      favorCount\n    }\n  \n    \n    \n    averageRating\n    ratingCount\n    url\n  \n  \n  \n    kinds { \n    name @skip(if: true)\n    shortName @include(if: true)\n    id\n   }\n    highlightTags { name }\n    \n  \n    \n            }\n          }\n        "
+    ).then((res) => {
+      this.weeklyList = formatArray(res, 5);
+    });
+    /* 获取签约新作数据 */
+    this.getHomeData(
+      this.startList[1].data.worksIds,
+      "\n          query getWorksList($worksIds: [ID!]) {\n            worksList(worksIds: $worksIds) {\n              \n      id\n      \n    \n    title\n    cover\n    url\n    isBundle\n    coverLabel\n  \n    \n    url\n    title\n  \n    \n    author {\n      name\n      url\n    }\n    origAuthor {\n      name\n      url\n    }\n  \n    \n  abstract\n  authorHighlight\n  editorHighlight\n\n    \n    isEssay\n    \n    ... on EssayWorks {\n      favorCount\n    }\n  \n    \n    \n    averageRating\n    ratingCount\n    url\n  \n  \n  \n    kinds { \n    name @skip(if: true)\n    shortName @include(if: true)\n    id\n   }\n    highlightTags { name }\n    \n  \n    \n            }\n          }\n        "
+    ).then((res) => {
+      this.recNewList = formatArray(res, 5);
+    });
+    /* 获取最近更新数据1 */
+    this.getHomeData(
+      this.startList[3].data.worksIds,
+      "\n          query getWorksList($worksIds: [ID!]) {\n            worksList(worksIds: $worksIds) {\n              id \n    \n    title\n    cover\n    url\n    isBundle\n    coverLabel\n  \n    \n    url\n    title\n  \n    ... on ColumnWorks {\n      lastUpdateTime\n    }\n  \n            }\n          }\n        "
+    ).then((res) => {
+      this.recentlyList_1 = res;
+    });
+    /* 获取最近更新数据2 */
+    this.getHomeData(
+      this.startList[4].data.worksIds,
+      "\n          query getWorksList($worksIds: [ID!]) {\n            worksList(worksIds: $worksIds) {\n              id \n    \n    title\n    cover\n    url\n    isBundle\n    coverLabel\n  \n    \n    url\n    title\n  \n    ... on ColumnWorks {\n      lastUpdateTime\n    }\n  \n            }\n          }\n        "
+    ).then((res) => {
+      this.recentlyList_2 = res;
+    });
   },
   components: {
     // Header,
@@ -109,6 +168,7 @@ export default {
     General,
     HomeRecommend,
     GridGroup,
+    Like,
   },
 };
 </script>
@@ -120,14 +180,14 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
 }
-.section-bottom {
-  background-color: #f8f9f9;
-}
-.section-bottom-bgc {
-  width: 1200px;
-  min-width: 1200px;
-  margin: 0 auto;
-}
+// .section-bottom {
+//   background-color: #f8f9f9;
+// }
+// .section-bottom-bgc {
+//   width: 1200px;
+//   min-width: 1200px;
+//   margin: 0 auto;
+// }
 .general-widget {
   height: 30px;
   padding: 30px 0;
