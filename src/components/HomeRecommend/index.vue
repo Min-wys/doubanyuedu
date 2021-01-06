@@ -30,7 +30,6 @@ export default {
   async mounted() {
     const result = await this.$API.home.getHotRecommend();
     this.channelList = formatArray(result.data.worksList, 4);
-    console.log(this.channelList);
   },
   components: {
     RecommendItem,

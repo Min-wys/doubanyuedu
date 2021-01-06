@@ -178,7 +178,6 @@ export default {
     const urlResult = await this.$API.chnnel.channelUrlList(this.channelId);
     this.channelUrlList = urlResult.data.worksList;
     this.titleList = urlResult.data.titleList;
-    console.log("图片数据", this.titleList);
   },
 };
 </script>
