@@ -7,6 +7,7 @@ export default {
   mutations: {
     ADD_BOOK(state, book) {
       /* 添加书籍传入id */
+      state.isInBookShelf = true;
       state.books.push(book);
     },
     DELETE_BOOK(state, books) {
@@ -22,6 +23,7 @@ export default {
         state.isInBookShelf = false;
       }
     },
+
   },
   getters: {},
 };

@@ -26,7 +26,8 @@
           <div class="headPortrait">
             <img :src="book.cover" alt="" />
           </div>
-          <span>{{ book.author[0].name }}</span>
+          <span >{{ book.author[0].name }}</span>
+          <!-- <span v-if="book.origAuthor[0]">{{ book.origAuthor[0].name }}</span> -->
         </div>
         <!-- 个性签名 -->
         <div class="signature">
@@ -195,7 +196,7 @@
       </div>
     </div>
     <!-- footer -->
-    <OneStoryFooter :book="book.id"/>
+    <OneStoryFooter :book="book.id" />
   </div>
 </template>
 

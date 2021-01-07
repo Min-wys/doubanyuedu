@@ -17,12 +17,12 @@
             @mouseenter="bookContent = true"
             @mouseleave="bookContent = false"
             @click="addbook"
-            v-if="!bookDone"
+            v-if="!$store.state.bookshelf.isInBookShelf"
             ><i class="iconfont icon-wodeshujia"></i>加入书架{{
               bookContent ? " 第一时间获得更新提醒" : ""
             }}</span
           >
-          <span v-if="bookDone" class="bookDone">
+          <span v-else class="bookDone">
             <i class="iconfont icon-wodeshujia"></i>
             已在书架
           </span>
@@ -42,13 +42,11 @@ export default {
   data() {
     return {
       bookContent: false, // 书架内容
-      bookDone: false, // 已在书架
     };
   },
   props: ["book"],
   methods: {
     addbook() {
-      this.bookDone = true;
       this.$store.commit("ADD_BOOK", this.book);
     },
   },

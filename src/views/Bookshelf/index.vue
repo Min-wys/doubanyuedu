@@ -100,7 +100,7 @@ export default {
     }),
   },
   methods: {
-    ...mapMutations(["DELETE_BOOK", "REPLACE_BOOK"]),
+    ...mapMutations(["DELETE_BOOK", "REPLACE_BOOK","ISINBOOKSHELF"]),
     async delBooks() {
       this.DELETE_BOOK(this.checkList);
       this.checkList = [];
@@ -144,6 +144,7 @@ export default {
         }
         return;
       }
+      this.ISINBOOKSHELF(book.id)
       this.$router.push("/OneStory");
       this.REPLACE_BOOK(book);
     },
