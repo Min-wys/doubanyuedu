@@ -21,6 +21,7 @@ export default {
   methods: {
     toOneStory() {
       this.$store.commit("REPLACE_BOOK", this.recommendItem);
+      this.$store.dispatch("ISINBOOKSHELF", this.book.id);
       this.$router.push("/OneStory");
     },
   },

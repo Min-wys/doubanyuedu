@@ -1,6 +1,7 @@
 export default {
   state: {
     books: ["162794639", "34157247", "166538175"],
+    isInBookShelf: false,
   },
   actions: {},
   mutations: {
@@ -13,6 +14,13 @@ export default {
         const index = state.books.indexOf(item);
         state.books.splice(index, 1);
       });
+    },
+    ISINBOOKSHELF(state, id) {
+      if (state.books.includes(id)) {
+        state.isInBookShelf = true;
+      } else {
+        state.isInBookShelf = false;
+      }
     },
   },
   getters: {},
