@@ -1,0 +1,399 @@
+{
+ "data":{
+  "name": "文艺・连载榜",
+  "list": [
+   {
+    "readCount": 0,
+    "lastRank": 1,
+    "currentRank": 1,
+    "wordCount": 0,
+    "donationCount": 0,
+    "voteCount": 0,
+    "works": {
+     "id": "131665583",
+     "url": "\/column\/32958869\/",
+     "title": "我在电视台的悲催岁月",
+     "isOrigin": true,
+     "isColumn": true,
+     "isEssay": false,
+     "isGallery": false,
+     "isBundle": false,
+     "author": [
+      {
+       "url": "\/author\/63774504\/",
+       "name": "王梓"
+      }
+     ],
+     "origAuthor": null,
+     "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/32958869.jpg?v=1585289935",
+     "coverLabel": "",
+     "kinds": [
+      {
+       "shortName": "文艺",
+       "id": 503
+      }
+     ],
+     "highlightTags": [
+      {
+       "name": "职业故事",
+       "id": 59228
+      }
+     ]
+    }
+   },
+   {
+    "readCount": 0,
+    "lastRank": 2,
+    "currentRank": 2,
+    "wordCount": 0,
+    "donationCount": 0,
+    "voteCount": 0,
+    "works": {
+     "id": "162237546",
+     "url": "\/column\/35496488\/",
+     "title": "独眼司机",
+     "isOrigin": true,
+     "isColumn": true,
+     "isEssay": false,
+     "isGallery": false,
+     "isBundle": false,
+     "author": [
+      {
+       "url": "\/author\/63769946\/",
+       "name": "西米"
+      }
+     ],
+     "origAuthor": null,
+     "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/35496488.jpg?v=1606384639",
+     "coverLabel": "",
+     "kinds": [
+      {
+       "shortName": "文艺",
+       "id": 503
+      }
+     ],
+     "highlightTags": [
+      {
+       "name": "城市生活",
+       "id": 1377
+      }
+     ]
+    }
+   },
+   {
+    "readCount": 0,
+    "lastRank": 3,
+    "currentRank": 3,
+    "wordCount": 0,
+    "donationCount": 0,
+    "voteCount": 0,
+    "works": {
+     "id": "164656636",
+     "url": "\/column\/35735939\/",
+     "title": "不完美生活指南",
+     "isOrigin": true,
+     "isColumn": true,
+     "isEssay": false,
+     "isGallery": false,
+     "isBundle": false,
+     "author": [
+      {
+       "url": "\/author\/63692811\/",
+       "name": "倪刃"
+      }
+     ],
+     "origAuthor": null,
+     "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/35735939.jpg?v=1607072855",
+     "coverLabel": "",
+     "kinds": [
+      {
+       "shortName": "文艺",
+       "id": 503
+      }
+     ],
+     "highlightTags": [
+      {
+       "name": "时代记忆",
+       "id": 71890
+      }
+     ]
+    }
+   },
+   {
+    "readCount": 0,
+    "lastRank": null,
+    "currentRank": 4,
+    "wordCount": 0,
+    "donationCount": 0,
+    "voteCount": 0,
+    "works": {
+     "id": "160506576",
+     "url": "\/column\/35346380\/",
+     "title": "长生不死",
+     "isOrigin": true,
+     "isColumn": true,
+     "isEssay": false,
+     "isGallery": false,
+     "isBundle": false,
+     "author": [
+      {
+       "url": "\/author\/63808247\/",
+       "name": "陈已已"
+      }
+     ],
+     "origAuthor": null,
+     "cover": "https://img3.doubanio.com\/view\/ark_column_cover\/retina\/public\/35346380.jpg?v=1603678799",
+     "coverLabel": "",
+     "kinds": [
+      {
+       "shortName": "文艺",
+       "id": 503
+      }
+     ],
+     "highlightTags": []
+    }
+   },
+   {
+    "readCount": 0,
+    "lastRank": null,
+    "currentRank": 5,
+    "wordCount": 0,
+    "donationCount": 0,
+    "voteCount": 0,
+    "works": {
+     "id": "162220606",
+     "url": "\/column\/35494144\/",
+     "title": "难以分手的错爱",
+     "isOrigin": true,
+     "isColumn": true,
+     "isEssay": false,
+     "isGallery": false,
+     "isBundle": false,
+     "author": [
+      {
+       "url": "\/author\/63805288\/",
+       "name": "幽林酣梦"
+      }
+     ],
+     "origAuthor": null,
+     "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/35494144.jpg?v=1603744092",
+     "coverLabel": "",
+     "kinds": [
+      {
+       "shortName": "文艺",
+       "id": 503
+      }
+     ],
+     "highlightTags": [
+      {
+       "name": "时代记忆",
+       "id": 71890
+      }
+     ]
+    }
+   },
+   {
+    "readCount": 0,
+    "lastRank": 4,
+    "currentRank": 6,
+    "wordCount": 0,
+    "donationCount": 0,
+    "voteCount": 0,
+    "works": {
+     "id": "160351951",
+     "url": "\/column\/35331963\/",
+     "title": "我们这样的生活方式",
+     "isOrigin": true,
+     "isColumn": true,
+     "isEssay": false,
+     "isGallery": false,
+     "isBundle": false,
+     "author": [
+      {
+       "url": "\/author\/63778533\/",
+       "name": "慕顺"
+      }
+     ],
+     "origAuthor": null,
+     "cover": "https://img2.doubanio.com\/view\/ark_column_cover\/retina\/public\/35331963.jpg?v=1604888452",
+     "coverLabel": "",
+     "kinds": [
+      {
+       "shortName": "文艺",
+       "id": 503
+      }
+     ],
+     "highlightTags": [
+      {
+       "name": "城市生活",
+       "id": 1377
+      }
+     ]
+    }
+   },
+   {
+    "readCount": 0,
+    "lastRank": 6,
+    "currentRank": 7,
+    "wordCount": 0,
+    "donationCount": 0,
+    "voteCount": 0,
+    "works": {
+     "id": "166156723",
+     "url": "\/column\/35857205\/",
+     "title": "对杀（上）",
+     "isOrigin": true,
+     "isColumn": true,
+     "isEssay": false,
+     "isGallery": false,
+     "isBundle": false,
+     "author": [
+      {
+       "url": "\/author\/63786675\/",
+       "name": "酷丐"
+      }
+     ],
+     "origAuthor": null,
+     "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/35857205.jpg?v=1607786108",
+     "coverLabel": "",
+     "kinds": [
+      {
+       "shortName": "文艺",
+       "id": 503
+      }
+     ],
+     "highlightTags": [
+      {
+       "name": "城市生活",
+       "id": 1377
+      }
+     ]
+    }
+   },
+   {
+    "readCount": 0,
+    "lastRank": 5,
+    "currentRank": 8,
+    "wordCount": 0,
+    "donationCount": 0,
+    "voteCount": 0,
+    "works": {
+     "id": "161041601",
+     "url": "\/column\/35388624\/",
+     "title": "暮色与晨曦",
+     "isOrigin": true,
+     "isColumn": true,
+     "isEssay": false,
+     "isGallery": false,
+     "isBundle": false,
+     "author": [
+      {
+       "url": "\/author\/63710491\/",
+       "name": "苏莹"
+      }
+     ],
+     "origAuthor": null,
+     "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/35388624.jpg?v=1604887816",
+     "coverLabel": "",
+     "kinds": [
+      {
+       "shortName": "文艺",
+       "id": 503
+      }
+     ],
+     "highlightTags": []
+    }
+   },
+   {
+    "readCount": 0,
+    "lastRank": 8,
+    "currentRank": 9,
+    "wordCount": 0,
+    "donationCount": 0,
+    "voteCount": 0,
+    "works": {
+     "id": "162068791",
+     "url": "\/column\/35469011\/",
+     "title": "蔷薇河街纪事",
+     "isOrigin": true,
+     "isColumn": true,
+     "isEssay": false,
+     "isGallery": false,
+     "isBundle": false,
+     "author": [
+      {
+       "url": "\/author\/63809966\/",
+       "name": "隼浮"
+      }
+     ],
+     "origAuthor": null,
+     "cover": "https://img3.doubanio.com\/view\/ark_column_cover\/retina\/public\/35469011.jpg?v=1605494264",
+     "coverLabel": "",
+     "kinds": [
+      {
+       "shortName": "文艺",
+       "id": 503
+      }
+     ],
+     "highlightTags": [
+      {
+       "name": "青春成长",
+       "id": 4278
+      },
+      {
+       "name": "时代记忆",
+       "id": 71890
+      }
+     ]
+    }
+   },
+   {
+    "readCount": 0,
+    "lastRank": 9,
+    "currentRank": 10,
+    "wordCount": 0,
+    "donationCount": 0,
+    "voteCount": 0,
+    "works": {
+     "id": "167442785",
+     "url": "\/column\/35943416\/",
+     "title": "小镇做题家",
+     "isOrigin": true,
+     "isColumn": true,
+     "isEssay": false,
+     "isGallery": false,
+     "isBundle": false,
+     "author": [
+      {
+       "url": "\/author\/63793802\/",
+       "name": "烦晕"
+      }
+     ],
+     "origAuthor": null,
+     "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/35943416.jpg?v=1608764255",
+     "coverLabel": "",
+     "kinds": [
+      {
+       "shortName": "文艺",
+       "id": 503
+      }
+     ],
+     "highlightTags": [
+      {
+       "name": "青春成长",
+       "id": 4278
+      }
+     ]
+    }
+   }
+  ],
+  "period": null,
+  "background": {
+   "color": "",
+   "url": "https://img3.doubanio.com\/f\/ark\/b9b2cf3019981c1173f6d50ab02861ded7b3eeb4\/pics\/charts\/bg-literary_fiction-unfinished_column.png"
+  },
+  "fullName": "作品三日内有更新，按周热度排行",
+  "type": "unfinished_column",
+  "channel": "literary_fiction"
+ }
+}

@@ -267,6 +267,15 @@ router.get("/oneStoryIntroData", function(ctx, next) {
   };
 });
 
+let rankingsdata = require("./datas/rankings.json");
+router.get("/rankings", function(ctx,next) {
+  ctx.body = {
+  code: 200,
+  data:rankingsdata,
+  }
+})
+
+
 app.listen("3000", function(error) {
   if (error) {
     console.log("服务器运行失败!!!");
