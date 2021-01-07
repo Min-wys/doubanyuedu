@@ -10,6 +10,13 @@ module.exports = {
           "^/api": "",
         },
       },
+      "/j": {
+        target: "https://read.douban.com",
+        changeOrigin: true,
+        pathRewrite: {
+          "^/j": "/j",
+        },
+      },
     },
   },
 };

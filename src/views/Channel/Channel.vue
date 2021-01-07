@@ -36,8 +36,18 @@
                 v-for="channelUrl in channelUrlList"
                 :key="channelUrl.id"
               >
-                <img :src="channelUrl.url" alt="" />
+                <img v-lazy="channelUrl.url" alt="" />
               </div>
+              <!-- <div
+                class="swiper-slide"
+              >
+                <img src="../../assets/image/10136.jpg" alt="" />
+              </div>
+              <div
+                class="swiper-slide"
+              >
+                <img src="../../assets/image/10137.jpg" alt="" />
+              </div> -->
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -142,6 +152,7 @@ export default {
     // 轮播图区域
     this.Swiper = new Swiper(this.$refs.swiper, {
       loop: true,
+      observer: true, //修改swiper自己或子元素时，自动初始化swiper
       autoplay: {
         // 自动轮播
         delay: 2000, // 轮播间隔时间
@@ -167,7 +178,6 @@ export default {
     const urlResult = await this.$API.chnnel.channelUrlList(this.channelId);
     this.channelUrlList = urlResult.data.worksList;
     this.titleList = urlResult.data.titleList;
-    console.log("图片数据", this.titleList);
   },
 };
 </script>

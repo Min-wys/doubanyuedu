@@ -1,7 +1,7 @@
 <template>
   <div class="reco">
-    <div class="recoImg">
-      <img :src="recommendItem.cover" alt="" />
+    <div class="recoImg" @click="toOneStory">
+      <img v-lazy="recommendItem.cover" alt="" />
     </div>
     <div class="info">
       <h4 class="title">{{ recommendItem.title }}</h4>
@@ -18,6 +18,12 @@
 export default {
   name: "RecommendItem",
   props: ["recommendItem"],
+  methods: {
+    toOneStory() {
+      this.$store.commit("REPLACE_BOOK", this.recommendItem);
+      this.$router.push("/OneStory");
+    },
+  },
 };
 </script>
 

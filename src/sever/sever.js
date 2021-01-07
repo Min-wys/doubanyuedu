@@ -249,7 +249,25 @@ router.get("/draft", function (ctx, next) {
   };
 });
 
-app.listen("3000", function (error) {
+// 返回OneStory的章节数据
+let oneStorySectionData = require("./datas/oneStory/section.json");
+router.get("/oneStorySectionData", function(ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: oneStorySectionData,
+  };
+});
+
+// 返回OneStory的评论数据
+let oneStoryIntroData = require("./datas/oneStory/intro.json");
+router.get("/oneStoryIntroData", function(ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: oneStoryIntroData,
+  };
+});
+
+app.listen("3000", function(error) {
   if (error) {
     console.log("服务器运行失败!!!");
   } else {

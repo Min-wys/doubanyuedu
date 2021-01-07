@@ -10,8 +10,8 @@ const instance = axios.create({
 
 // 请求拦截器
 instance.interceptors.request.use((config) => {
-  config.headers.Referer = "https://read.douban.com";
   // 把设置到响应头中
+  // config.headers.Referer = "https://read.douban.com/";
   return config;
 });
 
