@@ -145,8 +145,6 @@ export default {
         });
       }
       state.sectionList.list = state.sectionList.list.concat(state.manySection);
-      // state.sectionList.list.push(state.manySection);
-      // state.sectionList.list = state.sectionList.list.flat();
     },
     // 收起的五条数据
     CLOSE_SECTION_LIST(state) {
@@ -188,5 +186,9 @@ export default {
 
       intro.commentType = "Discussion";
     },
+    // 添加评论数据
+    ADD_INTRO(){
+      
+    }
   },
 };

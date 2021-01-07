@@ -26,8 +26,7 @@
           <div class="headPortrait">
             <img :src="book.cover" alt="" />
           </div>
-          <span >{{ book.author[0].name }}</span>
-          <!-- <span v-if="book.origAuthor[0]">{{ book.origAuthor[0].name }}</span> -->
+          <span v-if="book.author[0]">{{ book.author[0].name }}</span>
         </div>
         <!-- 个性签名 -->
         <div class="signature">
