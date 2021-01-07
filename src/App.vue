@@ -1,8 +1,10 @@
 <template>
-  <div id="app">
+  <div id="app" style="height:100%">
     <Header />
-    
-    <router-view></router-view>
+
+    <!-- <div style="height:100%"> -->
+      <router-view></router-view>
+    <!-- </div> -->
   </div>
 </template>
 
@@ -20,6 +22,7 @@ export default {
 html,
 body {
   width: 100%;
+  height: 100%;
 }
 a {
   text-decoration: none !important;

@@ -11,6 +11,8 @@ const Channel = () =>
   import(/* webpackChunkName: "Home" */ "../views/Channel/Channel.vue");
 const OneStory = () =>
   import(/* webpackChunkName: "Home" */ "../views/OneStory");
+const Bookshelf = () =>
+  import(/* webpackChunkName: "Bookshelf" */ "../views/Bookshelf");
 
 // 改写push/replace方法
 const { push } = VueRouter.prototype;
@@ -52,6 +54,11 @@ const router = new VueRouter({
       path: "/OneStory",
       component: OneStory,
       name: "OneStory",
+    },
+    {
+      path: "/bookshelf",
+      component: Bookshelf,
+      name: "bookshelf",
     },
   ],
   // 每次切换路由页面滚动条位置

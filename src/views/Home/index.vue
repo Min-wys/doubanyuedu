@@ -90,10 +90,38 @@ export default {
       });
       this.isShow = false;
     },
-    /* 获取热门数据 */
+    /* 获取畅销作品数据 */
     async getHotData() {
-      const result = await this.$API.home.getHotData();
-      this.hotData = formatArray(result.data.worksList, 5);
+      const result = await this.$API.doubanhome.getHomeData(
+        [
+          "159180145",
+          "162149898",
+          "128867352",
+          "130752195",
+          "163272764",
+          "134378693",
+          "159433801",
+          "108342413",
+          "163020030",
+          "162423377",
+          "162680490",
+          "161026920",
+          "149790273",
+          "160636271",
+          "161315595",
+          "166538175",
+          "158503247",
+          "161379402",
+          "162794639",
+          "165006550",
+          "153142997",
+          "159284229",
+          "159420541",
+          "158000997",
+        ],
+        "\n          query getWorksList($worksIds: [ID!]) {\n            worksList(worksIds: $worksIds) {\n              \n      id\n      \n    \n    title\n    cover\n    url\n    isBundle\n    coverLabel\n  \n    \n    url\n    title\n  \n    \n    author {\n      name\n      url\n    }\n    origAuthor {\n      name\n      url\n    }\n  \n    \n  abstract\n  authorHighlight\n  editorHighlight\n\n    \n    isEssay\n    \n    ... on EssayWorks {\n      favorCount\n    }\n  \n    \n    \n    averageRating\n    ratingCount\n    url\n  \n  \n  \n    kinds { \n    name @skip(if: true)\n    shortName @include(if: true)\n    id\n   }\n    highlightTags { name }\n    \n  \n    \n            }\n          }\n        "
+      );
+      this.hotData = formatArray(result.data.data.worksList, 5);
     },
     /* 获取导航数据 */
     async getChannelList() {

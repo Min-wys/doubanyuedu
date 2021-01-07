@@ -39,7 +39,7 @@ export default {
   margin: 40px 0 60px 0;
 }
 /deep/ .el-carousel__container {
-  width: 85%;
+  width: 1263px;
   margin: 0 auto;
   overflow: hidden;
 }
