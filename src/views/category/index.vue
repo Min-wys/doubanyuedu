@@ -151,7 +151,7 @@
       <div class="mainContent">
         <ul class="main_box">
           <li class="mainItem" v-for="item in categoryList" :key="item.id">
-            <div class="inner">
+            <div class="inner" @click="toOneStory(item)">
               <div class="cover">
                 <a href="javascript:;"><img src="./images/34659576.jpg" /></a>
               </div>
@@ -228,6 +228,11 @@ export default {
     };
   },
   methods: {
+    // 跳转到小说的详情页
+    toOneStory(book) {
+      this.$store.commit("REPLACE_BOOK", book);
+      this.$router.push("/OneStory");
+    },
     // 请求分类数据
     async getTypeData() {
       const result = await this.$API.category.getCategoryTypeData();

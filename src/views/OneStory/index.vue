@@ -169,7 +169,6 @@
               <div class="remarkBottom" v-show="item.commentType === 'Review'">
                 <div
                   class="remarkBottomSection"
-                  :class="{ clickGood: clickGoodId === item.id && !goodBoo }"
                   @click="clickGood(item.id)"
                 >
                   <span>赞 {{ item.upvoteCount }}</span>
@@ -470,9 +469,6 @@ export default {
       color: #108899;
     }
   }
-}
-.clickGood {
-  background: #108899 !important;
 }
 .sectionText {
   margin: 5px 0;
