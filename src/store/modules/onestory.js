@@ -161,16 +161,18 @@ export default {
       let intro = state.introList.comments.find((item) => item.id === id);
       // 没有refDiscussion的先添加上属性
       if (!intro.refDiscussion) {
-        Vue.set(intro, "refDiscussion", [{
-          id: Date.now(),
-          user: {
-            name: "清风",
-            url: "https://read.douban.com/people/226232272",
+        Vue.set(intro, "refDiscussion", [
+          {
+            id: Date.now(),
+            user: {
+              name: "清风",
+              url: "https://read.douban.com/people/226232272",
+            },
+            isDeleted: null,
+            createTime: "01-03",
+            content,
           },
-          isDeleted: null,
-          createTime: "01-03",
-          content,
-        }]);
+        ]);
       } else {
         intro.refDiscussion.push({
           id: Date.now(),
@@ -187,8 +189,32 @@ export default {
       intro.commentType = "Discussion";
     },
     // 添加评论数据
-    ADD_INTRO(){
-      
-    }
+    ADD_INTRO(state, content) {
+      state.introList.push({
+        id: Date.now(),
+        upvoteCount: 0,
+        isHidden: false,
+        isDeleted: null,
+        works: {
+          agent: { id: "223670812" },
+          id: "168527638",
+          title: "第七章 关小晴捞鱼计划",
+          cover:
+            "https://img1.doubanio.com/view/ark_article_cover/retina/public/168527638.jpg?v=0",
+          url: "/column/35971331/chapter/168527638/",
+        },
+        user: {
+          id: "204768580",
+          avatar: "https://img2.doubanio.com/icon/user_normal_f.jpg",
+          name: "无名氏",
+          url: "https://read.douban.com/people/204768580",
+        },
+        createTime: "刚刚",
+        commentType: "Review",
+        content,
+        refDiscussion: null,
+        operationInfo: null,
+      });
+    },
   },
 };
