@@ -1,5 +1,5 @@
 <template>
-  <header class="header-card">
+  <header class="header-card" @blur="isCategory = false">
     <div class="header-inner">
       <router-link to="/" class="site-logo"></router-link>
       <nav class="func-nav">
@@ -28,6 +28,17 @@
         </ul>
       </div>
       <div class="user-info">
+        <router-link to="/bookshelf">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="fill-current-color"
+          >
+            <path
+              d="M13.9 5.223l3.14 12.1a.23.23 0 00.284.165l2.332-.645a.233.233 0 00.162-.28l-3.14-12.1a.23.23 0 00-.284-.166l-2.332.645a.233.233 0 00-.162.28zM8.5 5h-3v12h3zm1 12h3V3h-3v14zm4-9.327V14.5h1.77zm0-3.57a1.212 1.212 0 01.293-.125l2.33-.645a1.232 1.232 0 011.516.86v.018l3.136 12.1a1.23 1.23 0 01-.863 1.5l-2.33.647a1.232 1.232 0 01-1.516-.86v-.018l-.537-2.08H13.5V17a1 1 0 01-1 1h-3a1 1 0 01-.5-.134 1 1 0 01-.5.134h-3a1 1 0 01-1-1v-1.5H1.822a.23.23 0 00-.23.227l-.074 5.04a.23.23 0 00.23.233h20.506a.23.23 0 00.228-.234l-.074-5.04a.23.23 0 00-.23-.226h-1.59l-.268-1h1.858a1.23 1.23 0 011.23 1.213l.074 5.038A1.23 1.23 0 0122.27 22H1.75a1.23 1.23 0 01-1.232-1.23v-.02l.074-5.037a1.23 1.23 0 011.23-1.213H4.5V5a1 1 0 011-1h3V3a1 1 0 011-1h3a1 1 0 011 1z"
+            ></path>
+          </svg>
+        </router-link>
         <router-link to="">登录</router-link>
         <router-link to="">注册</router-link>
       </div>
@@ -114,7 +125,7 @@ export default {
   align-items: center;
   padding-left: 15px;
   height: 50px;
-  width: 118px;
+  width: 190px;
   box-sizing: border-box;
 }
 .user-info a {
@@ -162,7 +173,12 @@ export default {
 .btn-link {
   margin-right: 5px;
 }
-.nav-category{
+.nav-category {
   cursor: pointer;
+}
+.fill-current-color {
+  width: 24px;
+  height: 24px;
+  color: var(--blueBlack);
 }
 </style>

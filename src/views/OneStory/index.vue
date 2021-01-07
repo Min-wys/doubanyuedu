@@ -195,7 +195,7 @@
       </div>
     </div>
     <!-- footer -->
-    <OneStoryFooter />
+    <OneStoryFooter :book="book.id"/>
   </div>
 </template>
 

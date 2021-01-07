@@ -1,6 +1,6 @@
 <template>
   <div class="Brief">
-    <div @click="toOneStory">
+    <div @click="toOneStory" style="cursor:pointer">
       <img v-lazy="book.cover" alt="" class="img" />
       <h4>{{ book.title }}</h4>
     </div>

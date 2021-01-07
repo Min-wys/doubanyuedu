@@ -16,7 +16,7 @@
           <span
             @mouseenter="bookContent = true"
             @mouseleave="bookContent = false"
-            @click="bookDone = true"
+            @click="addbook"
             v-if="!bookDone"
             ><i class="iconfont icon-wodeshujia"></i>加入书架{{
               bookContent ? " 第一时间获得更新提醒" : ""
@@ -44,6 +44,13 @@ export default {
       bookContent: false, // 书架内容
       bookDone: false, // 已在书架
     };
+  },
+  props: ["book"],
+  methods: {
+    addbook() {
+      this.bookDone = true;
+      this.$store.commit("ADD_BOOK", this.book);
+    },
   },
 };
 </script>
