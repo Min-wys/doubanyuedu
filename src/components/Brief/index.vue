@@ -1,6 +1,6 @@
 <template>
   <div class="Brief">
-    <div @click="toOneStory" style="cursor:pointer">
+    <div @click="toOneStory" style="cursor: pointer">
       <img v-lazy="book.cover" alt="" class="img" />
       <h4>{{ book.title }}</h4>
     </div>
@@ -52,6 +52,7 @@ export default {
   methods: {
     toOneStory() {
       this.$store.commit("REPLACE_BOOK", this.book);
+      this.$store.dispatch("ISINBOOKSHELF", this.book.id);
       this.$router.push("/OneStory");
     },
   },
