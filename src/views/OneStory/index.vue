@@ -51,7 +51,7 @@
       <!-- 蓝色标签区域 -->
       <div class="blueTag">
         <p>></p>
-        <span>{{ book.kinds ? book.kinds[0].shortName : "连载" }}小说</span>
+        <span>{{ book.kinds[0] ? book.kinds[0].shortName : "连载" }}小说</span>
         <p>></p>
         <div v-if="book.highlightTags">
           <span v-for="(tag, index) in book.highlightTags" :key="index">{{

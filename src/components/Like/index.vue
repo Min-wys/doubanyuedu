@@ -59,4 +59,7 @@ export default {
   width: 20%;
   padding: 40px 20px 0 20px;
 }
+h2{
+  font-size: 24px;
+}
 </style>

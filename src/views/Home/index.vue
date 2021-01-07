@@ -49,8 +49,13 @@
     <General :data="hotData" :title="'畅销作品'" />
     <General :data="weeklyList" :title="startList[0].data.title" />
     <General :data="recNewList" :title="startList[1].data.title" />
-    <!-- </div>
-    </div> -->
+    <!-- 排行榜显示 -->
+    <div class="ranking">
+      <zujian />
+      <zujian />
+      <zujian />
+    </div>
+
     <GridGroup :data="recentlyList_1" :title="startList[3].data.title" />
     <GridGroup :data="recentlyList_2" :title="startList[4].data.title" />
     <Like :data="likeList" @click="refreshLikeList" />
@@ -63,6 +68,7 @@ import General from "../../components/General";
 import HomeRecommend from "../../components/HomeRecommend";
 import GridGroup from "../../components/GridGroup";
 import Like from "../../components/Like";
+import zujian from "../rankings/zujian";
 import formatArray from "../../utils/formatArray";
 export default {
   name: "Home",
@@ -197,6 +203,7 @@ export default {
     HomeRecommend,
     GridGroup,
     Like,
+    zujian,
   },
 };
 </script>
@@ -315,5 +322,9 @@ export default {
 }
 .widget-channel-container {
   background-color: #f8f9f9;
+}
+.ranking{
+  display: flex;
+  justify-content: space-around;
 }
 </style>
