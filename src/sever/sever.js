@@ -10,7 +10,7 @@ app.use(router.routes()).use(router.allowedMethods());
 
 // 返回home数据
 let homeData = require("./datas/home.json");
-router.get("/home", function(ctx, next) {
+router.get("/home", function (ctx, next) {
   ctx.body = {
     code: 200,
     data: homeData,
@@ -18,7 +18,7 @@ router.get("/home", function(ctx, next) {
 });
 // 返回畅销作品数据
 let hotData = require("./datas/hot.json");
-router.get("/hot", function(ctx, next) {
+router.get("/hot", function (ctx, next) {
   ctx.body = {
     code: 200,
     data: hotData,
@@ -26,7 +26,7 @@ router.get("/hot", function(ctx, next) {
 });
 // 返回畅销作品数据
 let homeRecommend = require("./datas/homeRecommend.json");
-router.get("/homerecommend", function(ctx, next) {
+router.get("/homerecommend", function (ctx, next) {
   ctx.body = {
     code: 200,
     data: homeRecommend,
@@ -40,7 +40,7 @@ let channelDanger = require("./datas/channelDanger.json");
 // 女性频道的推荐数据
 let channelWoman = require("./datas/channelWoman.json");
 
-router.get("/channel", function(ctx, next) {
+router.get("/channel", function (ctx, next) {
   const id = ctx.request.url.split("?")[1].split("=")[1];
   // 进行判断返回的数据是什么
   switch (id) {
@@ -84,13 +84,60 @@ router.get("/channel", function(ctx, next) {
 });
 
 // 返回finishBoom完本频道的完本推荐数据
-let finishBoomData = require("./datas/finishBoom.json");
+
+// 返回category分类数据
+let categoryYanqingData = require("./datas/category/yanqing.json");
+let categoryNvxingData = require("./datas/category/nvxing.json");
+let categoryXuanyiData = require("./datas/category/xuanyi.json");
+let categoryKehuanData = require("./datas/category/kehuan.json");
+
+router.get("/category", function (ctx, next) {
+  const kindId = ctx.request.url.split("?")[1].split("=")[1]
+  switch (kindId) {
+    case "1":
+      ctx.body = {
+        code: 200,
+        data: categoryYanqingData,
+      };
+      break;
+    case "2":
+      ctx.body = {
+        code: 200,
+        data: categoryNvxingData,
+      };
+      break;
+    case "3":
+      ctx.body = {
+        code: 200,
+        data: categoryXuanyiData,
+      };
+      break;
+    case "4":
+      ctx.body = {
+        code: 200,
+        data: categoryKehuanData,
+      };
+      break;
+  }
+});
+
+// 返回category分类类型筛选数据
+let categoryTypeData = require("./datas/category/classification.json");
+router.get("/categoryType", function (ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: categoryTypeData,
+  };
+});
+
+
 // 悬疑频道的新作数据
 let channelNewWork = require("./datas/channelNewWork.json");
 // 女性频道的新作数据
+let finishBoomData = require("./datas/finishBoom.json");
 let channelWomanNewwork = require("./datas/channelWomanNewwork.json");
 
-router.get("/finishBoomData", function(ctx, next) {
+router.get("/finishBoomData", function (ctx, next) {
   const id = ctx.request.url.split("?")[1].split("=")[1];
   // console.log(id, typeof id);
   // 进行判断返回的数据是什么
@@ -141,7 +188,7 @@ let channelDangerUrlList = require("./datas/channelDangerUrlList.json");
 // 女性频道的图片数据
 let chanelWomanUrlList = require("./datas/chanelWomanUrlList.json");
 
-router.get("/channelUrlList", function(ctx, next) {
+router.get("/channelUrlList", function (ctx, next) {
   const id = ctx.request.url.split("?")[1].split("=")[1];
   // console.log(id, typeof id);
   // 进行判断返回的数据是什么
@@ -185,35 +232,9 @@ router.get("/channelUrlList", function(ctx, next) {
   }
 });
 
-// 返回六个频道数据
-router.get("/finishBoomData", function(ctx, next) {
-  ctx.body = {
-    code: 200,
-    data: finishBoomData,
-  };
-});
-
-// 返回category分类数据
-let categoryData = require("./datas/category/category.json");
-router.get("/category", function(ctx, next) {
-  ctx.body = {
-    code: 200,
-    data: categoryData,
-  };
-});
-
-// 返回category加入书架数数据
-let categoryLibData = require("./datas/category/lib.json");
-router.get("/categorylib", function(ctx, next) {
-  ctx.body = {
-    code: 200,
-    data: categoryLibData,
-  };
-});
-
 // 返回finishBoom完本推荐的完本推荐数据
 let sixChannelList = require("./datas/sixChannelList.json");
-router.get("/sixchannellist", function(ctx, next) {
+router.get("/sixchannellist", function (ctx, next) {
   ctx.body = {
     code: 200,
     data: sixChannelList,
@@ -221,7 +242,7 @@ router.get("/sixchannellist", function(ctx, next) {
 });
 // 返回征稿数据
 let draft = require("./datas/draft.json");
-router.get("/draft", function(ctx, next) {
+router.get("/draft", function (ctx, next) {
   ctx.body = {
     code: 200,
     data: draft,

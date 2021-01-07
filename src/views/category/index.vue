@@ -8,7 +8,7 @@
             >原创写作</el-breadcrumb-item
           >
           <el-breadcrumb-item
-            >{{ kind }}小说<span>({{ total }})</span></el-breadcrumb-item
+            >{{ tags }}<span>({{ total }})</span></el-breadcrumb-item
           >
         </el-breadcrumb>
       </div>
@@ -86,59 +86,12 @@
                 <ul class="select_option_list">
                   <li
                     class="select-option"
-                    :class="{ selected: options.kind === 501 }"
-                    @click="setCategory('kind', 501)"
+                    v-for="item in classification"
+                    :key="item.id"
+                    :class="{ selected: options.kind === item.id }"
+                    @click="changeCategory(item.id, item.type)"
                   >
-                    言情小说
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.kind === 502 }"
-                    @click="setCategory('kind', 502)"
-                  >
-                    女性小说
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.kind === 503 }"
-                    @click="setCategory('kind', 503)"
-                  >
-                    悬疑小说
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.kind === 504 }"
-                    @click="setCategory('kind', 504)"
-                  >
-                    科幻小说
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.kind === 505 }"
-                    @click="setCategory('kind', 505)"
-                  >
-                    幻想小说
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.kind === 506 }"
-                    @click="setCategory('kind', 506)"
-                  >
-                    文艺小说
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.kind === 507 }"
-                    @click="setCategory('kind', 507)"
-                  >
-                    历史小说
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.kind === 508 }"
-                    @click="setCategory('kind', 508)"
-                  >
-                    非小说
+                    {{ item.type }}
                   </li>
                 </ul>
               </div>
@@ -150,119 +103,32 @@
             v-show="isShaixuanShow"
           >
             <div>
-              <div class="select_group">
-                <span class="select_label">价格</span>
+              <div
+                class="select_group"
+                v-for="screen in screenList"
+                :key="screen.id"
+              >
+                <span class="select_label">{{ screen.typename }}</span>
                 <ul class="select_option_list" @click="addTag">
                   <li
                     class="select-option"
                     :class="{
                       selected:
-                        options.price === '' || options.price === '全部',
+                        options[screen.type] === '' ||
+                        options[screen.type] === '全部',
                     }"
-                    @click="delTag('price')"
+                    @click="delTag(screen.type)"
                   >
                     全部
                   </li>
                   <li
                     class="select-option"
-                    :class="{ selected: options.price === '免费' }"
-                    data-price="免费"
+                    v-for="(item, index) in screen.content"
+                    :key="index"
+                    :class="{ selected: options[screen.type] === item.type }"
+                    :[screen.type]="item.type"
                   >
-                    免费
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.price === '付费' }"
-                    data-price="付费"
-                  >
-                    付费
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.price === '会员免费读' }"
-                    data-price="会员免费读"
-                  >
-                    会员免费读
-                  </li>
-                </ul>
-              </div>
-              <div class="select_group">
-                <span class="select_label">字数</span>
-                <ul class="select_option_list" @click="addTag">
-                  <li
-                    class="select-option"
-                    :class="{
-                      selected:
-                        options.wordcount === '' ||
-                        options.wordcount === '全部',
-                    }"
-                    @click="delTag('wordcount')"
-                  >
-                    全部
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.wordcount === '50 万字以上' }"
-                    data-wordcount="50 万字以上"
-                  >
-                    50 万字以上
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.wordcount === '30 – 50 万字' }"
-                    data-wordcount="30 – 50 万字"
-                  >
-                    30 – 50 万字
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.wordcount === '15 – 30 万字' }"
-                    data-wordcount="15 – 30 万字"
-                  >
-                    15 – 30 万字
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.wordcount === '8 – 15 万字' }"
-                    data-wordcount="8 – 15 万字"
-                  >
-                    8 – 15 万字
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.wordcount === '8 万字以内' }"
-                    data-wordcount="8 万字以内"
-                  >
-                    8 万字以内
-                  </li>
-                </ul>
-              </div>
-              <div class="select_group">
-                <span class="select_label">进度</span>
-                <ul class="select_option_list" @click="addTag">
-                  <li
-                    class="select-option"
-                    :class="{
-                      selected:
-                        options.progress === '' || options.progress === '全部',
-                    }"
-                    @click="delTag('progress')"
-                  >
-                    全部
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.progress === '连载中' }"
-                    data-progress="连载中"
-                  >
-                    连载中
-                  </li>
-                  <li
-                    class="select-option"
-                    :class="{ selected: options.progress === '已完成' }"
-                    data-progress="已完成"
-                  >
-                    已完成
+                    {{ item.type }}
                   </li>
                 </ul>
               </div>
@@ -304,7 +170,12 @@
                 <div class="extra_info">
                   <a href="javascript:;">{{ item.kinds[0].shortName }}</a>
                   <span class="separator"></span>
-                  <span>{{ item.wordCount }}</span>
+                  <span
+                    >{{
+                      Math.floor((+item.wordCount / 10000) * 10) / 10
+                    }}
+                    万字</span
+                  >
                   <span
                     :class="{
                       separator: item.highlightTags[0] ? true : false,
@@ -340,7 +211,7 @@ export default {
   data() {
     return {
       options: {
-        kind: 501,
+        kind: "1",
         sort: "hot",
         price: "",
         wordcount: "",
@@ -348,24 +219,28 @@ export default {
       },
       categoryList: [],
       total: 0,
-      kind: "",
+      tags: "",
       highlightTagsList: [],
       isFenleiShow: false,
       isShaixuanShow: false,
+      classification: [],
+      screenList: [],
     };
   },
-  computed: {
-    wordCount(count) {
-      return Math.floor((count / 10000) * 10) / 10;
-    },
-  },
   methods: {
-    // 请求数据
-    async getCategoryData() {
-      const result = await this.$API.category.getKindData();
+    // 请求分类数据
+    async getTypeData() {
+      const result = await this.$API.category.getCategoryTypeData();
+      this.classification = result.data.classification;
+      this.screenList = result.data.screenList;
+    },
+    // 请求页面数据
+    async getCategoryKindData(kindId, tags) {
+      const result = await this.$API.category.getKindData(kindId);
       this.categoryList = result.data.list;
       this.total = result.data.total;
-      this.kind = this.categoryList[0].kinds[0].shortName;
+      this.options.kind = kindId;
+      this.tags = tags;
       const list = this.categoryList
         .filter((item) => item.highlightTags[0])
         .map((item) => item.highlightTags[0].name);
@@ -391,28 +266,36 @@ export default {
     // 改变分类类型
     setCategory(kind, value) {
       this.options[kind] = value;
-      // this.getCategoryData()
     },
     // 增加标签
     addTag(e) {
-      const { price, wordcount, progress } = e.target.dataset;
+      const { price, wordcount, progress } = e.target.attributes;
+
       if (price) {
-        this.options.price = price;
+        this.options.price = price.value;
       }
       if (wordcount) {
-        this.options.wordcount = wordcount;
+        this.options.wordcount = wordcount.value;
       }
       if (progress) {
-        this.options.progress = progress;
+        this.options.progress = progress.value;
       }
     },
     // 删除标签
     delTag(tag) {
       this.options[tag] = "";
     },
+    // 改变分类
+    changeCategory(kindId, tags) {
+      this.getCategoryKindData(kindId, tags);
+    },
   },
   mounted() {
-    this.getCategoryData();
+    const kindId = this.$route.params.id.toString();
+    const tags = this.$route.query.tags;
+
+    this.getCategoryKindData(kindId, tags);
+    this.getTypeData();
   },
 };
 </script>
