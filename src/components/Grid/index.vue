@@ -35,9 +35,6 @@
 export default {
   name: "Grid",
   props: ["book"],
-  mounted() {
-    console.log(this.book);
-  },
 };
 </script>
 
