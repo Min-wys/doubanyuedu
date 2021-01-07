@@ -4,6 +4,80 @@
       "worksType": 1,
       "comments": [
         {
+          "id": "1796303",
+          "isHidden": false,
+          "upvoteCount": 0,
+          "isDeleted": null,
+          "works": {
+            "agent": { "id": "223670812" },
+            "id": "168347049",
+            "title": "第五章 职场小白第一天",
+            "cover": "https://img1.doubanio.com/view/ark_article_cover/retina/public/168347049.jpg?v=0",
+            "url": "/column/35971331/chapter/168347049/"
+          },
+          "user": {
+            "id": "139368570",
+            "avatar": "https://img9.doubanio.com/icon/up139368570-4.jpg",
+            "name": "嫁个程序猿哥哥",
+            "url": "https://read.douban.com/people/139368570",
+            "agentName": "一条郭征鱼",
+            "hasMedal": false
+          },
+          "createTime": "6 小时前",
+          "commentType": "Review",
+          "content": "有情人终成兄妹……太狠了",
+          "refDiscussion": null,
+          "operationInfo": null
+        },
+        {
+          "id": "1796194",
+          "upvoteCount": 0,
+          "isHidden": false,
+          "isDeleted": null,
+          "works": {
+            "agent": { "id": "223670812" },
+            "id": "168527638",
+            "title": "第七章 关小晴捞鱼计划",
+            "cover": "https://img1.doubanio.com/view/ark_article_cover/retina/public/168527638.jpg?v=0",
+            "url": "/column/35971331/chapter/168527638/"
+          },
+          "user": {
+            "id": "204768580",
+            "avatar": "https://img2.doubanio.com/icon/user_normal_f.jpg",
+            "name": "金金",
+            "url": "https://read.douban.com/people/204768580"
+          },
+          "createTime": "9 小时前",
+          "commentType": "Review",
+          "content": "想养肥！不过瘾",
+          "refDiscussion": null,
+          "operationInfo": null
+        },
+        {
+          "id": "1796061",
+          "upvoteCount": 0,
+          "isHidden": false,
+          "isDeleted": null,
+          "works": {
+            "agent": { "id": "223670812" },
+            "id": "168527638",
+            "title": "第七章 关小晴捞鱼计划",
+            "cover": "https://img1.doubanio.com/view/ark_article_cover/retina/public/168527638.jpg?v=0",
+            "url": "/column/35971331/chapter/168527638/"
+          },
+          "user": {
+            "id": "188249990",
+            "avatar": "https://img3.doubanio.com/icon/up188249990-1.jpg",
+            "name": "Carrie",
+            "url": "https://read.douban.com/people/188249990"
+          },
+          "createTime": "12 小时前",
+          "commentType": "Review",
+          "content": "哎呀一章真的不过瘾，是不是该养肥了再来",
+          "refDiscussion": null,
+          "operationInfo": null
+        },
+        {
           "id": "1829123",
           "isHidden": false,
           "isDeleted": null,
@@ -19,7 +93,7 @@
             "name": "豆友210544341",
             "url": "https://read.douban.com/people/210544341"
           },
-          "createTime": "3 小时前",
+          "createTime": "15 小时前",
           "commentType": "Review",
           "url": "/review/1991376/",
           "badge": null,
@@ -27,11 +101,11 @@
           "operationInfo": null,
           "upvoted": false,
           "upvoteCount": 0,
-          "commentCount": 0,
           "reviewId": "1991376"
         },
         {
           "id": "1794548",
+          "upvoteCount": 0,
           "isHidden": false,
           "isDeleted": null,
           "works": {
@@ -52,7 +126,7 @@
           "createTime": "01-04",
           "commentType": "Discussion",
           "content": "这句话太经典啦，记在本本上",
-          "refDiscussion": {
+          "refDiscussion": [{
             "id": "1793983",
             "user": {
               "name": "一土二七点",
@@ -61,80 +135,11 @@
             "isDeleted": null,
             "createTime": "01-03",
             "content": "天下有情人终成兄妹哈哈哈"
-          },
-          "operationInfo": null
-        },
-        {
-          "id": "1794497",
-          "isHidden": false,
-          "isDeleted": null,
-          "works": {
-            "agent": { "id": "223670812" },
-            "id": "168347049",
-            "title": "第五章 职场小白第一天",
-            "cover": "https://img1.doubanio.com/view/ark_article_cover/retina/public/168347049.jpg?v=0",
-            "url": "/column/35971331/chapter/168347049/"
-          },
-          "user": {
-            "id": "204768580",
-            "avatar": "https://img2.doubanio.com/icon/user_normal_f.jpg",
-            "name": "金金",
-            "url": "https://read.douban.com/people/204768580"
-          },
-          "createTime": "01-04",
-          "commentType": "Discussion",
-          "content": "撒花花",
-          "refDiscussion": null,
-          "operationInfo": null
-        },
-        {
-          "id": "1793983",
-          "isHidden": false,
-          "isDeleted": null,
-          "works": {
-            "agent": { "id": "223670812" },
-            "id": "168347049",
-            "title": "第五章 职场小白第一天",
-            "cover": "https://img1.doubanio.com/view/ark_article_cover/retina/public/168347049.jpg?v=0",
-            "url": "/column/35971331/chapter/168347049/"
-          },
-          "user": {
-            "id": "226232272",
-            "avatar": "https://img2.doubanio.com/icon/up226232272-2.jpg",
-            "name": "一土二七点",
-            "url": "https://read.douban.com/people/226232272"
-          },
-          "createTime": "01-03",
-          "commentType": "Discussion",
-          "content": "天下有情人终成兄妹哈哈哈",
-          "refDiscussion": null,
-          "operationInfo": null
-        },
-        {
-          "id": "1793068",
-          "isHidden": false,
-          "isDeleted": null,
-          "works": {
-            "agent": { "id": "223670812" },
-            "id": "168220353",
-            "title": "第四章 褒贬不一",
-            "cover": "https://img2.doubanio.com/view/ark_article_cover/retina/public/168220353.jpg?v=0",
-            "url": "/column/35971331/chapter/168220353/"
-          },
-          "user": {
-            "id": "168182819",
-            "avatar": "https://img3.doubanio.com/icon/up168182819-1.jpg",
-            "name": "白浅黑森林",
-            "url": "https://read.douban.com/people/168182819"
-          },
-          "createTime": "01-02",
-          "commentType": "Discussion",
-          "content": "陆总 记住你今天说的话哦！",
-          "refDiscussion": null,
+          }],
           "operationInfo": null
         }
       ],
-      "commentTotal": 11
+      "commentTotal": 14
     }
   }
 }

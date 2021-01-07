@@ -152,20 +152,30 @@
                 >发表{{ item.commentType === "Review" ? "书评" : "讨论" }}</span
               >
               <!-- 白色块 -->
-              <div class="remarkDetailWhite" v-if="item.refDiscussion">
-                <div>
-                  <span>{{ item.refDiscussion.user.name }}</span>
-                  <span>{{ item.refDiscussion.createTime }}</span>
+              <div v-if="item.refDiscussion">
+                <div
+                  class="remarkDetailWhite"
+                  v-for="re in item.refDiscussion"
+                  :key="re.id"
+                >
+                  <div>
+                    <span>{{ re.user.name }}</span>
+                    <span>{{ re.createTime }}</span>
+                  </div>
+                  <span>{{ re.content }}</span>
                 </div>
-                <span>{{ item.refDiscussion.content }}</span>
               </div>
               <p class="remarkText">{{ item.content }}</p>
               <div class="remarkBottom" v-show="item.commentType === 'Review'">
-                <div class="remarkBottomSection">
+                <div
+                  class="remarkBottomSection"
+                  :class="{ clickGood: clickGoodId === item.id && !goodBoo }"
+                  @click="clickGood(item.id)"
+                >
                   <span>赞 {{ item.upvoteCount }}</span>
                 </div>
-                <div class="remarkBottomSection">
-                  <span>回复 {{ item.commentCount }}</span>
+                <div @click="open(item.id)" class="remarkBottomSection">
+                  <span>回复</span>
                 </div>
                 <div class="remarkBottomSection">
                   <span>分享 ></span>
@@ -179,7 +189,7 @@
                   <span>章节</span>
                   <p>{{ item.works.title }}</p>
                 </div>
-                <div class="remarkBottomSection">
+                <div class="remarkBottomSection" @click="open(item.id)">
                   <span>写回复</span>
                 </div>
               </div>
@@ -200,6 +210,8 @@ export default {
       showSectionText: true, // 章节显示
       newBefore: true, // 最新在前
       manySection: true, // 收起和加载更多的开关
+      goodBoo: true, // 控制赞的数目
+      clickGoodId: null, // 赞的id值
     };
   },
   computed: {
@@ -215,6 +227,8 @@ export default {
       "SORT_SECTION_LIST",
       "CONCAT_SECTION_LIST",
       "CLOSE_SECTION_LIST",
+      "CLICK_GOOD",
+      "INTRO_REPLY",
     ]),
     // 点击让最新章节在前
     newBeforeClick() {
@@ -228,6 +242,30 @@ export default {
       this.manySection ? this.CONCAT_SECTION_LIST() : this.CLOSE_SECTION_LIST();
       // 取反
       this.manySection = !this.manySection;
+    },
+    // 点赞
+    clickGood(id) {
+      let { goodBoo } = this;
+      this.clickGoodId = id;
+      this.CLICK_GOOD({ id, goodBoo });
+      this.goodBoo = !this.goodBoo;
+    },
+    // 输入框element弹窗
+    open(id) {
+      this.$prompt("请输入回复内容", "回复", {
+        confirmButtonText: "确定",
+        cancelButtonText: "取消",
+      })
+        .then(({ value }) => {
+          console.log(value);
+          this.INTRO_REPLY({ id, content: value });
+        })
+        .catch(() => {
+          this.$message({
+            type: "info",
+            message: "取消输入",
+          });
+        });
     },
   },
   async mounted() {
@@ -432,6 +470,9 @@ export default {
       color: #108899;
     }
   }
+}
+.clickGood {
+  background: #108899 !important;
 }
 .sectionText {
   margin: 5px 0;

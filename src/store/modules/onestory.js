@@ -1,4 +1,5 @@
 import * as API from "../../api";
+import Vue from "vue";
 export default {
   state: {
     book: {},
@@ -151,6 +152,41 @@ export default {
     CLOSE_SECTION_LIST(state) {
       // 截取前五个数据
       state.sectionList.list = state.sectionList.list.slice(0, 5);
+    },
+    // 点赞
+    CLICK_GOOD(state, { id, goodBoo }) {
+      let intro = state.introList.comments.find((item) => item.id === id);
+      goodBoo ? (intro.upvoteCount = "1") : (intro.upvoteCount = "0");
+    },
+    // 回复
+    INTRO_REPLY(state, { id, content }) {
+      let intro = state.introList.comments.find((item) => item.id === id);
+      // 没有refDiscussion的先添加上属性
+      if (!intro.refDiscussion) {
+        Vue.set(intro, "refDiscussion", [{
+          id: Date.now(),
+          user: {
+            name: "清风",
+            url: "https://read.douban.com/people/226232272",
+          },
+          isDeleted: null,
+          createTime: "01-03",
+          content,
+        }]);
+      } else {
+        intro.refDiscussion.push({
+          id: Date.now(),
+          user: {
+            name: "明月",
+            url: "https://read.douban.com/people/226232272",
+          },
+          isDeleted: null,
+          createTime: "01-06",
+          content,
+        });
+      }
+
+      intro.commentType = "Discussion";
     },
   },
 };

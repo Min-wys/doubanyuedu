@@ -38,16 +38,6 @@
               >
                 <img v-lazy="channelUrl.url" alt="" />
               </div>
-              <!-- <div
-                class="swiper-slide"
-              >
-                <img src="../../assets/image/10136.jpg" alt="" />
-              </div>
-              <div
-                class="swiper-slide"
-              >
-                <img src="../../assets/image/10137.jpg" alt="" />
-              </div> -->
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
