@@ -1,0 +1,50 @@
+{
+  "title": "编辑推荐",
+  "recommendList": [
+    {
+      "id": "1",
+      "bookName": "我们与恶的距离",
+      "imgUrl": "https://img9.doubanio.com/view/ark_article_cover/retina/public/167878846.jpg?v=1609226622",
+      "writer": "〔吕莳媛 等",
+      "originalPrice": "49.20元",
+      "currentPrice": "29.99元",
+      "detailTxet": "《我们与恶的距离》撕开沉默伤口，是吕莳媛丢给喧嚣社会的一个庞大诘问。一起随机杀…"
+    },
+    {
+      "id": "2",
+      "bookName": "剑来（套装1-14册）出版精校版",
+      "imgUrl": "https://img2.doubanio.com/view/ark_article_cover/retina/public/168402012.jpg?v=1609751971",
+      "writer": "烽火戏诸侯",
+      "originalPrice": "597.00元",
+      "currentPrice": "99.99元",
+      "detailTxet": " 《剑来》1-14册出版精校版！烽火戏诸侯继《雪中悍刀行》后又一巅峰之作！ 网络文学… "
+    },
+    {
+      "id": "3",
+      "bookName": "仿制药的真相",
+      "imgUrl": "https://img1.doubanio.com/view/ark_article_cover/retina/public/168401329.jpg?v=1609751905",
+      "writer": "〔美〕凯瑟琳·埃班（Katherine Eban） 高天羽译",
+      "originalPrice": "29.99元",
+      "currentPrice": "25.99元",
+      "detailTxet": "仿制药是在品牌药专利到期之后，合法仿制出来的廉价版本。据称它的成分、效果与品牌…"
+    },
+    {
+      "id": "4",
+      "bookName": "破天机：基因编辑的惊人力量",
+      "imgUrl": "https://img3.doubanio.com/view/ark_article_cover/retina/public/167368841.jpg?v=1608704916",
+      "writer": "〔美〕詹尼佛·杜德娜 等 傅贺译",
+      "originalPrice": "39.99元",
+      "currentPrice": "19.99元",
+      "detailTxet": "生物世界的基本规律是演化，演化的核心机制是自然选择，自然选择的基本单位是基因。…"
+    },
+    {
+      "id": "5",
+      "bookName": "复盘网飞",
+      "imgUrl": "https://img1.doubanio.com/view/ark_article_cover/retina/public/156272428.jpg?v=1597288720",
+      "writer": "〔美〕马克·伦道夫尚书译",
+      "originalPrice": "41.40元",
+      "currentPrice": "20.70元",
+      "detailTxet": "这是我们这个时代具有戏剧性和洞察力的创业故事。网飞是美国流媒体巨头，它与脸书、…"
+    }
+  ]
+}

@@ -7,7 +7,7 @@
           <span><i class="iconfont icon-fenxiang"></i> 分享</span>
         </li>
         <li class="footerLeftItem">
-          <span><i class="iconfont icon-pingjia" @click="open"></i>评论</span>
+          <span @click="openIntro"><i class="iconfont icon-pingjia"></i>评论</span>
         </li>
         <li class="footerLeftItem">
           <span><i class="iconfont icon-tuijian2"></i>推荐票</span>
@@ -47,17 +47,19 @@ export default {
   props: ["book"],
   methods: {
     addbook() {
-      this.$store.commit("ADD_BOOK", this.book);
+      this.$store.commit("ADD_BOOK", this.book.id);
     },
     // 输入框element弹窗
-    open() {
+    openIntro() {
       this.$prompt("请输入评论内容", "评论", {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
       })
         .then(({ value }) => {
-          console.log(value);
-          // this.INTRO_REPLY({ id, content: value });
+          this.$store.commit("ADD_INTRO", {
+            title: this.book.title,
+            content: value,
+          });
         })
         .catch(() => {
           this.$message({

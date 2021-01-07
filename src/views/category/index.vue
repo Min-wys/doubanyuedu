@@ -1,5 +1,5 @@
 <template>
-  <div id="category">
+  <div class="category">
     <div class="category_container">
       <!-- 头部面包屑区 -->
       <div class="category_header">
@@ -153,7 +153,7 @@
           <li class="mainItem" v-for="item in categoryList" :key="item.id">
             <div class="inner" @click="toOneStory(item)">
               <div class="cover">
-                <a href="javascript:;"><img src="./images/34659576.jpg" /></a>
+                <a href="javascript:;"><img v-lazy="item.cover" /></a>
               </div>
               <div class="info">
                 <a href="javascript:;"
@@ -306,10 +306,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
-#category {
+.category {
   margin-top: 50px;
   width: 100%;
-  height: 100%;
   background-color: #f8f9f9;
   overflow: hidden;
   .selected {

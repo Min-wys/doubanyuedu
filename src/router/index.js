@@ -17,19 +17,20 @@ const Rankings = () =>
   import(/* webpackChunkName: "Rankings" */ "../views/rankings");
 const Bookshelf = () =>
   import(/* webpackChunkName: "Bookshelf" */ "../views/Bookshelf");
+const Ebooks = () => import(/* webpackChunkName: "Home" */ "../views/Ebooks");
 
 // 改写push/replace方法
 const { push } = VueRouter.prototype;
 const { replace } = VueRouter.prototype;
 
-VueRouter.prototype.push = function(location, onComplete, onAbort) {
+VueRouter.prototype.push = function (location, onComplete, onAbort) {
   if (onComplete && onAbort) {
     return push.call(this, location, onComplete, onAbort);
   }
   return push.call(this, location, onComplete, () => {});
 };
 
-VueRouter.prototype.replace = function(location, onComplete, onAbort) {
+VueRouter.prototype.replace = function (location, onComplete, onAbort) {
   if (onComplete && onAbort) {
     return replace.call(this, location, onComplete, onAbort);
   }
@@ -67,6 +68,11 @@ const router = new VueRouter({
       path: "/bookshelf",
       component: Bookshelf,
       name: "bookshelf",
+    },
+    {
+      path: "/ebooks",
+      component: Ebooks,
+      name: "Ebooks",
     },
   ],
   // 每次切换路由页面滚动条位置

@@ -17,7 +17,7 @@
             <router-link to="/rankings">排行</router-link>
           </li>
           <li>
-            <router-link to="">出版</router-link>
+            <router-link to="/ebooks">出版</router-link>
           </li>
           <li>
             <router-link to="">会员</router-link>

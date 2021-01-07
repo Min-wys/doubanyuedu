@@ -1,6 +1,6 @@
 <template>
   <div v-if="startList[0]">
-    <Banner />
+    <Banners />
     <div class="general-widget">
       <div class="section-container">
         <div class="author-count">
@@ -58,7 +58,7 @@
 </template>
 
 <script>
-import Banner from "../../components/Banner";
+import Banners from "../../components/Banners";
 import General from "../../components/General";
 import HomeRecommend from "../../components/HomeRecommend";
 import GridGroup from "../../components/GridGroup";
@@ -192,7 +192,7 @@ export default {
   },
   components: {
     // Header,
-    Banner,
+    Banners,
     General,
     HomeRecommend,
     GridGroup,

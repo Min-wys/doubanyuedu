@@ -189,16 +189,16 @@ export default {
       intro.commentType = "Discussion";
     },
     // 添加评论数据
-    ADD_INTRO(state, content) {
-      state.introList.push({
+    ADD_INTRO(state, { title, content }) {
+      state.introList.comments.push({
         id: Date.now(),
         upvoteCount: 0,
         isHidden: false,
         isDeleted: null,
         works: {
-          agent: { id: "223670812" },
+          agent: { id: Date.now()+1 },
           id: "168527638",
-          title: "第七章 关小晴捞鱼计划",
+          title,
           cover:
             "https://img1.doubanio.com/view/ark_article_cover/retina/public/168527638.jpg?v=0",
           url: "/column/35971331/chapter/168527638/",

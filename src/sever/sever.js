@@ -9,11 +9,11 @@ const router = new KoaRouter();
 app.use(router.routes()).use(router.allowedMethods());
 
 // 返回home数据
-let homeData = require("./datas/home.json");
+let homeDataList = require("./datas/home.json");
 router.get("/home", function (ctx, next) {
   ctx.body = {
     code: 200,
-    data: homeData,
+    data: homeDataList,
   };
 });
 // 返回畅销作品数据
@@ -275,6 +275,57 @@ router.get("/rankings", function(ctx,next) {
   }
 })
 
+// 返回home数据ttttt
+let homeData = require("./datas/eBooks/home.json");
+router.get("/home", function (ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: homeData,
+  };
+});
+
+//书籍分类数据
+let booksClassify = require("./datas/eBooks/books.json");
+router.get("/books", function (ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: booksClassify,
+  };
+});
+
+//畅销排行
+let goodSale = require("./datas/eBooks/goodsale.json");
+router.get("/goodsale", function (ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: goodSale,
+  };
+});
+
+//新书排行
+let newBooks = require("./datas/eBooks/newbooks.json");
+router.get("/newbooks", function (ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: newBooks,
+  };
+});
+//编辑推荐
+let recommendBooks = require("./datas/eBooks/recommendBooks.json");
+router.get("/recommend", function (ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: recommendBooks,
+  };
+});
+//最新上架
+let newReleases = require("./datas/eBooks/newreleases.json");
+router.get("/newreleases", function (ctx, next) {
+  ctx.body = {
+    code: 200,
+    data: newReleases,
+  };
+});
 
 app.listen("3000", function(error) {
   if (error) {

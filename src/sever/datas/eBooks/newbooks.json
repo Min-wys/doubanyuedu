@@ -1,0 +1,80 @@
+{
+  "title": "新书排行",
+  "newBooksDetail": [
+    {
+      "id": "1",
+      "ClassifyName": "热带",
+      "writer": "〔日〕森见登美彦"
+    },
+    {
+      "id": "2",
+      "ClassifyName": "鳗鱼的旅行",
+      "writer": "〔瑞典〕帕特里克·斯文松"
+    },
+    {
+      "id": "3",
+      "ClassifyName": "守夜者4：天演",
+      "writer": "法医秦明"
+    },
+    {
+      "id": "4",
+      "ClassifyName": "冯唐成事心法",
+      "writer": "冯唐"
+    },
+    {
+      "id": "5",
+      "ClassifyName": "长安异闻录",
+      "writer": "远宁"
+    },
+    {
+      "id": "6",
+      "ClassifyName": "数据分析思维：分析方法和业务知识",
+      "writer": "猴子·数据分析学院"
+    },
+    {
+      "id": "7",
+      "ClassifyName": "德川家康",
+      "writer": "〔日〕火坂雅志"
+    },
+    {
+      "id": "8",
+      "ClassifyName": "短线交易秘诀（原书第2版）",
+      "writer": "美〕拉里·威廉斯"
+    },
+    {
+      "id": "9",
+      "ClassifyName": "迷信与宗教",
+      "writer": "〔日〕井上圆了（井上円了）"
+    },
+    {
+      "id": "10",
+      "ClassifyName": "我的姑姑三毛",
+      "writer": "〔加〕陈天慈"
+    },
+    {
+      "id": "11",
+      "ClassifyName": "鸽子（聚斯金德作品集）",
+      "writer": "〔德〕帕特里克·聚斯金德（Patrick Suskind）"
+    },
+    {
+      "id": "12",
+      "ClassifyName": "价值投资之茅台大博弈",
+      "writer": "董宝珍"
+    },
+    {
+      "id": "13",
+      "ClassifyName": "研究生英语学位课统考真题及模拟题精解（GET 2019—2020）",
+      "writer": "鲁显生 等"
+    },
+    {
+      "id": "14",
+      "ClassifyName": "阳光劫匪友情测试",
+      "writer": "〔〔日〕伊坂幸太郎"
+    },
+    {
+      "id": "15",
+      "ClassifyName": "迷案重现：没药花园",
+      "writer": "何袜皮"
+    }
+  ]
+}

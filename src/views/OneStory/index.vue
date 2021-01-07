@@ -166,7 +166,7 @@
                 </div>
               </div>
               <p class="remarkText">{{ item.content }}</p>
-              <div class="remarkBottom" v-show="item.commentType === 'Review'">
+              <div class="remarkBottom" v-if="item.commentType === 'Review'">
                 <div class="remarkBottomSection" @click="clickGood(item.id)">
                   <span>赞 {{ item.upvoteCount }}</span>
                 </div>
@@ -177,9 +177,10 @@
                   <span>分享 ></span>
                 </div>
               </div>
+              <!-- v-show="item.commentType === 'Discussion'" -->
               <div
                 class="remarkBottomTwo"
-                v-show="item.commentType === 'Discussion'"
+                v-else
               >
                 <div class="remarkBottomTwLeft">
                   <span>章节</span>
@@ -195,7 +196,7 @@
       </div>
     </div>
     <!-- footer -->
-    <OneStoryFooter :book="book.id" />
+    <OneStoryFooter :book="book" />
   </div>
 </template>
 
@@ -494,7 +495,7 @@ export default {
   color: #a6a6a6;
 }
 .remark {
-  padding: 20px 0 10px;
+  padding: 20px 0 50px;
   li {
     display: flex;
     border-bottom: 1px solid #ddd;

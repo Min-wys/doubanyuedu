@@ -1,37 +1,54 @@
 <template>
-  <div>
-    <div class="aside">
-      <div class="reading_devices">
-        <h3>阅读平台</h3>
-        <div class="readingList">
-          <ul>
-            <li>
-              <a href="javascript:;">web</a>
-            </li>
-            <li>
-              <a href="javascript:;"
-                ><span>阅读器下载</span> <span>iphone|ipad|Android</span></a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="kinds">
-          <h3>分类</h3>
-          <ul>
-              <li>小说</li>
-          </ul>
-      </div>
+  <div class="content">
+    <!-- 待组件渲染 -->
+    <div class="header">顶部区域</div>
+    <div class="inner">
+      <Stitle />
     </div>
-    <div class="article"></div>
+    <div class="banner">
+      <a href="/"><img src="./Stitle/images/banner.png" alt="" /></a>
+    </div>
+    <!-- 底部组件待渲染 -->
+    <div class="footer"></div>
   </div>
 </template>
 
 <script>
+import Stitle from "./Stitle/index";
 export default {
-  name: "Ebooks",
+  name: "Home",
+  components: {
+    Stitle,
+  },
 };
 </script>
 
 <style lang="less" scoped>
+.content {
+  background-color: #f8f9f9;
+
+  .header {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    // position: fixed;
+    // top: 0;
+    background-color: #fff;
+    //margin-bottom: 30px;
+  }
+  .inner {
+    width: 936px;
+    margin: 0 auto;
+  }
+  .banner {
+    width: 936px;
+    margin: 0 auto;
+
+    img {
+      width: 936px;
+      height: 90px;
+    }
+  }
+}
 </style>
