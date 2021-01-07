@@ -1,12 +1,18 @@
 <template>
-  <div id="app">豆瓣阅读111</div>
+  <div id="app">
+    <Home />
+  </div>
 </template>
 
 <script>
+import Home from "./views/Home";
 export default {
   name: "app",
+  components: {
+    Home,
+  },
 };
 </script>
 
-<style>
+<style lang="less" scoped>
 </style>

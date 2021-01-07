@@ -1,0 +1,82 @@
+{
+  "title": "畅销排行",
+  "day": "24H",
+  "week": "周",
+  "goodSaleList": [
+    {
+      "id": "1",
+      "ClassifyName": "人间不值得",
+      "writer": "〔日〕高野和明"
+    },
+    {
+      "id": "2",
+      "ClassifyName": "消失的13级台阶",
+      "writer": "〔日〕中村恒子 等"
+    },
+    {
+      "id": "3",
+      "ClassifyName": "月亮与六便士（作家榜经典）",
+      "writer": "〔英〕毛姆"
+    },
+    {
+      "id": "4",
+      "ClassifyName": "傅雷家书",
+      "writer": "傅雷 等"
+    },
+    {
+      "id": "5",
+      "ClassifyName": "原生家庭：如何修补自己的性格缺陷",
+      "writer": "〔美〕苏珊·福沃德 等"
+    },
+    {
+      "id": "6",
+      "ClassifyName": "呐喊",
+      "writer": "鲁迅"
+    },
+    {
+      "id": "7",
+      "ClassifyName": "一生的旅程",
+      "writer": "〔美〕罗伯特·艾格 等"
+    },
+    {
+      "id": "8",
+      "ClassifyName": "穷查理宝典",
+      "writer": "〔美〕查理·芒格 / Charlie T. Munger 等"
+    },
+    {
+      "id": "9",
+      "ClassifyName": "心流",
+      "writer": "〔美〕米哈里·契克森米哈赖"
+    },
+    {
+      "id": "10",
+      "ClassifyName": "人类简史：从动物到上帝",
+      "writer": "〔以〕尤瓦尔·赫拉利"
+    },
+    {
+      "id": "11",
+      "ClassifyName": "原则",
+      "writer": "〔美〕瑞·达利欧（Ray Dalio）"
+    },
+    {
+      "id": "12",
+      "ClassifyName": "光明共和国",
+      "writer": "〔西〕安德烈斯·巴尔瓦"
+    },
+    {
+      "id": "13",
+      "ClassifyName": "绝叫",
+      "writer": "〔日〕叶真中显"
+    },
+    {
+      "id": "14",
+      "ClassifyName": "贫穷的本质",
+      "writer": "〔印度〕阿比吉特·班纳吉 等"
+    },
+    {
+      "id": "15",
+      "ClassifyName": "局外人",
+      "writer": "〔法〕阿尔贝·加缪"
+    }
+  ]
+}

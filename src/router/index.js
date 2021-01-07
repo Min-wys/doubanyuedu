@@ -6,22 +6,23 @@ import VueRouter from "vue-router";
 
 const Home = () => import(/* webpackChunkName: "Home" */ "../views/Home");
 
+
 // 改写push/replace方法
 const { push } = VueRouter.prototype;
 const { replace } = VueRouter.prototype;
 
-VueRouter.prototype.push = function(location, onComplete, onAbort) {
+VueRouter.prototype.push = function (location, onComplete, onAbort) {
   if (onComplete && onAbort) {
     return push.call(this, location, onComplete, onAbort);
   }
-  return push.call(this, location, onComplete, () => {});
+  return push.call(this, location, onComplete, () => { });
 };
 
-VueRouter.prototype.replace = function(location, onComplete, onAbort) {
+VueRouter.prototype.replace = function (location, onComplete, onAbort) {
   if (onComplete && onAbort) {
     return replace.call(this, location, onComplete, onAbort);
   }
-  return replace.call(this, location, onComplete, () => {});
+  return replace.call(this, location, onComplete, () => { });
 };
 Vue.use(VueRouter);
 

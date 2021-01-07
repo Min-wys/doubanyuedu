@@ -1,0 +1,95 @@
+{
+  "title": "最新上架",
+  "newreleasesList": [
+    {
+      "id": "1",
+      "bookName": "沉默的病人",
+      "imgUrl": "https://img9.doubanio.com/view/ark_article_cover/retina/public/168395404.jpg?v=1609747137",
+      "writer": "〔英〕亚历克斯·麦克利兹 祁阿红译",
+      "originalPrice": "45.00元",
+      "currentPrice": "16.99元",
+      "detailTxet": "多少看似完美的夫妻，都在等待杀死对方的契机。杀死丈夫时，艾丽西亚33岁。她往…"
+    },
+    {
+      "id": "2",
+      "bookName": "无畏：为什么以色列能成为创新强国",
+      "imgUrl": "https://img9.doubanio.com/view/ark_article_cover/retina/public/167898414.jpg?v=1609312036",
+      "writer": "〔以〕英巴尔·阿里埃利（Inbal Arieli） 李雨桐译",
+      "originalPrice": "",
+      "currentPrice": "22.40元",
+      "detailTxet": "揭秘以色列创新奇迹背后的5步创新法则。作者英巴尔·阿里埃利是以色列知名连续创业家…"
+    },
+    {
+      "id": "3",
+      "bookName": "忧伤的时候，到厨房去（2020版）",
+      "imgUrl": "https://img1.doubanio.com/view/ark_article_cover/retina/public/167898698.jpg?v=1609311591",
+      "writer": "〔土〕爱诗乐·沛克 韩玲译",
+      "originalPrice": "",
+      "currentPrice": "19.92元",
+      "detailTxet": "莉莉娅某天醒来发现，她的婚姻可能并不是看上去那么美好；马克仍然无法面对挚爱的妻…"
+    },
+    {
+      "id": "4",
+      "bookName": "爱因斯坦的老板",
+      "imgUrl": "https://img9.doubanio.com/view/ark_article_cover/retina/public/167878636.jpg?v=1609230149",
+      "writer": "〔美〕罗伯特·托马斯 等 林子萱译",
+      "originalPrice": "",
+      "currentPrice": "29.88元",
+      "detailTxet": "平庸的领导者只能指导比自己更平庸的员工，卓越的领导者却能管理比自己更聪明的员工…"
+    },
+    {
+      "id": "5",
+      "bookName": "发酵完全指南：风味、营养和方法",
+      "imgUrl": "https://img1.doubanio.com/view/ark_article_cover/retina/public/167878757.jpg?v=1609230371",
+      "writer": "〔美〕桑德尔·埃利克斯·卡茨 魏思静译",
+      "originalPrice": "",
+      "currentPrice": "25.20元",
+      "detailTxet": "人类从远古时期便开始制作发酵食品和饮料，享受它带来的美味和营养。我们依靠发酵的…"
+    },
+    {
+      "id": "6",
+      "bookName": "重症监护室的故事",
+      "imgUrl": "https://img3.doubanio.com/view/ark_article_cover/retina/public/167852301.jpg?v=1609223506",
+      "writer": "〔英〕马特·摩根（Matt Morgan） 苗小迪译",
+      "originalPrice": "",
+      "currentPrice": "40.99元",
+      "detailTxet": "病情危重，通常指病人有一个或多个重要器官无法正常运作。18岁少年在异国被感染后患…"
+    },
+    {
+      "id": "7",
+      "bookName": "牛津通识读本：植物（中文版）",
+      "imgUrl": "https://img2.doubanio.com/view/ark_article_cover/retina/public/167851953.jpg?v=1609219885",
+      "writer": "〔英〕蒂莫西·沃克（Timothy Walker） 张雪译",
+      "originalPrice": "",
+      "currentPrice": "19.99元",
+      "detailTxet": "植物是生物圈的基本组成要素，它们的进化直接影响着动物生命的进化和地球气候的演变…"
+    },
+    {
+      "id": "8",
+      "bookName": "神好多的日本",
+      "imgUrl": "https://img1.doubanio.com/view/ark_article_cover/retina/public/167855067.jpg?v=1609227733",
+      "writer": "〔日〕山口谣司 雷欣翰译",
+      "originalPrice": "52.80元",
+      "currentPrice": "18.99元",
+      "detailTxet": " ★说文解字，日本“八百万”神明，一目了然。神社神明一一对应，日本神社观光不再走…"
+    },
+    {
+      "id": "9",
+      "bookName": " 电影音乐（中文版）",
+      "imgUrl": "https://img9.doubanio.com/view/ark_article_cover/retina/public/167851846.jpg?v=1609211479",
+      "writer": "〔美〕凯瑟琳·卡利纳克（Kathryn Kalinak） 徐黎译",
+      "originalPrice": "",
+      "currentPrice": "19.99元",
+      "detailTxet": "电影音乐的历史和电影一样长久。在声画同步成为标准之前的很多年里，投影的活动图像…"
+    },
+    {
+      "id": "10",
+      "bookName": "阅读浪漫小说",
+      "imgUrl": "https://img2.doubanio.com/view/ark_article_cover/retina/public/167852222.jpg?v=1609222047",
+      "writer": "〔美〕珍妮斯·A.拉德威（Janice A.Radway）",
+      "originalPrice": "",
+      "currentPrice": "41.99元",
+      "detailTxet": "女权主义者、文学批评家和大众文化理论家总是忽视浪漫主义阅读。他们声称，“浪漫情…"
+    }
+  ]
+}

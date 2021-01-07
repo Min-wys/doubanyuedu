@@ -1,0 +1,61 @@
+{
+  "title": "分类",
+  "booksClassifyList": [
+    {
+      "id": "1",
+      "ClassifyName": "小说"
+    },
+    {
+      "id": "2",
+      "ClassifyName": "文学"
+    },
+    {
+      "id": "3",
+      "ClassifyName": "人文社科"
+    },
+    {
+      "id": "4",
+      "ClassifyName": "经济管理"
+    },
+    {
+      "id": "5",
+      "ClassifyName": "科技科普"
+    },
+    {
+      "id": "6",
+      "ClassifyName": "计算机与互联网"
+    },
+    {
+      "id": "7",
+      "ClassifyName": "成功励志"
+    },
+    {
+      "id": "8",
+      "ClassifyName": "生活"
+    },
+    {
+      "id": "9",
+      "ClassifyName": "少儿"
+    },
+    {
+      "id": "10",
+      "ClassifyName": "艺术"
+    },
+    {
+      "id": "11",
+      "ClassifyName": "漫画绘本"
+    },
+    {
+      "id": "12",
+      "ClassifyName": "教育考试"
+    },
+    {
+      "id": "13",
+      "ClassifyName": "杂志"
+    },
+    {
+      "id": "14",
+      "ClassifyName": "科技"
+    }
+  ]
+}
