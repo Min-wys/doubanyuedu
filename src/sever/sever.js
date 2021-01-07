@@ -26,14 +26,6 @@ router.get("/rankings", function(ctx,next) {
   }
 })
 
-let tuijianbangdata = require("./datas/tuijianbang.json");
-router.get("/tuijianbang", function(ctx,next) {
-  ctx.body = {
-  code: 200,
-  data:tuijianbangdata,
-  }
-})
-
 
 app.listen("3000", function(error) {
   if (error) {

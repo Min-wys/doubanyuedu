@@ -38,7 +38,10 @@
               </a>
             </p>
           </div>
-          <img src="./image/薄情人回收手册.jpg" />
+          <a class="touming">
+              <img src="./image/薄情人回收手册.jpg" />
+          </a>
+         
         </div>
       </div>
     </div>
@@ -113,7 +116,25 @@ export default {
 }
 .ranking-big img {
   width: 80px;
-  height: 120px;
+  height: 120px;  
+  // margin: 20px 0;
+  border: none;
+  border-radius: 4px;
+  opacity: 1;
+  transition: opacity .1s ease-in;
+}
+.ranking-big .touming{
+  width: 80px;
+  height: 120px;  
+  margin: 20px 0;
+   border-radius: 4px;
+  background-color: #000;
+}
+
+.ranking-big img:hover{
+    opacity: 0.9;
+    background-color: #000;
+    transition: opacity .1s ease-in;
 }
 .ranking-number {
   flex-shrink: 0;
