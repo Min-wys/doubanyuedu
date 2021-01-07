@@ -52,7 +52,7 @@ export default {
   methods: {
     toOneStory() {
       this.$store.commit("REPLACE_BOOK", this.book);
-      this.$store.dispatch("ISINBOOKSHELF", this.book.id);
+      this.$store.commit("ISINBOOKSHELF", this.book.id);
       this.$router.push("/OneStory");
     },
   },

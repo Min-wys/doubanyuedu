@@ -7,14 +7,14 @@
           <a href="" class="btn-link">查看更多</a>
         </div>
         <div class="gridgroup">
-          <div class="gridItem" v-for="item in data" :key="item.id">
+          <div
+            class="gridItem"
+            v-for="item in data"
+            :key="item.id"
+          >
             <div class="img-section">
-              <a class="img-inner" href="">
-                <img
-                  class="img"
-                  :src="item.cover"
-                  alt=""
-                />
+              <a class="img-inner" >
+                <img class="img" :src="item.cover" alt="" />
               </a>
             </div>
             <div class="item-info">
@@ -36,6 +36,14 @@
 export default {
   name: "GridGroup",
   props: ["data", "title"],
+  methods: {
+    // toOneStory(book) {
+    //   console.log(book);
+    //   this.$store.commit("REPLACE_BOOK", book);
+    //   this.$store.commit("ISINBOOKSHELF", book.id);
+    //   this.$router.push("/OneStory");
+    // },
+  },
 };
 </script>
 
