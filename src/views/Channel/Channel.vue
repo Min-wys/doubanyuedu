@@ -106,6 +106,16 @@
         <General :data="generalData" :title="title.title" />
       </div>
     </div>
+    <!-- 排行区域 -->
+    <div class="rankingOuter">
+      <div class="rankingHeader">
+        <h2>排行</h2>
+        <div>查看更多</div>
+      </div>
+      <div class="ranking">
+        <Zujian class="component" v-for="item in 3" :key="item" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -113,6 +123,10 @@
 // 引入公共的走马灯
 import General from "../../components/General";
 import formatArray from "../../utils/formatArray";
+
+// 引入排行
+import Zujian from "../../views/rankings/zujian";
+
 // 引入swiper轮播图
 import "swiper/swiper-bundle.css";
 import Swiper, { Navigation, Pagination, Autoplay } from "swiper";
@@ -124,6 +138,7 @@ export default {
   components: {
     Recommend,
     General,
+    Zujian,
   },
   data() {
     return {
@@ -266,6 +281,41 @@ export default {
         width: 17px;
         height: 16px;
       }
+    }
+  }
+}
+.rankingOuter {
+  width: 1200px;
+  margin: 0 auto;
+  .ranking {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .component {
+      background: #fcfbf9;
+      margin:0 20px 0 50px;
+    }
+  }
+  .rankingHeader {
+    width: 90%;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 1;
+    }
+    div {
+      padding: 0 14px;
+      height: 30px;
+      font-size: 13px;
+      line-height: 30px;
+      border-radius: 4px;
+      background: var(--white);
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     }
   }
 }

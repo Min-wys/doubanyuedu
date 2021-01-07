@@ -167,10 +167,7 @@
               </div>
               <p class="remarkText">{{ item.content }}</p>
               <div class="remarkBottom" v-show="item.commentType === 'Review'">
-                <div
-                  class="remarkBottomSection"
-                  @click="clickGood(item.id)"
-                >
+                <div class="remarkBottomSection" @click="clickGood(item.id)">
                   <span>赞 {{ item.upvoteCount }}</span>
                 </div>
                 <div @click="open(item.id)" class="remarkBottomSection">
@@ -197,11 +194,14 @@
         </ul>
       </div>
     </div>
+    <!-- footer -->
+    <OneStoryFooter />
   </div>
 </template>
 
 <script>
 import { mapState, mapActions, mapMutations } from "vuex";
+import OneStoryFooter from "../../components/OneStoryFooter";
 export default {
   name: "OneStory",
   data() {
@@ -212,6 +212,9 @@ export default {
       goodBoo: true, // 控制赞的数目
       clickGoodId: null, // 赞的id值
     };
+  },
+  components: {
+    OneStoryFooter,
   },
   computed: {
     ...mapState({
@@ -254,6 +257,8 @@ export default {
       this.$prompt("请输入回复内容", "回复", {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
+        // inputPattern: /^[\s]/,
+        // inputErrorMessage: "内容不能为空",
       })
         .then(({ value }) => {
           console.log(value);
