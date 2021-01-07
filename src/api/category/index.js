@@ -2,18 +2,19 @@ import request from '../../utils/request.js'
 
 export default {
     // 获取分类类别基础数据
-    getKindData() {
+    getKindData(id) {
         return request({
             method: "GET",
-            url: "/category"
+            url: `/category?id=${id}`
         })
     },
 
-    // 获取加入书架数数据
-    getCategoryLibData() {
+    // 获取分类类型筛选数据
+    getCategoryTypeData() {
         return request({
             method: "GET",
-            url: "/categorylib"
+            url: "/categoryType"
         })
-    }
+    },
+
 }

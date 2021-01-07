@@ -1,0 +1,769 @@
+{
+    "data": {
+        "total": 8069,
+        "list": [
+            {
+                "title": "双宿时代：占据陌生肉体的我们",
+                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/34001578.jpg?v=1588837743",
+                "url": "\/column\/34001578\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "鹳耳",
+                        "url": "\/author\/63768650\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "简介：\n某日，毫无征兆的情况下，世界上陆续有6%的人捉对互换了意识，并且在互换后，同时拥有两具身体的全部记忆。\n他们被称为“双宿人”。\n这件事，以一种与大规模战争、天灾不同的方式，改变了世界面貌。\n\n29岁的华人韦一宸，居住在与中国接壤的某新兴移民城市，是一名刑侦警察。\n他因为行为不端，伤害证人，即将遭警局除名。\n但上级竟给他指派了新任务：保护一名能判断一个人是否“双宿”的 “鉴证师”……\n\n在他们的世界里，真情、信任和背叛的定义，都被迫改写。\n\n-----------------------------------------\n\n本文固定每日更新至结束。欢迎订阅投票 ：）",
+                "authorHighlight": null,
+                "editorHighlight": "6% 的人类已经互相交换意识，你是下一个，所以请牢记心中挚爱。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 380304,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": true,
+                "highlightTags": [
+                    {
+                        "name": "都市幻想"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "139769195"
+            },
+            {
+                "title": "天下刀宗",
+                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/32079294.jpg?v=1583911825",
+                "url": "\/column\/32079294\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "雨楼清歌",
+                        "url": "\/author\/63702907\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "一丈嚣狂，三尺闲愁，都裁作天衣，可当风雨乎？\n",
+                "authorHighlight": null,
+                "editorHighlight": null,
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 250664,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": true,
+                "highlightTags": [
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "111807088"
+            },
+            {
+                "title": "天下没有四块五一本的无敌剑谱",
+                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/33262158.jpg?v=1588837934",
+                "url": "\/column\/33262158\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "缝合医生",
+                        "url": "\/author\/63776538\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "吕老三可是弹云山的三好学生，学会《天无剑谱》之后猛虎下山，拉起大旗准备闯出些名堂。刚一开局，捡到一个熊小五。吕老三眼毒，有识人之能，一拍大腿给熊小五送上了山，心想这厮必能光耀山门。不过，吕老三也有算错的时候——这熊小五实在太特么能吃了。",
+                "authorHighlight": null,
+                "editorHighlight": "超人气拉力赛幻想组佳作，修仙逆袭也可以走喜剧路线，满满的少年漫热血情怀。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 398673,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": true,
+                "highlightTags": [
+                    {
+                        "name": "玄幻"
+                    },
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "133532568"
+            },
+            {
+                "title": "藏剑者 · 终",
+                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/35948935.jpg?v=1608955975",
+                "url": "\/column\/35948935\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "易别景",
+                        "url": "\/author\/63690203\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "大漠孤烟，红土喋血。天上峰会，雪顶决战。\n在命运旅程的终点，等待他的将是什么？\n藏剑者故事的最终篇章 螭玉会雪篇。",
+                "authorHighlight": null,
+                "editorHighlight": null,
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 187410,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "167545297"
+            },
+            {
+                "title": "港都异变1988",
+                "cover": "https://img3.doubanio.com\/view\/ark_column_cover\/retina\/public\/35844580.jpg?v=1608202603",
+                "url": "\/column\/35844580\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "闻希声",
+                        "url": "\/author\/63813690\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "1988.9.17 香岛隔绝事件拉开帷幕，东区遭袭，九龙瘫痪，新界裂变！不透光的都市牢笼内，名为「易术」的诡道播种在“幸运儿”们的身上。\n\n用游戏来夺命的未成年杀手组织柳花堂，拥有压倒性力量的兽化部队碧血盟，暗藏玄机的文化企业瀑谷，前香岛黑派组织青年国术社……能力者们穷其所能探索着隔绝事件的真相，而至深的罪恶，却已被埋藏在悚人的世界里侧…\n\n末世的残响，在这片土地上黯然奏鸣。",
+                "authorHighlight": "港都隔绝，全岛瘫痪，易术能力者们在极夜中探寻着世界的真相。",
+                "editorHighlight": "长夜封锁的杀戮都市，普通上班族觉醒异能，上演绝地求生！",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 74648,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "165998213"
+            },
+            {
+                "title": "天下无仙",
+                "cover": "https://img2.doubanio.com\/view\/ark_column_cover\/retina\/public\/35919533.jpg?v=1608806061",
+                "url": "\/column\/35919533\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "木石君",
+                        "url": "\/author\/63766247\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "修仙者修炼所需的灵物，无一不是凡人劳动所得。\n修仙者获得的每一分灵力，都浸透着凡人的血汗。\n凡人阿池设计结识仙人戚无明，一路除魔修斩妖物，终于获得了进入戚家门墙的资格。\n在仙盟，她见到了更大的不平等。为了改变仙凡贵贱，她选择不顾一切地往高位上爬。\n戚无明在阿池身上看见了自己的影子，因为这相似之处，他欣赏她却更厌恶她。\n他们的关系愈演愈烈，终成相爱相杀之局。",
+                "authorHighlight": "她是一介凡人，却一路逆袭成仙，誓要改变仙贵凡贱的世界。",
+                "editorHighlight": "她是一介凡人，却一路逆袭成仙，誓要改变仙贵凡贱的世界。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 70753,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "奇幻"
+                    },
+                    {
+                        "name": "玄幻"
+                    },
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "167091804"
+            },
+            {
+                "title": "梦幻由心莲",
+                "cover": "https://img1.doubanio.com\/view\/ark_column_banner_cover\/retina\/public\/885059cdb4dd4fbba73e7c63e9502bb7.jpg",
+                "url": "\/column\/32852310\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "爱的水瓶",
+                        "url": "\/author\/63773430\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "冰冷裹挟着红花，欲望啃啮着心伤。\n爱是温柔的手，还是捆绑的绳。\n",
+                "authorHighlight": null,
+                "editorHighlight": null,
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 175472,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "奇幻"
+                    },
+                    {
+                        "name": "架空世界"
+                    },
+                    {
+                        "name": "脑洞故事"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "129753939"
+            },
+            {
+                "title": "六藏图",
+                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/32981249.jpg?v=1588837713",
+                "url": "\/column\/32981249\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "天下第一郭",
+                        "url": "\/author\/27520808\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "贞观八年上元节，扬州郊外的龙华寺发生命案，寺内僧众无一生还。\n\n与此同时，伴随着佛教三阶宗在大唐的兴盛，关于三阶宗圣物“六藏图”失窃的传言，甚嚣尘上。\n\n同年，东海商人张九微、康国使臣康君邺、吐谷浑死士慕容婕分别前往大唐。三个异乡人和他们背后的势力在盛世中搅动风云，却不曾想到，一股追寻六藏图的暗流，正将所有人卷入一场足以改写大唐国运的惊天阴谋。\n\nPOV（视点人物）写作手法，每个章节从不同的人物视角出发。",
+                "authorHighlight": null,
+                "editorHighlight": "由佛珠引发的连环杀人，将三个异乡客卷入改写大唐国运的惊天阴谋",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 337427,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": true,
+                "highlightTags": [
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "131974625"
+            },
+            {
+                "title": "古怪谈",
+                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/32787634.jpg?v=1579231968",
+                "url": "\/column\/32787634\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "袋鼠花",
+                        "url": "\/author\/2938440\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "中国古代悬疑怪谈，变幻莫测，匪夷所思，令人悚然而又神往。在老庄的绮丽梦乡中，自地理志的四海八荒地，由笔记小说的幽情谬思里，从乡野异闻的奇谈怪论间，走出这一个个美丽的怨灵、可爱的妖精、恐怖的鬼怪、恍惚的男女。",
+                "authorHighlight": null,
+                "editorHighlight": "乡野异闻奇谈，这里有一个个美丽的怨灵、可爱的妖精、恐怖的鬼怪，一段段诡异神秘的传奇故事。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 144293,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": true,
+                "highlightTags": [
+                    {
+                        "name": "奇幻"
+                    },
+                    {
+                        "name": "架空世界"
+                    },
+                    {
+                        "name": "都市幻想"
+                    },
+                    {
+                        "name": "脑洞故事"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "128533702"
+            },
+            {
+                "title": "古怪谈 2",
+                "cover": "https://img2.doubanio.com\/view\/ark_column_cover\/retina\/public\/35987052.jpg?v=1609432348",
+                "url": "\/column\/35987052\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "袋鼠花",
+                        "url": "\/author\/2938440\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "怪谈故事，变幻莫测，匪夷所思，令人悚然而又神往。在神话传说的绮丽梦乡中，自地理志异的四海八荒地，由乡野异闻的奇谈怪论间，从心灵深处的幽情谬思里，走出这一个个美丽的怨灵、可爱的妖精、恐怖的鬼怪、恍惚的男女。",
+                "authorHighlight": null,
+                "editorHighlight": null,
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 18160,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "奇幻"
+                    },
+                    {
+                        "name": "都市幻想"
+                    },
+                    {
+                        "name": "脑洞故事"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "168095199"
+            },
+            {
+                "title": "大唐良谋",
+                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/33879818.jpg?v=1592468422",
+                "url": "\/column\/33879818\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "婠叔僮",
+                        "url": "\/author\/63786999\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "煌煌大唐，有良相，立于书牍，有良将，藏于市井。并刀如水，吴盐胜雪，风起云涌，两京动荡，天子九逃，陆九郎力挽狂澜，将这颓唐不堪的乱世又延续了百年。福兮祸兮......",
+                "authorHighlight": null,
+                "editorHighlight": "丰神俊朗大理寺卿VS江湖女仵作，联手侦破大唐悬案！",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 110996,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "138947206"
+            },
+            {
+                "title": "半龙隐",
+                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/33041954.jpg?v=1592467527",
+                "url": "\/column\/33041954\/",
+                "isBundle": false,
+                "coverLabel": "vip-can-read-label",
+                "author": [
+                    {
+                        "name": "红酥手贱",
+                        "url": "\/author\/63730476\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "不曾被窥探过的龙的世界，祖孙三代的命运交响曲。",
+                "authorHighlight": null,
+                "editorHighlight": "永生者知道，他的下一个躯壳已在蠢蠢欲动。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 450013,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": true,
+                "highlightTags": [
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "132217230"
+            },
+            {
+                "title": "玄鸟录",
+                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/31396146.jpg?v=1550818468",
+                "url": "\/column\/31396146\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "倪刃",
+                        "url": "\/author\/63692811\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "这是一部以中国青铜时代城邦文明为背景的冒险权谋爱情奇幻史诗。\n大禹之后，天下分崩。代表帝权的九鼎之一被人所偷。\n娇宠任性的公子白浚，能否在现实捶打之下走向成熟？\n芒作为奴隶，忍受着命运的痛苦压抑，他是否有机会在乱世获得重生？\n来自青衣城的少女墨绫，在后宫为母亲和自己的存活而战，她的命运将会怎样改变？\n东夷殷族，新的“诗人君王”将如何带领东夷参与九州的纵横捭阖？\n谁能寻获苍龙圣鼎，召唤出西域苍龙，在天下诸侯的纷争中取得先机？\n谁又能令玄鸟从东海而出，掀起一场残酷与光明共舞的风暴？",
+                "authorHighlight": "中国青铜时代冒险权谋爱情奇幻史诗",
+                "editorHighlight": "传说寻获苍龙圣鼎就能取得天下，无论王族还是奴隶，都想借乱世改变命运。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 273825,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "奇幻"
+                    },
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "107506859"
+            },
+            {
+                "title": "刀走妖心",
+                "cover": "https://img2.doubanio.com\/view\/ark_column_cover\/retina\/public\/35472803.jpg?v=1604888575",
+                "url": "\/column\/35472803\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "利利是是",
+                        "url": "\/author\/63810022\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "斩妖的要诀，是穿过骨与肉的层层防护，剥出那颗妖类特有的心。在这个妖祸四起的江湖上，凭着名为【诸恶莫作】的钢刀和娴熟的掏心技巧，猎妖人陈甲闯出了一片天。然而，斩破了无数颗妖心，他这颗人心却愈加彷徨……\n\n《刀走妖心 errant swordsman》的第一个大篇章《飞沙妖窟》",
+                "authorHighlight": "披着武侠外皮的灾难|悬疑|权谋|冒险故事",
+                "editorHighlight": "妖祸四起的江湖，猎妖人斩破了无数颗妖心，自己的心却愈加彷徨。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 94103,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "玄幻"
+                    },
+                    {
+                        "name": "架空世界"
+                    },
+                    {
+                        "name": "脑洞故事"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "162110509"
+            },
+            {
+                "title": "夜闯布达拉宫",
+                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/31559827.jpg?v=1557821530",
+                "url": "\/column\/31559827\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "雲隱",
+                        "url": "\/author\/63741730\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "凉州古寺之中，晋代灵均台下，水系与布达拉宫相连。\n我与张潮误入灵均台下暗河，竟一直走到了布达拉宫。那迷宫般的城堡内，过去的事情宛若记忆般轮番上演。我们遇到了被毒杀的九世达赖，渐渐分裂的三头金身，唱着情歌的仓央嘉措，松赞干布的秘密遗训……\n整座拉萨宛若时间之轮，在迷雾之中缓缓转动。而一切秘密的中心，就在大昭寺的觉康殿内。\n要想逃出时间的迷宫，必须解开这时轮坛城的奥秘。",
+                "authorHighlight": null,
+                "editorHighlight": null,
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 232693,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": true,
+                "highlightTags": [
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "109401693"
+            },
+            {
+                "title": "食肆故事",
+                "cover": "https://img1.doubanio.com\/view\/ark_column_cover\/retina\/public\/31493438.jpg?v=1589165087",
+                "url": "\/column\/31493438\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "大头宝宝君",
+                        "url": "\/author\/63758074\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "在一家看似不起眼的小食店里，有位美艳的老板娘和年轻小伙计荠儿。表面上，他们掌握着令人着迷的美食密码。可你永远不知道，走进这家小食店的人背后有多少不为人知的神秘故事。而他们，就是串联起着一系列离奇故事的关键人物。",
+                "authorHighlight": "食肆，真的只是吃饭的地方吗？",
+                "editorHighlight": null,
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 375058,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": true,
+                "highlightTags": [
+                    {
+                        "name": "玄幻"
+                    },
+                    {
+                        "name": "脑洞故事"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "109143159"
+            },
+            {
+                "title": "穿越到了名不见经传的三流小说里",
+                "cover": "https://img3.doubanio.com\/view\/ark_column_cover\/retina\/public\/35229801.jpg?v=1601783175",
+                "url": "\/column\/35229801\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "沈藤萝",
+                        "url": "\/author\/63774064\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "少年和少女穿越到了一个疑似是小说世界的地方，为了回到原来的世界，决定并肩作战，完成剧情。但是原来以为只是蹩脚的名不见经传的悬疑小说，找到凶手就可以通关，两个人却在同行的过程中，对这小说的本质产生了怀疑。\n\n",
+                "authorHighlight": "以为是个穿越，却是个悬疑，以为是个悬疑，实际是个武侠……",
+                "editorHighlight": "少年和少女穿越到一部没有名气的武侠小说里，不断探索故事各种可能的模式。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 366085,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "159007637"
+            },
+            {
+                "title": "公元：时间牧人",
+                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/33508654.jpg?v=1599719318",
+                "url": "\/column\/33508654\/",
+                "isBundle": false,
+                "coverLabel": "vip-can-read-label",
+                "author": [
+                    {
+                        "name": "石径斜",
+                        "url": "\/author\/63776609\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "一次试验，一场迷雾，将两座相隔千年的城市重叠到同一时空。当古代与现代交融，过去和未来纠缠，相差两千年的人们，会如何应对彼此？时间，究竟是文明的福音，还是人类的囚牢？静水流深的历史长河，又隐藏着怎样的欲望和秘密、私心和伟大？",
+                "authorHighlight": null,
+                "editorHighlight": "一次试验，一场迷雾，将两座相隔千年的城市重叠到同一时空。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 213000,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": true,
+                "highlightTags": [
+                    {
+                        "name": "架空世界"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "135713050"
+            },
+            {
+                "title": "鸮群：赛博时代的猎人们",
+                "cover": "https://img3.doubanio.com\/view\/ark_column_cover\/retina\/public\/35308591.jpg?v=1603079311",
+                "url": "\/column\/35308591\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "铸沙人",
+                        "url": "\/author\/63807504\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "二一零零年，东部第一枢纽都市，零上三十七度。在这座热岛的无人街道上疾驰着的他们，目标是阳光下狩猎者们不便触及的阴影中所暗藏的一切。寻求着心胜于物之道的异能人，在夹缝中生存的暴力团首领或是唯利是图的走私者。他们或许都是猎物，又或许都是同伴。这是猎人与猎物之间的故事，是鸮群与鼠群之间的故事。",
+                "authorHighlight": "赛博时代的都市传说，猎魔人和异能者的死斗！",
+                "editorHighlight": "赏金猎人 VS 异能少女，联手调查拯救赛博都市。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 207274,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": false,
+                "highlightTags": [
+                    {
+                        "name": "都市幻想"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "160040168"
+            },
+            {
+                "title": "大唐名人穿越实录",
+                "cover": "https://img9.doubanio.com\/view\/ark_column_cover\/retina\/public\/32980045.jpg?v=1588838477",
+                "url": "\/column\/32980045\/",
+                "isBundle": false,
+                "coverLabel": "",
+                "author": [
+                    {
+                        "name": "青溪客",
+                        "url": "\/author\/63713338\/"
+                    }
+                ],
+                "origAuthor": null,
+                "translator": null,
+                "abstract": "在8世纪和王维相见，又在21世纪和王维重逢，郁妍很激动。但当李白崔颢颜真卿杜牧鱼玄机温庭筠……都被传送到她家之后，她每天都担心自己会出现在社会新闻里：“幽州警方捣毁某小区一传销窝点，当场缴获赃款现金三十一元八角。该团伙发展下线的套路非常特别，所有成员均被洗脑，坚信自己从唐朝穿越而来。”\n她开始勤勤恳恳地帮（诱）助（骗）大家融入现代社会，直到——李白成了品酒微博大V，鱼玄机考中了公务员，崔颢做上了黄鹤楼的导游……\n她终于放心了。",
+                "authorHighlight": null,
+                "editorHighlight": "李白鱼玄机颜真卿反穿现代找工作，史上最不实用的21世纪就业指南。",
+                "isOrigin": true,
+                "kinds": [
+                    {
+                        "shortName": "幻想",
+                        "id": 506
+                    }
+                ],
+                "wordCount": 256691,
+                "wordCountUnit": "字",
+                "isColumn": true,
+                "isFinished": true,
+                "highlightTags": [
+                    {
+                        "name": "都市幻想"
+                    }
+                ],
+                "isInLibrary": false,
+                "id": "131972119"
+            }
+        ]
+    }
+}

@@ -14,7 +14,7 @@
             <router-link to="">原创</router-link>
           </li>
           <li>
-            <router-link to="">排行</router-link>
+            <router-link to="/rankings">排行</router-link>
           </li>
           <li>
             <router-link to="">出版</router-link>

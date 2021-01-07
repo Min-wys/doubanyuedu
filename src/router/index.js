@@ -3,6 +3,8 @@
 */
 import Vue from "vue";
 import VueRouter from "vue-router";
+// import Home from '../views/Home'
+// import Rankings from '../views/Rankings'
 
 const Home = () => import(/* webpackChunkName: "Home" */ "../views/Home");
 const Category = () =>
@@ -11,6 +13,8 @@ const Channel = () =>
   import(/* webpackChunkName: "Home" */ "../views/Channel/Channel.vue");
 const OneStory = () =>
   import(/* webpackChunkName: "Home" */ "../views/OneStory");
+const Rankings = () =>
+  import(/* webpackChunkName: "Rankings" */ "../views/rankings");
 const Bookshelf = () =>
   import(/* webpackChunkName: "Bookshelf" */ "../views/Bookshelf");
 
@@ -54,6 +58,10 @@ const router = new VueRouter({
       path: "/OneStory",
       component: OneStory,
       name: "OneStory",
+    },
+    {
+      path: "/rankings",
+      component: Rankings,
     },
     {
       path: "/bookshelf",
