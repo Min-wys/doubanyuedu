@@ -57,6 +57,7 @@ export default {
 <style lang="less" scoped>
 .content {
   margin-bottom: 40px;
+
   .swiper-container {
     width: 696px;
     height: 205px;

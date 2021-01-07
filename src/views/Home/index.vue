@@ -35,7 +35,7 @@ export default {
     // position: fixed;
     // top: 0;
     background-color: #fff;
-    // margin-bottom: 30px;
+    //margin-bottom: 30px;
   }
   .inner {
     width: 936px;

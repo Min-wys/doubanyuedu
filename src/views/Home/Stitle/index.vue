@@ -806,7 +806,7 @@ export default {
 .content {
   display: flex;
   justify-content: space-between;
-  margin-top: 45px;
+  margin-top: 25px;
 
   .left {
     width: 192px;
@@ -991,6 +991,7 @@ export default {
   }
   .right {
     width: 696px;
+    margin-top: -25px;
     .line {
       width: 100%;
       border-bottom: 1px solid #ddd;
